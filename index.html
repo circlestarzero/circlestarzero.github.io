@@ -316,7 +316,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-15 16:18:14" itemprop="dateModified" datetime="2022-04-15T16:18:14+08:00">2022-04-15</time>
+                <time title="修改时间：2022-04-15 16:18:47" itemprop="dateModified" datetime="2022-04-15T16:18:47+08:00">2022-04-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -381,15 +381,66 @@ z & = z' \\
 t & = \gamma(t' + \frac{vx'}{c^2}) \\
 \end{aligned}
 \right.
-\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/04/14/%E7%9B%B8%E5%AF%B9%E8%AE%BA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script><p>&lt;!— more —</p>
+<p><strong>原长最长</strong> 相对参考系静止的长度 $L=L’ \sqrt{1-(\frac{v}{c})^2}<br>$<br><strong>原时最短</strong> 同处的时钟所测量的唯一时间 $t’=\frac{t}{\sqrt{1-(\frac{v}{c})^2}}$</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\Delta t'=\frac{\Delta t - \frac{v}{c^2}\Delta x}{\sqrt{1-(\frac{v}{c})^2}} = &\frac{\Delta t }{\sqrt{1-(\frac{v}{c})^2}}\left(1-\frac{\Delta x\cdot v}{\Delta t \cdot c^2}\right) \\
+\Delta t=&\frac{\Delta t' + \frac{v}{c^2}\Delta x'}{\sqrt{1-(\frac{v}{c})^2}}
+\end{aligned}</script><p>$\Delta t \text{与} \Delta t’\text{总是同号}$，即因果律在相对论中不会变化<br><strong>洛伦兹速度变换</strong><br>推导</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+u_x'= &\frac{dx'}{dt'} = \frac{dx'}{dt} \cdot \frac{dt}{dt'}\\
+\frac{dx'}{dt} =&\frac{\gamma(x-vt)}{dt} = \gamma(u_x -v)\\
+\frac{dt'}{dt} =&\gamma(1-\frac{v}{c^2}u_x)\\
+\end{aligned}</script><p>结论</p>
+<script type="math/tex; mode=display">
+\left\{
+    \begin{aligned}
+        u_x'&=\frac{u_x-v}{1-\frac{v}{c^2}u_x} \\
+        u_y'&= \frac{u_y}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2} \\
+        u_z'&= \frac{u_z}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2}
+    \end{aligned}
+\right.</script><p>S’系变换到S系（将-v替换v）</p>
+<script type="math/tex; mode=display">
+\left\{
+    \begin{aligned}
+        u_x&=\frac{u_x'+v}{1+\frac{v}{c^2}u_x'} \\
+        u_y&= \frac{u_y'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2} \\
+        u_z&= \frac{u_z'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2}
+    \end{aligned}
+\right.</script><h2 id="相对论质量"><a href="#相对论质量" class="headerlink" title="相对论质量"></a>相对论质量</h2><script type="math/tex; mode=display">
+\begin{aligned}
+   m = m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}
+\end{aligned}\\
+m_0\rightarrow静止质量</script><h2 id="相对论动能"><a href="#相对论动能" class="headerlink" title="相对论动能"></a>相对论动能</h2><script type="math/tex; mode=display">
+\begin{aligned}
+    \Delta E =& \Delta m c^2\\
+    E_k=&mc^2-m_0c^2\\
+       =&(\frac{1}{\sqrt{1-(\frac{u}{c})^2}}-1)m_0c^2 \quad
+    \text{当u<<c时，} [1-(\frac{u}{c})^2]^{-0.5}=1+\frac{1}{2}
+    (\frac{u}{c})^2+\cdots\\
+        =&\frac{1}{2}m_0 u^2 \quad \text{牛顿力学中的形式}\\
+    m =&m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}
+\end{aligned}</script><h2 id="相对能的动能与动量的关系"><a href="#相对能的动能与动量的关系" class="headerlink" title="相对能的动能与动量的关系"></a>相对能的动能与动量的关系</h2><script type="math/tex; mode=display">
+\begin{aligned}
+    E = & mc^2 \\
+    P = & mv \\
+    m = & \frac{m_0}{\sqrt{1-(\frac{v}{c})^2}} \\
+    E^2 = &P^2c^2+m_0^2c^4 \\
+    E= &m_0c^2+E_k \\
+    E_k^2+2E_km_0c^2= &P^2c^2 \\
+    \text{当v<<c时}，&E_k^2<<m_0c^2,此时：\\
+    2E_km_0c^2=&P^2c^2 \\
+    \text{即}E_k=&\frac{P^2}{2m_0}
+\end{aligned}</script><p>对于光子:</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+    m_0 = & 0 \\
+    E^2 = & P^2c^2 \\
+    P = & \frac{E}{c} \\
+    m = & \frac{E}{C^2}
+\end{aligned}</script>
       
     </div>
 

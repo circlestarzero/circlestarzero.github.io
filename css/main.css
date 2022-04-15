@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ab3e05;
+  background: #f4f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1979,7 +1979,7 @@ pre .javascript .function {
 .followme {
   align-items: center;
   background: var(--card-bg-color);
-  border-left: 3px solid #ff2a2a;
+  border-left: 3px solid #ffd9e6;
   color: #bbb;
   margin: 2em 0 1em 0;
   padding: 1em 1.5em;

@@ -46,14 +46,14 @@
       
         
         
-      <description>&lt;h1 id=&quot;你好呀&quot;&gt;&lt;a href=&quot;#你好呀&quot; class=&quot;headerlink&quot; title=&quot;你好呀~&quot;&gt;&lt;/a&gt;你好呀~&lt;/h1&gt;&lt;p&gt;我是CC&lt;/p&gt;
-&lt;p&gt;欢迎访问我的blog&lt;/p&gt;
+      <description>&lt;h1 id=&quot;你好呀&quot;&gt;&lt;a href=&quot;#你好呀&quot; class=&quot;headerlink&quot; title=&quot;你好呀~&quot;&gt;&lt;/a&gt;你好呀~&lt;/h1&gt;&lt;p&gt;我是CC~&lt;/p&gt;
+&lt;p&gt;欢迎访问我的blog~&lt;/p&gt;
 </description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="你好呀"><a href="#你好呀" class="headerlink" title="你好呀~"></a>你好呀~</h1><p>我是CC</p><p>欢迎访问我的blog</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="你好呀"><a href="#你好呀" class="headerlink" title="你好呀~"></a>你好呀~</h1><p>我是CC~</p><p>欢迎访问我的blog~</p>]]></content:encoded>
       
       
       

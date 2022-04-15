@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff5c7f;
+  background: #ab3e05;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1971,7 +1971,7 @@ pre .javascript .function {
 }
 .post-copyright {
   background: var(--card-bg-color);
-  border-left: 3px solid #ff2a2a;
+  border-left: 3px solid #ffd9e6;
   list-style: none;
   margin: 2em 0 0;
   padding: 0.5em 1em;
@@ -2801,7 +2801,7 @@ body {
   color: #f7f7f7;
 }
 code {
-  color: #ff7600;
+  color: #ffd9e6;
   background: #fbf7f8;
   margin: 2px;
 }

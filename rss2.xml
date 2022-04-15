@@ -9,7 +9,7 @@
     <atom:link href="https://circlecirclezero.cc/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>keep curious</description>
-    <pubDate>Thu, 14 Apr 2022 11:35:17 GMT</pubDate>
+    <pubDate>Fri, 15 Apr 2022 08:18:14 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,16 +18,32 @@
       <guid>https://circlecirclezero.cc/2022/04/14/%E7%9B%B8%E5%AF%B9%E8%AE%BA/</guid>
       <pubDate>Thu, 14 Apr 2022 11:21:22 GMT</pubDate>
       
-        
-        
       <description>&lt;blockquote&gt;
 &lt;h1 id=&quot;相对论&quot;&gt;&lt;a href=&quot;#相对论&quot; class=&quot;headerlink&quot; title=&quot;相对论&quot;&gt;&lt;/a&gt;相对论&lt;/h1&gt;&lt;/blockquote&gt;
-&lt;h2 id=&quot;洛伦兹变换&quot;&gt;&lt;a href=&quot;#洛伦兹变换&quot; class=&quot;hea</description>
-        
+&lt;h2 id=&quot;洛伦兹变换&quot;&gt;&lt;a href=&quot;#洛伦兹变换&quot; class=&quot;headerlink&quot; title=&quot;洛伦兹变换&quot;&gt;&lt;/a&gt;洛伦兹变换&lt;/h2&gt;&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+\left\{
+\begin{aligned}
+x&#39; &amp; =  \gamma(x-vt) \\
+y&#39; &amp; = y \\
+z &amp; &#39;= z \\
+t&#39; &amp; = \gamma(t - \frac{vx}{c^2}) \\
+\end{aligned}
+\right.
+\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}&lt;/script&gt;&lt;p&gt;洛伦兹逆变换：(将-v替换v)&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
+\left\{
+\begin{aligned}
+x &amp; =  \gamma(x&#39;+vt) \\
+y &amp; = y&#39; \\
+z &amp; = z&#39; \\
+t &amp; = \gamma(t&#39; + \frac{vx&#39;}{c^2}) \\
+\end{aligned}
+\right.
+\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}&lt;/script&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<blockquote><h1 id="相对论"><a href="#相对论" class="headerlink" title="相对论"></a>相对论</h1></blockquote><h2 id="洛伦兹变换"><a href="#洛伦兹变换" class="headerlink" title="洛伦兹变换"></a>洛伦兹变换</h2><script type="math/tex; mode=display">\left\{\begin{aligned}x' & =  \gamma(x-vt) \\y' & = y \\z & '= z \\t' & = \gamma(t - \frac{vx}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script><p>洛伦兹逆变换：(将-v替换v)</p><script type="math/tex; mode=display">\left\{\begin{aligned}x & =  \gamma(x'+vt) \\y & = y' \\z & = z' \\t & = \gamma(t' + \frac{vx'}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script><p><strong>原长最长</strong> 相对参考系静止的长度 $L=L’ \sqrt{1-(\frac{v}{c})^2}<br>$<br><strong>原时最短</strong> 同处的时钟所测量的唯一时间 $t’=\frac{t}{\sqrt{1-(\frac{v}{c})^2}}$</p><script type="math/tex; mode=display">\begin{aligned}\Delta t'=\frac{\Delta t - \frac{v}{c^2}\Delta x}{\sqrt{1-(\frac{v}{c})^2}} = &\frac{\Delta t }{\sqrt{1-(\frac{v}{c})^2}}\left(1-\frac{\Delta x\cdot v}{\Delta t \cdot c^2}\right) \\\Delta t=&\frac{\Delta t' + \frac{v}{c^2}\Delta x'}{\sqrt{1-(\frac{v}{c})^2}}\end{aligned}</script><p>$\Delta t \text{与} \Delta t’\text{总是同号}$，即因果律在相对论中不会变化<br><strong>洛伦兹速度变换</strong><br>推导</p><script type="math/tex; mode=display">\begin{aligned}u_x'= &\frac{dx'}{dt'} = \frac{dx'}{dt} \cdot \frac{dt}{dt'}\\\frac{dx'}{dt} =&\frac{\gamma(x-vt)}{dt} = \gamma(u_x -v)\\\frac{dt'}{dt} =&\gamma(1-\frac{v}{c^2}u_x)\\\end{aligned}</script><p>结论</p><script type="math/tex; mode=display">\left\{    \begin{aligned}        u_x'&=\frac{u_x-v}{1-\frac{v}{c^2}u_x} \\        u_y'&= \frac{u_y}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2} \\        u_z'&= \frac{u_z}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.</script><p>S’系变换到S系（将-v替换v）</p><script type="math/tex; mode=display">\left\{    \begin{aligned}        u_x&=\frac{u_x'+v}{1+\frac{v}{c^2}u_x'} \\        u_y&= \frac{u_y'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2} \\        u_z&= \frac{u_z'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.</script><h2 id="相对论质量"><a href="#相对论质量" class="headerlink" title="相对论质量"></a>相对论质量</h2><script type="math/tex; mode=display">\begin{aligned}   m = m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}\\m_0\rightarrow静止质量</script><h2 id="相对论动能"><a href="#相对论动能" class="headerlink" title="相对论动能"></a>相对论动能</h2><script type="math/tex; mode=display">\begin{aligned}    \Delta E =& \Delta m c^2\\    E_k=&mc^2-m_0c^2\\       =&(\frac{1}{\sqrt{1-(\frac{u}{c})^2}}-1)m_0c^2 \quad    \text{当u<<c时，} [1-(\frac{u}{c})^2]^{-0.5}=1+\frac{1}{2}    (\frac{u}{c})^2+\cdots\\        =&\frac{1}{2}m_0 u^2 \quad \text{牛顿力学中的形式}\\    m =&m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}</script><h2 id="相对能的动能与动量的关系"><a href="#相对能的动能与动量的关系" class="headerlink" title="相对能的动能与动量的关系"></a>相对能的动能与动量的关系</h2><script type="math/tex; mode=display">\begin{aligned}    E = & mc^2 \\    P = & mv \\    m = & \frac{m_0}{\sqrt{1-(\frac{v}{c})^2}} \\    E^2 = &P^2c^2+m_0^2c^4 \\    E= &m_0c^2+E_k \\    E_k^2+2E_km_0c^2= &P^2c^2 \\    \text{当v<<c时}，&E_k^2<<m_0c^2,此时：\\    2E_km_0c^2=&P^2c^2 \\    \text{即}E_k=&\frac{P^2}{2m_0}\end{aligned}</script><p>对于光子:</p><script type="math/tex; mode=display">\begin{aligned}    m_0 = & 0 \\    E^2 = & P^2c^2 \\    P = & \frac{E}{c} \\    m = & \frac{E}{C^2}\end{aligned}</script>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><h1 id="相对论"><a href="#相对论" class="headerlink" title="相对论"></a>相对论</h1></blockquote><h2 id="洛伦兹变换"><a href="#洛伦兹变换" class="headerlink" title="洛伦兹变换"></a>洛伦兹变换</h2><script type="math/tex; mode=display">\left\{\begin{aligned}x' & =  \gamma(x-vt) \\y' & = y \\z & '= z \\t' & = \gamma(t - \frac{vx}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script><p>洛伦兹逆变换：(将-v替换v)</p><script type="math/tex; mode=display">\left\{\begin{aligned}x & =  \gamma(x'+vt) \\y & = y' \\z & = z' \\t & = \gamma(t' + \frac{vx'}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script><span id="more"></span><p><strong>原长最长</strong> 相对参考系静止的长度 $L=L’ \sqrt{1-(\frac{v}{c})^2}<br>$<br><strong>原时最短</strong> 同处的时钟所测量的唯一时间 $t’=\frac{t}{\sqrt{1-(\frac{v}{c})^2}}$</p><script type="math/tex; mode=display">\begin{aligned}\Delta t'=\frac{\Delta t - \frac{v}{c^2}\Delta x}{\sqrt{1-(\frac{v}{c})^2}} = &\frac{\Delta t }{\sqrt{1-(\frac{v}{c})^2}}\left(1-\frac{\Delta x\cdot v}{\Delta t \cdot c^2}\right) \\\Delta t=&\frac{\Delta t' + \frac{v}{c^2}\Delta x'}{\sqrt{1-(\frac{v}{c})^2}}\end{aligned}</script><p>$\Delta t \text{与} \Delta t’\text{总是同号}$，即因果律在相对论中不会变化<br><strong>洛伦兹速度变换</strong><br>推导</p><script type="math/tex; mode=display">\begin{aligned}u_x'= &\frac{dx'}{dt'} = \frac{dx'}{dt} \cdot \frac{dt}{dt'}\\\frac{dx'}{dt} =&\frac{\gamma(x-vt)}{dt} = \gamma(u_x -v)\\\frac{dt'}{dt} =&\gamma(1-\frac{v}{c^2}u_x)\\\end{aligned}</script><p>结论</p><script type="math/tex; mode=display">\left\{    \begin{aligned}        u_x'&=\frac{u_x-v}{1-\frac{v}{c^2}u_x} \\        u_y'&= \frac{u_y}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2} \\        u_z'&= \frac{u_z}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.</script><p>S’系变换到S系（将-v替换v）</p><script type="math/tex; mode=display">\left\{    \begin{aligned}        u_x&=\frac{u_x'+v}{1+\frac{v}{c^2}u_x'} \\        u_y&= \frac{u_y'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2} \\        u_z&= \frac{u_z'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.</script><h2 id="相对论质量"><a href="#相对论质量" class="headerlink" title="相对论质量"></a>相对论质量</h2><script type="math/tex; mode=display">\begin{aligned}   m = m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}\\m_0\rightarrow静止质量</script><h2 id="相对论动能"><a href="#相对论动能" class="headerlink" title="相对论动能"></a>相对论动能</h2><script type="math/tex; mode=display">\begin{aligned}    \Delta E =& \Delta m c^2\\    E_k=&mc^2-m_0c^2\\       =&(\frac{1}{\sqrt{1-(\frac{u}{c})^2}}-1)m_0c^2 \quad    \text{当u<<c时，} [1-(\frac{u}{c})^2]^{-0.5}=1+\frac{1}{2}    (\frac{u}{c})^2+\cdots\\        =&\frac{1}{2}m_0 u^2 \quad \text{牛顿力学中的形式}\\    m =&m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}</script><h2 id="相对能的动能与动量的关系"><a href="#相对能的动能与动量的关系" class="headerlink" title="相对能的动能与动量的关系"></a>相对能的动能与动量的关系</h2><script type="math/tex; mode=display">\begin{aligned}    E = & mc^2 \\    P = & mv \\    m = & \frac{m_0}{\sqrt{1-(\frac{v}{c})^2}} \\    E^2 = &P^2c^2+m_0^2c^4 \\    E= &m_0c^2+E_k \\    E_k^2+2E_km_0c^2= &P^2c^2 \\    \text{当v<<c时}，&E_k^2<<m_0c^2,此时：\\    2E_km_0c^2=&P^2c^2 \\    \text{即}E_k=&\frac{P^2}{2m_0}\end{aligned}</script><p>对于光子:</p><script type="math/tex; mode=display">\begin{aligned}    m_0 = & 0 \\    E^2 = & P^2c^2 \\    P = & \frac{E}{c} \\    m = & \frac{E}{C^2}\end{aligned}</script>]]></content:encoded>
       
       
       <category domain="https://circlecirclezero.cc/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</category>

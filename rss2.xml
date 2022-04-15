@@ -9,8 +9,30 @@
     <atom:link href="https://circlecirclezero.cc/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>keep curious</description>
-    <pubDate>Fri, 15 Apr 2022 08:22:36 GMT</pubDate>
+    <pubDate>Fri, 15 Apr 2022 08:31:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Hello</title>
+      <link>https://circlecirclezero.cc/2022/04/15/test/</link>
+      <guid>https://circlecirclezero.cc/2022/04/15/test/</guid>
+      <pubDate>Fri, 15 Apr 2022 08:29:49 GMT</pubDate>
+      
+        
+        
+      <description>&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> a;</span><br><span class="line">    a=<span class="number">5</span>;</span><br><span class="line">    cout&lt;&lt;a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      
+      
+      <comments>https://circlecirclezero.cc/2022/04/15/test/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>相对论</title>

@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Hello</title>
+      <link href="/2022/04/15/test/"/>
+      <url>/2022/04/15/test/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="type">int</span> a;</span><br><span class="line">    a=<span class="number">5</span>;</span><br><span class="line">    cout&lt;&lt;a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>相对论</title>
       <link href="/2022/04/14/%E7%9B%B8%E5%AF%B9%E8%AE%BA/"/>
       <url>/2022/04/14/%E7%9B%B8%E5%AF%B9%E8%AE%BA/</url>

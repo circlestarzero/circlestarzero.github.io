@@ -1225,7 +1225,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #328529;
+  background: #fff044;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2875,4 +2875,7 @@ pre {
 code,
 pre {
   border: 1px solid #d6d6d6;
+}
+.v[data-class="v"] .vcards .vcard .vh .vmeta .vat {
+  color: #ffd9e6;
 }

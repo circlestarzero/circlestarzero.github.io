@@ -1225,7 +1225,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e95ed9;
+  background: #633d8b;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2850,4 +2850,8 @@ pre {
 }
 .back-to-top:hover {
   color: #49b1f5 !important;
+}
+.post {
+  padding: 0 !important;
+  box-shadow: 0 0 0 0 !important;
 }

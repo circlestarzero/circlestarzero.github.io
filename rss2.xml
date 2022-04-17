@@ -25,7 +25,7 @@
       
       
       
-      <content:encoded><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- abc</span><br><span class="line">- bcd</span><br></pre></td></tr></table></figure><p>摘抄自：<a href="https://vuejs.bootcss.com" title="vue.js doc">vue.jsdo</a></p><p><code>v-xx atrribute</code> 指令前缀</p><ul><li><p>是由Vue 提供的特殊 attribute</p></li><li><p><code>v-bind:title="message"</code></p><ul><li>将这个元素节点的<code>title</code> attribute 和 Vue实例的<code>message</code> property 保持一致</li></ul></li></ul><p><code>v-on</code>-&gt;添加事件监听器，通过它调用在Vue中的实例方法</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">&quot;reverseMessage&quot;</span>&gt;</span>反转<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><p><code>v-model</code> 实现表单输入和应用状态之间的双向绑定</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app-6&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app6 = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#app-6&#x27;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;Hello Vue!&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="组件系统">组件系统</h3><p>一个组件本质上是一个拥有预定义选项的一个 Vue 实例</p>]]></content:encoded>
+      <content:encoded><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- abc</span><br><span class="line">- bcd</span><br></pre></td></tr></table></figure><p>摘抄自：<a href="https://vuejs.bootcss.com" title="vue.js doc">vue.js do</a></p><p><code>v-xx atrribute</code> 指令前缀</p><ul><li>是由Vue 提供的特殊 attribute</li><li><p><code>v-bind:title=&quot;message&quot;</code></p><ul><li>将这个元素节点的<code>title</code> attribute 和 Vue 实例的<code>message</code> property 保持一致</li></ul></li></ul><p><code>v-on</code>-&gt; 添加事件监听器，通过它调用在Vue中的实例方法</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">&quot;reverseMessage&quot;</span>&gt;</span>反转<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><p><code>v-model</code> 实现表单输入和应用状态之间的双向绑定</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app-6&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app6 = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#app-6&#x27;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;Hello Vue!&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="组件系统"><a href="#组件系统" class="headerlink" title="组件系统"></a>组件系统</h3><p>一个组件本质上是一个拥有预定义选项的一个 Vue 实例</p>]]></content:encoded>
       
       
       <category domain="https://circlecirclezero.cc/categories/%E5%89%8D%E7%AB%AF/">前端</category>
@@ -43,36 +43,31 @@
       <pubDate>Thu, 14 Apr 2022 11:21:22 GMT</pubDate>
       
       <description>&lt;blockquote&gt;
-&lt;h1 id=&quot;相对论&quot;&gt;相对论&lt;/h1&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;洛伦兹变换&quot;&gt;洛伦兹变换&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
+&lt;h1 id=&quot;相对论&quot;&gt;&lt;a href=&quot;#相对论&quot; class=&quot;headerlink&quot; title=&quot;相对论&quot;&gt;&lt;/a&gt;相对论&lt;/h1&gt;&lt;/blockquote&gt;
+&lt;h2 id=&quot;洛伦兹变换&quot;&gt;&lt;a href=&quot;#洛伦兹变换&quot; class=&quot;headerlink&quot; title=&quot;洛伦兹变换&quot;&gt;&lt;/a&gt;洛伦兹变换&lt;/h2&gt;&lt;script type=&quot;math/tex; mode=display&quot;&gt;
 \left\{
 \begin{aligned}
-x&amp;#39; &amp;amp; =  \gamma(x-vt) \\
-y&amp;#39; &amp;amp; = y \\
-z &amp;amp; &amp;#39;= z \\
-t&amp;#39; &amp;amp; = \gamma(t - \frac{vx}{c^2}) \\
+x&#39; &amp; =  \gamma(x-vt) \\
+y&#39; &amp; = y \\
+z &amp; &#39;= z \\
+t&#39; &amp; = \gamma(t - \frac{vx}{c^2}) \\
 \end{aligned}
 \right.
-\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;洛伦兹逆变换：(将-v替换v)&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
+\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}&lt;/script&gt;&lt;p&gt;洛伦兹逆变换：(将-v替换v)&lt;/p&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;
 \left\{
 \begin{aligned}
-x &amp;amp; =  \gamma(x&amp;#39;+vt) \\
-y &amp;amp; = y&amp;#39; \\
-z &amp;amp; = z&amp;#39; \\
-t &amp;amp; = \gamma(t&amp;#39; + \frac{vx&amp;#39;}{c^2}) \\
+x &amp; =  \gamma(x&#39;+vt) \\
+y &amp; = y&#39; \\
+z &amp; = z&#39; \\
+t &amp; = \gamma(t&#39; + \frac{vx&#39;}{c^2}) \\
 \end{aligned}
 \right.
-\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}
-\]&lt;/span&gt;&lt;/p&gt;</description>
+\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}&lt;/script&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<blockquote><h1 id="相对论">相对论</h1></blockquote><h2 id="洛伦兹变换">洛伦兹变换</h2><p><span class="math display">\[\left\{\begin{aligned}x&#39; &amp; =  \gamma(x-vt) \\y&#39; &amp; = y \\z &amp; &#39;= z \\t&#39; &amp; = \gamma(t - \frac{vx}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}\]</span></p><p>洛伦兹逆变换：(将-v替换v)</p><p><span class="math display">\[\left\{\begin{aligned}x &amp; =  \gamma(x&#39;+vt) \\y &amp; = y&#39; \\z &amp; = z&#39; \\t &amp; = \gamma(t&#39; + \frac{vx&#39;}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}\]</span></p><span id="more"></span><p><strong>原长最长</strong> 相对参考系静止的长度 $L=L' $<strong>原时最短</strong> 同处的时钟所测量的唯一时间 <spanclass="math inline">\(t&#39;=\frac{t}{\sqrt{1-(\frac{v}{c})^2}}\)</span></p><p><span class="math display">\[\begin{aligned}\Delta t&#39;=\frac{\Delta t - \frac{v}{c^2}\Deltax}{\sqrt{1-(\frac{v}{c})^2}} = &amp;\frac{\Delta t}{\sqrt{1-(\frac{v}{c})^2}}\left(1-\frac{\Delta x\cdot v}{\Delta t \cdotc^2}\right) \\\Delta t=&amp;\frac{\Delta t&#39; + \frac{v}{c^2}\Deltax&#39;}{\sqrt{1-(\frac{v}{c})^2}}\end{aligned}\]</span></p><p><span class="math inline">\(\Delta t \text{与} \Deltat&#39;\text{总是同号}\)</span>，即因果律在相对论中不会变化<strong>洛伦兹速度变换</strong> 推导</p><p><span class="math display">\[\begin{aligned}u_x&#39;= &amp;\frac{dx&#39;}{dt&#39;} = \frac{dx&#39;}{dt} \cdot\frac{dt}{dt&#39;}\\\frac{dx&#39;}{dt} =&amp;\frac{\gamma(x-vt)}{dt} = \gamma(u_x -v)\\\frac{dt&#39;}{dt} =&amp;\gamma(1-\frac{v}{c^2}u_x)\\\end{aligned}\]</span></p><p>结论</p><p><span class="math display">\[\left\{    \begin{aligned}        u_x&#39;&amp;=\frac{u_x-v}{1-\frac{v}{c^2}u_x} \\        u_y&#39;&amp;=\frac{u_y}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2} \\        u_z&#39;&amp;=\frac{u_z}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.\]</span></p><p>S'系变换到S系（将-v替换v）</p><p><span class="math display">\[\left\{    \begin{aligned}        u_x&amp;=\frac{u_x&#39;+v}{1+\frac{v}{c^2}u_x&#39;} \\        u_y&amp;=\frac{u_y&#39;}{1+\frac{v}{c^2}u_x&#39;}\sqrt{1-(\frac{v}{c})^2} \\        u_z&amp;=\frac{u_z&#39;}{1+\frac{v}{c^2}u_x&#39;}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.\]</span></p><h2 id="相对论质量">相对论质量</h2><p><span class="math display">\[\begin{aligned}   m = m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}\\m_0\rightarrow静止质量\]</span></p><h2 id="相对论动能">相对论动能</h2><p><span class="math display">\[\begin{aligned}    \Delta E =&amp; \Delta m c^2\\    E_k=&amp;mc^2-m_0c^2\\       =&amp;(\frac{1}{\sqrt{1-(\frac{u}{c})^2}}-1)m_0c^2 \quad    \text{当u&lt;&lt;c时，} [1-(\frac{u}{c})^2]^{-0.5}=1+\frac{1}{2}    (\frac{u}{c})^2+\cdots\\        =&amp;\frac{1}{2}m_0 u^2 \quad \text{牛顿力学中的形式}\\    m =&amp;m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}\]</span></p><h2 id="相对能的动能与动量的关系">相对能的动能与动量的关系</h2><p><span class="math display">\[\begin{aligned}    E = &amp; mc^2 \\    P = &amp; mv \\    m = &amp; \frac{m_0}{\sqrt{1-(\frac{v}{c})^2}} \\    E^2 = &amp;P^2c^2+m_0^2c^4 \\    E= &amp;m_0c^2+E_k \\    E_k^2+2E_km_0c^2= &amp;P^2c^2 \\    \text{当v&lt;&lt;c时}，&amp;E_k^2&lt;&lt;m_0c^2,此时：\\    2E_km_0c^2=&amp;P^2c^2 \\    \text{即}E_k=&amp;\frac{P^2}{2m_0}\end{aligned}\]</span></p><p>对于光子:</p><p><span class="math display">\[\begin{aligned}    m_0 = &amp; 0 \\    E^2 = &amp; P^2c^2 \\    P = &amp; \frac{E}{c} \\    m = &amp; \frac{E}{C^2}\end{aligned}\]</span></p>]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><h1 id="相对论"><a href="#相对论" class="headerlink" title="相对论"></a>相对论</h1></blockquote><h2 id="洛伦兹变换"><a href="#洛伦兹变换" class="headerlink" title="洛伦兹变换"></a>洛伦兹变换</h2><script type="math/tex; mode=display">\left\{\begin{aligned}x' & =  \gamma(x-vt) \\y' & = y \\z & '= z \\t' & = \gamma(t - \frac{vx}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script><p>洛伦兹逆变换：(将-v替换v)</p><script type="math/tex; mode=display">\left\{\begin{aligned}x & =  \gamma(x'+vt) \\y & = y' \\z & = z' \\t & = \gamma(t' + \frac{vx'}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}</script><span id="more"></span><p><strong>原长最长</strong> 相对参考系静止的长度 $L=L’ \sqrt{1-(\frac{v}{c})^2}<br>$<br><strong>原时最短</strong> 同处的时钟所测量的唯一时间 $t’=\frac{t}{\sqrt{1-(\frac{v}{c})^2}}$</p><script type="math/tex; mode=display">\begin{aligned}\Delta t'=\frac{\Delta t - \frac{v}{c^2}\Delta x}{\sqrt{1-(\frac{v}{c})^2}} = &\frac{\Delta t }{\sqrt{1-(\frac{v}{c})^2}}\left(1-\frac{\Delta x\cdot v}{\Delta t \cdot c^2}\right) \\\Delta t=&\frac{\Delta t' + \frac{v}{c^2}\Delta x'}{\sqrt{1-(\frac{v}{c})^2}}\end{aligned}</script><p>$\Delta t \text{与} \Delta t’\text{总是同号}$，即因果律在相对论中不会变化<br><strong>洛伦兹速度变换</strong><br>推导</p><script type="math/tex; mode=display">\begin{aligned}u_x'= &\frac{dx'}{dt'} = \frac{dx'}{dt} \cdot \frac{dt}{dt'}\\\frac{dx'}{dt} =&\frac{\gamma(x-vt)}{dt} = \gamma(u_x -v)\\\frac{dt'}{dt} =&\gamma(1-\frac{v}{c^2}u_x)\\\end{aligned}</script><p>结论</p><script type="math/tex; mode=display">\left\{    \begin{aligned}        u_x'&=\frac{u_x-v}{1-\frac{v}{c^2}u_x} \\        u_y'&= \frac{u_y}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2} \\        u_z'&= \frac{u_z}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.</script><p>S’系变换到S系（将-v替换v）</p><script type="math/tex; mode=display">\left\{    \begin{aligned}        u_x&=\frac{u_x'+v}{1+\frac{v}{c^2}u_x'} \\        u_y&= \frac{u_y'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2} \\        u_z&= \frac{u_z'}{1+\frac{v}{c^2}u_x'}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.</script><h2 id="相对论质量"><a href="#相对论质量" class="headerlink" title="相对论质量"></a>相对论质量</h2><script type="math/tex; mode=display">\begin{aligned}   m = m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}\\m_0\rightarrow静止质量</script><h2 id="相对论动能"><a href="#相对论动能" class="headerlink" title="相对论动能"></a>相对论动能</h2><script type="math/tex; mode=display">\begin{aligned}    \Delta E =& \Delta m c^2\\    E_k=&mc^2-m_0c^2\\       =&(\frac{1}{\sqrt{1-(\frac{u}{c})^2}}-1)m_0c^2 \quad    \text{当u<<c时，} [1-(\frac{u}{c})^2]^{-0.5}=1+\frac{1}{2}    (\frac{u}{c})^2+\cdots\\        =&\frac{1}{2}m_0 u^2 \quad \text{牛顿力学中的形式}\\    m =&m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}</script><h2 id="相对能的动能与动量的关系"><a href="#相对能的动能与动量的关系" class="headerlink" title="相对能的动能与动量的关系"></a>相对能的动能与动量的关系</h2><script type="math/tex; mode=display">\begin{aligned}    E = & mc^2 \\    P = & mv \\    m = & \frac{m_0}{\sqrt{1-(\frac{v}{c})^2}} \\    E^2 = &P^2c^2+m_0^2c^4 \\    E= &m_0c^2+E_k \\    E_k^2+2E_km_0c^2= &P^2c^2 \\    \text{当v<<c时}，&E_k^2<<m_0c^2,此时：\\    2E_km_0c^2=&P^2c^2 \\    \text{即}E_k=&\frac{P^2}{2m_0}\end{aligned}</script><p>对于光子:</p><script type="math/tex; mode=display">\begin{aligned}    m_0 = & 0 \\    E^2 = & P^2c^2 \\    P = & \frac{E}{c} \\    m = & \frac{E}{C^2}\end{aligned}</script>]]></content:encoded>
       
       
       <category domain="https://circlecirclezero.cc/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</category>
@@ -91,16 +86,14 @@ t &amp;amp; = \gamma(t&amp;#39; + \frac{vx&amp;#39;}{c^2}) \\
       
         
         
-      <description>&lt;h1 id=&quot;你好呀&quot;&gt;你好呀~&lt;/h1&gt;
-&lt;p&gt;我是CC~&lt;/p&gt;
+      <description>&lt;h1 id=&quot;你好呀&quot;&gt;&lt;a href=&quot;#你好呀&quot; class=&quot;headerlink&quot; title=&quot;你好呀~&quot;&gt;&lt;/a&gt;你好呀~&lt;/h1&gt;&lt;p&gt;我是CC~&lt;/p&gt;
 &lt;p&gt;欢迎访问我的blog~&lt;/p&gt;
-&lt;img src=&quot;/2022/04/14/Hello/20220416_231551__.jpeg&quot; class=&quot;&quot;&gt;
-</description>
+&lt;img src=&quot;/2022/04/14/Hello/2022041</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="你好呀">你好呀~</h1><p>我是CC~</p><p>欢迎访问我的blog~</p><img src="/2022/04/14/Hello/20220416_231551__.jpeg" class="">]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="你好呀"><a href="#你好呀" class="headerlink" title="你好呀~"></a>你好呀~</h1><p>我是CC~</p><p>欢迎访问我的blog~</p><img src="/2022/04/14/Hello/20220416_231551__.jpeg" class="">]]></content:encoded>
       
       
       

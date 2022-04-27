@@ -20,21 +20,19 @@
     var CONFIG = {"hostname":"circlecirclezero.cc","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":"trueß","sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#ffd9e6","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="引入 力学：研究机械运动的规律  运动学：只讨论如何描述运动 动力学：物体间相互运动对机械运动的影响  参考系与质点  绝对时空观 质点  质点系  参考系 坐标系 质点运动学  位置矢量 位置矢量：\(\vec{OP}&#x3D;\vec{r}&#x3D;r\vec{e_r}\) 直角坐标系： \(\vec{r}&#x3D;x\vec{i}+y\vec{j}+z\vec{k}\) 位移：\(\Delta \vec{r}&#x3D;\v">
+  <meta name="description" content="第一型曲线积分 定义与性质 定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="质点运动学">
-<meta property="og:url" content="https://circlecirclezero.cc/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/index.html">
+<meta property="og:title" content="曲线积分与曲面积分">
+<meta property="og:url" content="https://circlecirclezero.cc/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="CC&#39;blog">
-<meta property="og:description" content="引入 力学：研究机械运动的规律  运动学：只讨论如何描述运动 动力学：物体间相互运动对机械运动的影响  参考系与质点  绝对时空观 质点  质点系  参考系 坐标系 质点运动学  位置矢量 位置矢量：\(\vec{OP}&#x3D;\vec{r}&#x3D;r\vec{e_r}\) 直角坐标系： \(\vec{r}&#x3D;x\vec{i}+y\vec{j}+z\vec{k}\) 位移：\(\Delta \vec{r}&#x3D;\v">
+<meta property="og:description" content="第一型曲线积分 定义与性质 定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取一">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://circlecirclezero.cc/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/20220417_190021_82995D0C-EBD4-467A-80BB-DE044B58827E.png">
-<meta property="article:published_time" content="2022-04-17T10:32:57.000Z">
-<meta property="article:modified_time" content="2022-04-17T12:50:53.420Z">
+<meta property="article:published_time" content="2022-04-27T06:06:25.000Z">
+<meta property="article:modified_time" content="2022-04-27T07:03:35.985Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://circlecirclezero.cc/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/20220417_190021_82995D0C-EBD4-467A-80BB-DE044B58827E.png">
 
-<link rel="canonical" href="https://circlecirclezero.cc/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/">
+<link rel="canonical" href="https://circlecirclezero.cc/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
 
 
 <script id="page-configurations">
@@ -47,7 +45,7 @@
   };
 </script>
 
-  <title>质点运动学 | CC'blog</title>
+  <title>曲线积分与曲面积分 | CC'blog</title>
   
 
 
@@ -198,7 +196,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/">
+    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -211,7 +209,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          质点运动学
+          曲线积分与曲面积分
         </h1>
 
         <div class="post-meta">
@@ -223,20 +221,11 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-04-17 18:32:57 / 修改时间：20:50:53" itemprop="dateCreated datePublished" datetime="2022-04-17T18:32:57+08:00">2022-04-17</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">大学物理</span></a>
-                </span>
+              <time title="创建时间：2022-04-27 14:06:25 / 修改时间：15:03:35" itemprop="dateCreated datePublished" datetime="2022-04-27T14:06:25+08:00">2022-04-27</time>
             </span>
 
           
-            <span id="/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/" class="post-meta-item leancloud_visitors" data-flag-title="质点运动学" title="阅读次数">
+            <span id="/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-meta-item leancloud_visitors" data-flag-title="曲线积分与曲面积分" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -251,8 +240,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -262,7 +251,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -281,91 +270,71 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="引入">引入</h3>
-<p>力学：研究机械运动的规律</p>
+        <h1 id="第一型曲线积分">第一型曲线积分</h1>
+<h2 id="定义与性质">定义与性质</h2>
+<p>定义1 设 <span class="math inline">\(L\)</span>
+是空间一条有限长的分段光滑曲线, <span
+class="math inline">\(f(x,y,z)\)</span> 是定义与L上的有界函数,
+以任意方式将L分为n小段 <span class="math inline">\(L_1,L_2, \cdots
+L_n\)</span> ,以 <span class="math inline">\(\Delta s_i, 记L_i的弧长, 令
+\lambda = \max _{1 \leq i \leq n} \Delta s_i,\)</span> 在每一小段 <span
+class="math inline">\(L_i\)</span> 上任取一点 <span
+class="math inline">\(P_i\)</span>, 构成和式 <span
+class="math inline">\(\sum_{i=1}^{n}f(P_i)\Delta s_i\)</span>, 若极限
+<span class="math display">\[I = \lim_{\lambda  \to 0}
+\sum_{i=1}^{n}f(P_i) \Delta s_i\]</span> 存在, 且与L的取法以及 <span
+class="math inline">\(P_i\)</span> 的取法无关, 则称 <span
+class="math inline">\(I 为 f(x,y,z)沿曲线L\)</span>的
+<strong>第一型曲线积分(对弧长的曲线积分)</strong> , 记作 <span
+class="math inline">\(\int_{L}^{} f(x,y,z) ds \quad (或简写作
+\int_{L}^{}fds, 若L为闭曲线,则记作 \oint_{L}^{}fds)\)</span>, 即 <span
+class="math display">\[ \int_{L}^{}f(x,y,z)ds = \lim_{\lambda  \to 0}
+\sum_{i=1}^{n} f(P_i)\Delta s_i \]</span></p>
+<p>其中 <span class="math inline">\(f(x,y,z)\)</span> 叫做
+<strong>被积函数</strong>, L称作 <strong>积分弧段</strong></p>
+<hr />
+<p>L为平面曲线时: <span
+class="math inline">\(\int_{L}^{}f(x,y)ds\)</span></p>
+<p>若函数 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(L\)</span> 上连续或分段连续,则积分 <span
+class="math inline">\(\int_{L}^{}f ds 存在\)</span></p>
+<p>若 <span class="math inline">\(f (x,y,z) \equiv 1,则s =
+\int_{L}^{}ds\)</span></p>
+<p>L为有限长分段光滑曲线, <span class="math inline">\(f,g\)</span>在
+<span class="math inline">\(L\)</span> 上连续,则性质如下</p>
 <ul>
-<li>运动学：只讨论如何描述运动</li>
-<li>动力学：物体间相互运动对机械运动的影响</li>
-</ul>
-<h3 id="参考系与质点">参考系与质点</h3>
+<li>线性性质 对任何常数 <span
+class="math inline">\(\alpha,\beta\)</span> 有
 <ul>
-<li>绝对时空观</li>
-<li>质点
-<ul>
-<li>质点系</li>
+<li><span class="math display">\[\int_{L}^{}  (\alpha f+\beta
+g)ds=\alpha \int_{L}^{}fds + \beta \int_{L}^{}gds\]</span></li>
 </ul></li>
-<li>参考系</li>
-<li>坐标系</li>
-<li>质点运动学</li>
-</ul>
-<h3 id="位置矢量">位置矢量</h3>
-<p>位置矢量：<span
-class="math inline">\(\vec{OP}=\vec{r}=r\vec{e_r}\)</span></p>
-<p>直角坐标系： <span
-class="math inline">\(\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}\)</span></p>
-<p>位移：<span class="math inline">\(\Delta
-\vec{r}=\vec{r_b}-\vec{r_a}\)</span></p>
-<p><span class="math inline">\(\vert\Delta\vec{r}\vert \neq \Delta
-r\)</span></p>
-<p><span class="math inline">\(\Delta r =
-\vert\vec{r_b}\vert-\vert\vec{r_a}\vert\)</span></p>
-<p><span class="math inline">\(\Delta t \to 0, \vert d\vec{r} \vert = d
-S\)</span></p>
-<p>平均速度 <span class="math inline">\(\bar{\vec{v}} = \frac{\Delta
-\vec{r}}{\Delta t}\)</span></p>
-<p><span class="math inline">\(\lvert \bar{\vec{v}} \rvert = \frac{\vert
-\Delta \vec{r} \vert}{\Delta t} \neq \frac{\Delta S}{\Delta
-t}\)</span></p>
-<p>速度 <span class="math inline">\(\vec{v}=\frac{d
-\vec{r}}{dt}\)</span></p>
-<p>速率<span class="math inline">\(\vert \vec{v} \vert = \frac{dS}{dt} =
-\lvert \frac{d \vec{r}}{dt} \rvert \neq \frac{dr}{dt}\)</span></p>
-<p>加速度<span
-class="math inline">\(\vec{a}=\frac{d\vec{v}}{dt}\)</span></p>
-<p><strong>自然坐标系</strong> <img data-src="/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/20220417_190021_82995D0C-EBD4-467A-80BB-DE044B58827E.png" class=""> 速度 <span
-class="math inline">\(\vec{v}=v\vec{e_\tau}\)</span></p>
-<p>加速度 <span class="math inline">\(\vec{a} = \frac{d\vec{v}}{dt} =
-\frac{d(v\vec{e_\tau)}}{dt} = \frac{dv}{dt}\vec{e_\tau}
-+v\frac{d\vec{e_\tau}}{dt}\)</span></p>
-<p><span class="math inline">\(\frac{dv}{dt}=\vec{a_\tau} \quad
-\frac{d\vec{e_\tau}}{dt} = \frac{d\theta \vert \vec{e_t}\vert}{dt}
-\vec{e_n} = \frac{1}{\rho}\frac{dS}{dt} \vec{e_n}\)</span></p>
-<p><span class="math inline">\(\vec{a} = \frac{dv}{dt}\vec{e_\tau}
-+\frac{v^2}{\rho}\vec{e_n}\)</span></p>
-<p>圆周运动: <span
-class="math inline">\(\vec{a}=\frac{dv}{dt}\vec{e_\tau} + \frac{v^2}{R}
-\vec{e_n}\)</span></p>
-<p>匀速圆周运动：<span class="math inline">\(\vec{a} = \frac{v^2}{R}
-\vec{e_n}\)</span></p>
-<p>角速度: <span class="math inline">\(\vec{\omega} =
-\frac{d\vec{\theta}}{dt}\)</span></p>
+<li>可加性 若L 由 两段弧<span class="math inline">\(L_1,
+L_2构成,则\)</span>
 <ul>
-<li>方向:右手定理</li>
-</ul>
-<p>角加速度: <span class="math inline">\(\vec{\beta} =
-\frac{d\vec{w}}{dt} = \frac{d^2 \vec{\theta}}{dt^2}\)</span></p>
-<p>空间曲线方程: <span class="math inline">\(f(x,y,z) = 0\)</span></p>
-<h3 id="积分特殊情况">积分特殊情况：</h3>
+<li><span class="math display">\[ \int_{L}^{} fds = \int_{L_1}^{}fds +
+\int_{L_2}^{}fds\]</span></li>
+</ul></li>
+<li>中值公式, 设 s 是 L 上的弧长, 则L上存在一点P, 使得
 <ul>
-<li><span class="math inline">\(a=f(t) \rarr f(t) = \frac{dv}{dt}\rArr
-f(t)dt=dv\)</span><br />
-</li>
-<li><span class="math inline">\(a=f(v) \rarr f(v) = \frac{dv}{dt} \rArr
-dt= \frac{dv}{f(v)}\)</span><br />
-</li>
-<li><span class="math inline">\(a=f(x) \rarr f(x) = \frac{dv}{dt} \rArr
-f(x) = \frac{dv}{dx} \frac{dx}{dt} \rArr f(x)dx= vdv\)</span></li>
+<li><span class="math display">\[\int_{L}^{}fds = s f  (p)\]</span></li>
+</ul></li>
 </ul>
-<h2 id="相对运动">相对运动</h2>
-<p>绝对量：静系测得的量</p>
-<p>相对量：动系测得的量</p>
-<p>牵连量：动系相对静系的量</p>
-<p><span class="math inline">\(\vec{r_绝} = \vec{r_相} +
-\vec{r_牵}\)</span></p>
-<p><span class="math inline">\(\vec{v_绝} = \vec{v_相} +
-\vec{v_牵}\)</span></p>
-<p><span class="math inline">\(\vec{a_绝} = \vec{a_相} +
-\vec{a_牵}\)</span></p>
+<h2 id="化为定积分">化为定积分</h2>
+<p>计算 <span class="math inline">\(\int_{L}^{}fds\)</span>
+的主要方法是引入L的参数方程化为定积分</p>
+<p>定理1 设曲线方程L 由以下参数方程给定: <span class="math display">\[ x
+= x  (t) , y = y  (t), z=z  (t)  (\alpha \leq t \leq \beta
+)     \]</span></p>
+<p>其中 <span class="math inline">\(x (t),y (t),z (t) 在区间 [ \alpha,
+\beta ]\)</span>上有连续导数,且 <span
+class="math inline">\(x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2} (t) \neq 0,
+若f (x,y,z) 在 L 上不连续,则\)</span> <span class="math display">\[
+\int_{L}^{}fds = \int_{\alpha }^{\beta }f (x (t), y (t), z (t))
+\sqrt[2]{x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2} (t)} dt \quad \alpha &lt;
+\beta  \]</span></p>
+<p>弧微分 <span class="math display">\[ ds = \sqrt[]{x&#39;^{2} (t) +
+y&#39;^{2} (t) + z&#39;^{2} (t)   }dt \]</span></p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
@@ -381,7 +350,7 @@ f(x) = \frac{dv}{dx} \frac{dx}{dt} \rArr f(x)dx= vdv\)</span></li>
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://circlecirclezero.cc/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/" title="质点运动学">https://circlecirclezero.cc/2022/04/17/质点运动学/</a>
+    <a href="https://circlecirclezero.cc/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" title="曲线积分与曲面积分">https://circlecirclezero.cc/2022/04/27/曲线积分与曲面积分/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -398,13 +367,10 @@ f(x) = \frac{dv}{dx} \frac{dx}{dt} \rArr f(x)dx= vdv\)</span></li>
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2022/04/16/vue-js-learning-notes/" rel="prev" title="vue.js学习笔记">
-      <i class="fa fa-chevron-left"></i> vue.js学习笔记
+    <a href="/2022/04/27/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/" rel="prev" title="随机事件与概率">
+      <i class="fa fa-chevron-left"></i> 随机事件与概率
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2022/04/17/%E5%8A%9B%E5%AD%A6/" rel="next" title="力学">
-      力学 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -464,7 +430,7 @@ f(x) = \frac{dv}{dx} \frac{dx}{dt} \rArr f(x)dx= vdv\)</span></li>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E5%85%A5"><span class="nav-number">1.</span> <span class="nav-text">引入</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E7%B3%BB%E4%B8%8E%E8%B4%A8%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">参考系与质点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%8D%E7%BD%AE%E7%9F%A2%E9%87%8F"><span class="nav-number">3.</span> <span class="nav-text">位置矢量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%A7%AF%E5%88%86%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5"><span class="nav-number">4.</span> <span class="nav-text">积分特殊情况：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8"><span class="nav-number"></span> <span class="nav-text">相对运动</span></a></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">化为定积分</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

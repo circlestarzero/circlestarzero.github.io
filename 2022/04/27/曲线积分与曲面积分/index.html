@@ -28,7 +28,7 @@
 <meta property="og:description" content="第一型曲线积分 定义与性质 定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取一">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T06:06:25.000Z">
-<meta property="article:modified_time" content="2022-04-27T07:25:27.051Z">
+<meta property="article:modified_time" content="2022-04-27T08:40:48.716Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -221,7 +221,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-04-27 14:06:25 / 修改时间：15:25:27" itemprop="dateCreated datePublished" datetime="2022-04-27T14:06:25+08:00">2022-04-27</time>
+              <time title="创建时间：2022-04-27 14:06:25 / 修改时间：16:40:48" itemprop="dateCreated datePublished" datetime="2022-04-27T14:06:25+08:00">2022-04-27</time>
             </span>
 
           
@@ -251,14 +251,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.7k</span>
+              <span>3.6k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -368,6 +368,105 @@ r&#39;^{2} (\theta )  }d \theta  \]</span></li>
 (\theta ) }d \theta
 \end{equation}\]</span></li>
 </ul>
+<h1 id="第二型曲线积分">第二型曲线积分</h1>
+<h2 id="定义与性质-1">定义与性质</h2>
+<p>定义1 设 <span
+class="math inline">\(P,Q,R\)</span>是定义在分段光滑有向曲线 <span
+class="math inline">\(L\)</span> 上的有界函数, <span
+class="math inline">\(\mathbf{F} = \{P,Q,R\}. 若积分 \int_{L}^{}
+\mathbf{F} \cdot \mathbf{\tau } ds\)</span>存在,则称它为函数组 P,Q,R
+(或矢量函数 <span class="math inline">\(\mathbf{F})\)</span> 沿曲线L的
+<strong>第二型曲线积分</strong>,记作 <span
+class="math inline">\(\int_{L}^{} \mathbf{F} \cdot d
+\mathbf{r}\)</span>,即 <span class="math display">\[ \begin{equation}
+    \int_{L}^{} \mathbf{F} \cdot d \mathbf{r} = \int_{L}^{} \mathbf{F}
+\cdot \mathbf{\tau }ds
+\end{equation} \]</span></p>
+<p>其中 <span
+class="math inline">\(P,Q,R\)</span>叫做<strong>被积函数</strong></p>
+<p><span class="math inline">\(L\)</span> 称为 <strong>积分弧段</strong>
+或 <strong>积分路径</strong></p>
+<p>以 <span class="math inline">\(\mathbf{r}\)</span> 记 <span
+class="math inline">\(L\)</span> 上的动点的矢径</p>
+<p>以 <span class="math inline">\(\mathbf{\tau}\)</span> 记为 <span
+class="math inline">\(L\)</span> 的单位切矢量,其方向与<span
+class="math inline">\(L\)</span>一致</p>
+<p>以 <span class="math inline">\(\cos \alpha ,\cos \beta ,\cos \gamma记
+\mathbf{\tau }\)</span>的方向余弦 令 <span
+class="math inline">\(\mathbf{r}= \left\{ x,y,z \right\}, 则 d
+\mathbf{r} = \left\{ dx,dy,dz \right\}\)</span></p>
+<p>则 <span class="math inline">\(ds ^{2} =d \mathbf{r} ^{2}, d
+\mathbf{r} = \mathbf{\tau }ds\)</span></p>
+<p><span class="math display">\[
+\begin{equation}
+    Pdx + Qdy + Rdz = (P \cos \alpha +Q \cos \beta + R \cos \gamma ) ds
+= \mathbf{F}d \cdot \mathbf{r} = \mathbf{F} \cdot \mathbf{\tau } ds
+\end{equation}
+\]</span></p>
+<p><span class="math display">\[
+\begin{equation}
+    \int_{L}^{} \mathbf{F} \cdot d\mathbf{r} = \int_{L}^ {} Pdx +Qdy+
+Rdz
+\end{equation}
+\]</span></p>
+<p><span class="math display">\[ \begin{equation}
+    \int_{L}^ {} Pdx +Qdy+ Rdz= \int_{L}^{} (P \cos \alpha + Q \cos
+\beta +R \cos \gamma ) ds
+\end{equation} \]</span></p>
+<p>也称第二型曲线积分为 <strong>对坐标的曲线积分</strong></p>
+<p>平面曲线情况 <span class="math display">\[ \int_{L}^{} \mathbf{F}
+\cdot d\mathbf{r} = \int_{L}^{}Pdx+Qdy
+\]</span></p>
+<p>对 <strong>矢量函数 F</strong>的第二型曲线积分 <span
+class="math inline">\(\leftrightarrow\)</span>对数量函数 <span
+class="math inline">\(\mathbf{F} \cdot \mathbf{\tau }\)</span>
+的第一型曲线积分</p>
+<p><strong>性质如下</strong></p>
+<ul>
+<li><p>曲线积分 <span class="math inline">\(\int_{L}^{} \mathbf{F} \cdot
+d \mathbf{r}\)</span>存在的条件</p>
+<ul>
+<li><span class="math inline">\(L\)</span>
+为分段光滑有限长的有向曲线</li>
+<li><span class="math inline">\(F = \left\{ P,Q,R \right\}\)</span>是
+<span class="math inline">\(L\)</span> 上的分段连续的矢量函数</li>
+</ul></li>
+<li><p>若记 <span class="math inline">\(-L 为 L\)</span>
+的反向曲线,则有</p>
+<ul>
+<li><span class="math display">\[ \begin{equation}
+  \int_{-L}^{} \mathbf{F} \cdot d \mathbf{r}=-\int_{L}^{}\mathbf{F}
+\cdot d \mathbf{r}
+\end{equation} \]</span></li>
+</ul></li>
+<li><p>设 <span class="math inline">\(\mathbf{F}=a \mathbf{G} + b
+\mathbf{H}\)</span> 则</p>
+<ul>
+<li><span class="math display">\[ \begin{equation}
+  \int_{L}^{} \mathbf{F} \cdot d \mathbf{r} = a \int_{L}^{} \mathbf{G}
+\cdot  d \mathbf{r} + b \int_{L}^{} \mathbf{H} \cdot  d \mathbf{r}
+\end{equation} \]</span></li>
+</ul></li>
+<li><p>设 <span class="math inline">\(L = L_1 + L_2\)</span>
+(方向一致)则</p>
+<ul>
+<li><span class="math display">\[ \begin{equation}
+  \int_{L}^{} \mathbf{F} \cdot d\mathbf{r}= \int_{L_1}^{}\mathbf{F}
+\cdot d\mathbf{r}+ \int_{L_2}^{}\mathbf{F} \cdot d\mathbf{r}
+\end{equation} \]</span></li>
+</ul></li>
+<li><p>若在 <span class="math inline">\(L\)</span> 上处处有 <span
+class="math inline">\(\mathbf{F} \bot \mathbf{\tau}\)</span>,则 <span
+class="math inline">\(\int_{L}^{} \mathbf{F} \cdot
+d\mathbf{r}=0\)</span></p></li>
+<li><p><span class="math display">\[
+\begin{equation}
+   \int_{L}^{} Pdx + Qdy + Rdz =\int_{L}^{}Pdx + \int_{L}^{}Qdy +
+\int_{L}^{} R dz
+\end{equation}
+\]</span></p></li>
+</ul>
+<h2 id="化为定积分-1">化为定积分</h2>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
@@ -463,7 +562,7 @@ r&#39;^{2} (\theta )  }d \theta  \]</span></li>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">化为定积分</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">化为定积分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">第二型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8-1"><span class="nav-number">2.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86-1"><span class="nav-number">2.2.</span> <span class="nav-text">化为定积分</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -530,12 +629,12 @@ r&#39;^{2} (\theta )  }d \theta  \]</span></li>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">9k</span>
+    <span title="站点总字数">11k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">8 分钟</span>
+    <span title="站点阅读时长">10 分钟</span>
 </div>
 
 

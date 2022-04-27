@@ -9,7 +9,7 @@
     <atom:link href="https://circlecirclezero.cc/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>keep curious</description>
-    <pubDate>Wed, 27 Apr 2022 01:24:30 GMT</pubDate>
+    <pubDate>Wed, 27 Apr 2022 01:27:30 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,23 +20,28 @@
       
         
         
-      <description>&lt;h1 id=&quot;热学&quot;&gt;热学&lt;/h1&gt;
+      <description>&lt;h1&gt;热学&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;研究对象&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;研究内容&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;研究对象&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;研究内容&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;热现象&lt;/li&gt;
 &lt;li&gt;热运动&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;研究方法&lt;/p&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;研究方法&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;微观&lt;/li&gt;
-&lt;li</description>
+&lt;li&gt;宏观</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="热学">热学</h1><ul><li><p>研究对象</p></li><li><p>研究内容</p><ul><li>热现象</li><li>热运动</li></ul></li><li><p>研究方法</p><ul><li>微观</li><li>宏观</li></ul></li></ul><h2 id="第六章气体动理论">第六章气体动理论</h2><h3 id="热力学系统与平衡态">热力学系统与平衡态</h3><h4 id="热力学系统">热力学系统</h4><ul><li>系统</li><li>外界</li><li>分类<ul><li>孤立系统<ul><li>与外界无任何交换</li></ul></li><li>封闭系统<ul><li>无质量交换</li></ul></li><li>开放系统</li><li>绝热系统<ul><li>与外界仅无热量交换</li></ul></li></ul></li></ul><h4 id="热力学平衡态">热力学平衡态</h4><ul><li>定义</li><li>例子</li></ul><h2 id="第六章气体动理论-1">第六章气体动理论</h2><h3 id="对真实气体的几点简介">对真实气体的几点简介</h3><h4 id="分子的平均碰撞次数-平均自由程">分子的平均碰撞次数平均自由程</h4><p>分子的平均碰撞频率 <spanclass="math inline">\(\overline{\mathbf{Z}}\)</span></p><ul><li>一个分子单位时间内和其他分子平均碰撞的次数</li><li><span class="math inline">\(\overline{\mathbf{Z}} = \sqrt{2} n \pid^2 \overline{v}\)</span></li><li><span class="math inline">\(\overline{\mathbf{Z}} = \sqrt{2} n \pid^2 \sqrt{\frac{8RT}{\pi M}}\)</span></li></ul><p>分子的平均自由程 * <span class="math inline">\(\overline{\lambda} =\frac{\overline{v}}{\overline{\mathbf{Z}}}= \frac{1}{\sqrt{2}\pid^2n}\)</span> * <span class="math inline">\(\overline{\lambda} =\frac{kT}{\sqrt{2}\pi d^2 p}\)</span> * 说明 * 标况下 * <spanclass="math inline">\(\overline{\mathbf{Z}}=7.41 \times 10^9s^{-1}\)</span> * <span class="math inline">\(\overline{\lambda} = 6.11\times 10^{-8} m\)</span></p><h4 id="偏离平衡态">偏离平衡态</h4><p>非平衡态到平衡态 输运过程(热运动)</p><p>常见的气体内的迁移现象</p><ul><li>动量的输运<ul><li>内摩擦或者粘滞现象<ul><li>粘滞力<ul><li><span class="math inline">\(df=-\eta \left (\frac{du}{dy}\right)dS\)</span></li><li><span class="math inline">\(dP_{动量} = dfdt = -\eta \left (\frac{du}{dy}\right)dSdt\)</span></li><li><span class="math inline">\(\eta&gt;0\)</span> 粘滞系数 粘度</li><li><span class="math inline">\(\eta = \frac{1}{3}nm_f\overline{v}\overline{\lambda}\)</span></li></ul></li></ul></li></ul></li><li>能量的输运<ul><li>热传导<ul><li><span class="math inline">\(dQ =-\kappa\frac{dT}{dy}dSdt\)</span></li><li><span class="math inline">\(\kappa&gt;0\)</span> 热导率</li><li><span class="math inline">\(\kappa =\frac{1}{3}nm_f\overline{v}\overline{\lambda}\frac{C_{V,m}}{M} \quadM:气体摩尔质量\)</span></li></ul></li></ul></li><li>质量的输运<ul><li>扩散<ul><li><span class="math inline">\(dm = -D \frac{d\rho}{dy}dSdt\)</span><ul><li><span class="math inline">\(D\)</span>为扩散系数</li><li><spanclass="math inline">\(D=\frac{1}{3}\overline{v}\overline{\lambda}\)</span></li></ul></li></ul></li></ul></li></ul><h4 id="范德瓦尔斯方程">范德瓦尔斯方程</h4><p>理想气体 <span class="math inline">\(P=nKT\)</span>在几十个大气压内,近似符合</p><p>非理想气体状态方程:范德瓦尔斯方程</p><p>理想气体微观模型:忽略了分子的大小,引力</p><p>分子体积的修正 * 分子的有效直径<spanclass="math inline">\(10^{-10}m\)</span> * 1mol气体的固有体积: * <spanclass="math inline">\(N_A \times \frac{4}{3}\pi r^3\approx2.5\times10^{-6}(m^3)\)</span> * <spanclass="math inline">\(V=\frac{4}{3}\pi d^3 = 8\times \frac{4}{3}\pir^3\)</span> * 分子最紧密状态必须占有的空间为 <spanclass="math inline">\(\frac{1}{2}V = 4 \times \frac{4}{3}\pir^3即固有体积的四倍\)</span> * b:1mol最紧密气体的体积 * <spanclass="math inline">\(P(V_m -b) = RT\)</span> * <spanclass="math inline">\(b \approx 10^{-5} m^{-3}\)</span></p><p>分子引力的修正 * 引力的有效作用半径 <span class="math inline">\(r_e=10^-9 m\)</span> * <span class="math inline">\(P= \frac{RT}{V_m -b} -\vert \Delta P\vert\)</span> * <span class="math inline">\(\vert\DeltaP\vert= \frac{a}{V_m^2}\)</span> * 靠近薄壁的分子会受到指向气体的拉力 *<span class="math inline">\((P+\frac{a}{V_m^2})(V_m-b)=RT\)</span> *<spanclass="math inline">\((P+\frac{m^2}{M^2}\frac{a}{V^2})(V-\frac{m}{M}b) =\frac{m}{M}RT)\)</span></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
+      <content:encoded><![CDATA[<h1>热学</h1><ul><li><p>研究对象</p></li><li><p>研究内容</p><ul><li>热现象</li><li>热运动</li></ul></li><li><p>研究方法</p><ul><li>微观</li><li>宏观</li></ul></li></ul><h2 id="第六章气体动理论">第六章气体动理论</h2><h3 id="热力学系统与平衡态">热力学系统与平衡态</h3><h4 id="热力学系统">热力学系统</h4><ul><li>系统</li><li>外界</li><li>分类<ul><li>孤立系统<ul><li>与外界无任何交换</li></ul></li><li>封闭系统<ul><li>无质量交换</li></ul></li><li>开放系统</li><li>绝热系统<ul><li>与外界仅无热量交换</li></ul></li></ul></li></ul><h4 id="热力学平衡态">热力学平衡态</h4><ul><li>定义</li><li>例子</li></ul><h2 id="第六章气体动理论-2">第六章气体动理论</h2><h3 id="对真实气体的几点简介">对真实气体的几点简介</h3><h4 id="分子的平均碰撞次数-平均自由程">分子的平均碰撞次数  平均自由程</h4><p>分子的平均碰撞频率 $\overline{\mathbf{Z}}$</p><ul><li>一个分子单位时间内和其他分子平均碰撞的次数</li><li>$\overline{\mathbf{Z}} = \sqrt{2} n \pi d^2 \overline{v}$</li><li>$\overline{\mathbf{Z}} = \sqrt{2} n \pi d^2 \sqrt{\frac{8RT}{\pi M}}$</li></ul><p>分子的平均自由程</p><ul><li>$\overline{\lambda} = \frac{\overline{v}}{\overline{\mathbf{Z}}}= \frac{1}{\sqrt{2}\pi d^2n}$</li><li>$\overline{\lambda} = \frac{kT}{\sqrt{2}\pi d^2 p}$</li><li>说明<ul><li>标况下<ul><li>$\overline{\mathbf{Z}}=7.41 \times 10^9 s^{-1}$</li><li>$\overline{\lambda} = 6.11 \times 10^{-8} m$</li></ul></li></ul></li></ul><h4 id="偏离平衡态">偏离平衡态</h4><p>非平衡态到平衡态 输运过程(热运动)</p><p>常见的气体内的迁移现象</p><ul><li>动量的输运<ul><li>内摩擦或者粘滞现象<ul><li>粘滞力<ul><li>$df=-\eta \left ( \frac{du}{dy}\right)dS$</li><li>$dP_{动量} = dfdt = -\eta \left ( \frac{du}{dy}\right)dSdt$</li><li>$\eta&gt;0$ 粘滞系数 粘度</li><li>$\eta = \frac{1}{3} nm_f\overline{v}\overline{\lambda}$</li></ul></li></ul></li></ul></li><li>能量的输运<ul><li>热传导<ul><li>$dQ = -\kappa\frac{dT}{dy}dSdt$</li><li>$\kappa&gt;0$ 热导率</li><li>$\kappa = \frac{1}{3}nm_f\overline{v}\overline{\lambda}\frac{C_{V,m}}{M} \quad M:气体摩尔质量$</li></ul></li></ul></li><li>质量的输运<ul><li>扩散<ul><li>$dm = -D \frac{d\rho}{dy}dSdt$<ul><li>$D$为扩散系数</li><li>$D=\frac{1}{3}\overline{v}\overline{\lambda}$</li></ul></li></ul></li></ul></li></ul><h4 id="范德瓦尔斯方程">范德瓦尔斯方程</h4><p>理想气体 $P=nKT$ 在几十个大气压内,近似符合</p><p>非理想气体状态方程:范德瓦尔斯方程</p><p>理想气体微观模型:忽略了分子的大小,引力</p><p>分子体积的修正</p><ul><li>分子的有效直径$10^{-10}m$</li><li>1mol气体的固有体积:<ul><li>$N_A \times \frac{4}{3}\pi r^3 \approx2.5\times10^{-6}(m^3)$</li></ul></li><li>$V=\frac{4}{3}\pi d^3 = 8\times \frac{4}{3}\pi r^3$</li><li>分子最紧密状态必须占有的空间为 $\frac{1}{2}V = 4 \times  \frac{4}{3}\pi r^3即固有体积的四倍$</li><li>b:1mol最紧密气体的体积</li><li>$P(V_m -b)  = RT$</li><li>$b \approx 10^{-5} m^{-3}$</li></ul><p>分子引力的修正</p><ul><li>引力的有效作用半径 $r_e= 10^-9 m$</li><li>$P= \frac{RT}{V_m -b} - \vert \Delta P\vert$</li><li>$\vert\Delta P\vert= \frac{a}{V_m^2}$<ul><li>靠近薄壁的分子会受到指向气体的拉力</li></ul></li><li>$(P+\frac{a}{V_m^2})(V_m-b)=RT$</li><li>$(P+\frac{m^2}{M^2}\frac{a}{V^2})(V-\frac{m}{M}b) = \frac{m}{M}RT)$</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
       
       
       
@@ -53,8 +58,7 @@
       
         
         
-      <description>
-&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;https://unpkg.com/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;h</description>
+      <description>&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;https://unpkg.com/kity@2.0.4/dist/kity.min.js&quot;&gt;&lt;/script&gt;&lt;script type=&quot;text&amp;#x2F;javascript&quot; src=&quot;ht</description>
         
       
       
@@ -77,14 +81,13 @@
         
         
       <description>&lt;h3 id=&quot;牛顿第二定律&quot;&gt;牛顿第二定律&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;math inline&quot;&gt;\(\vec{F} = \frac{d\vec{P}}{dt} =
-\frac{d(md\vec{v})}{dt} = m\frac{d\vec{v}}{dt} +
-</description>
+&lt;p&gt;$\vec{F} = \frac{d\vec{P}}{dt} = \frac{d(md\vec{v})}{dt} = m\frac{d\vec{v}}{dt} + \frac{dm}{dt}\vec{v}$&lt;/p&gt;
+&lt;</description>
         
       
       
       
-      <content:encoded><![CDATA[<h3 id="牛顿第二定律">牛顿第二定律</h3><p><span class="math inline">\(\vec{F} = \frac{d\vec{P}}{dt} =\frac{d(md\vec{v})}{dt} = m\frac{d\vec{v}}{dt} +\frac{dm}{dt}\vec{v}\)</span></p><p>when m is constant <span class="math inline">\(\vec{F} = m\vec{a}\)</span></p><p>惯性质量:<span class="math inline">\(m_I: \vec{F} = m\vec{a}\)</span></p><p>引力质量:<span class="math inline">\(m_g:\vec{F} = G \frac{Mm}{r^3}\vec{r}\)</span></p><p><span class="math inline">\(m_I = m_g\)</span></p><h3 id="惯性系">惯性系</h3><p>惯性系</p><ul><li>牛顿定理成立的参考系</li><li>相对惯性系作匀速直线运动的参考系</li></ul><p>非惯性系</p><ul><li>相对惯性系作加速运动的参考系</li></ul><h3 id="伽利略相对性原理">伽利略相对性原理</h3><p>伽利略相对性原理：一切惯性系中力学规律相同</p><p>惯性系的绝对速度不可测量</p><h3 id="牛顿运动定律">牛顿运动定律</h3><ul><li>第一定律<ul><li>前提和基础</li></ul></li><li>第二定律<ul><li>核心</li></ul></li><li>第三定律<ul><li>对第二定律的补充</li></ul></li></ul><h3 id="基本力">基本力</h3><p>基本力</p><ul><li>万有引力</li><li>电磁力</li><li>强力</li><li>弱力</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="牛顿第二定律">牛顿第二定律</h3><p>$\vec{F} = \frac{d\vec{P}}{dt} = \frac{d(md\vec{v})}{dt} = m\frac{d\vec{v}}{dt} + \frac{dm}{dt}\vec{v}$</p><p>when m is constant $\vec{F} = m \vec{a}$</p><p>惯性质量:$m_I: \vec{F} = m \vec{a}$</p><p>引力质量:$m_g:\vec{F} = G \frac{Mm}{r^3} \vec{r}$</p><p>$m_I = m_g$</p><h3 id="惯性系">惯性系</h3><p>惯性系</p><ul><li>牛顿定理成立的参考系</li><li>相对惯性系作匀速直线运动的参考系</li></ul><p>非惯性系</p><ul><li>相对惯性系作加速运动的参考系</li></ul><h3 id="伽利略相对性原理">伽利略相对性原理</h3><p>伽利略相对性原理：一切惯性系中力学规律相同</p><p>惯性系的绝对速度不可测量</p><h3 id="牛顿运动定律">牛顿运动定律</h3><ul><li>第一定律<ul><li>前提和基础</li></ul></li><li>第二定律<ul><li>核心</li></ul></li><li>第三定律<ul><li>对第二定律的补充</li></ul></li></ul><h3 id="基本力">基本力</h3><p>基本力</p><ul><li>万有引力</li><li>电磁力</li><li>强力</li><li>弱力</li></ul><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
       
       
       <category domain="https://circlecirclezero.cc/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</category>
@@ -116,7 +119,7 @@
       
       
       
-      <content:encoded><![CDATA[<h3 id="引入">引入</h3><p>力学：研究机械运动的规律</p><ul><li>运动学：只讨论如何描述运动</li><li>动力学：物体间相互运动对机械运动的影响</li></ul><h3 id="参考系与质点">参考系与质点</h3><ul><li>绝对时空观</li><li>质点<ul><li>质点系</li></ul></li><li>参考系</li><li>坐标系</li><li>质点运动学</li></ul><h3 id="位置矢量">位置矢量</h3><p>位置矢量：<spanclass="math inline">\(\vec{OP}=\vec{r}=r\vec{e_r}\)</span></p><p>直角坐标系： <spanclass="math inline">\(\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}\)</span></p><p>位移：<span class="math inline">\(\Delta\vec{r}=\vec{r_b}-\vec{r_a}\)</span></p><p><span class="math inline">\(\vert\Delta\vec{r}\vert \neq \Deltar\)</span></p><p><span class="math inline">\(\Delta r =\vert\vec{r_b}\vert-\vert\vec{r_a}\vert\)</span></p><p><span class="math inline">\(\Delta t \to 0, \vert d\vec{r} \vert = dS\)</span></p><p>平均速度 <span class="math inline">\(\bar{\vec{v}} = \frac{\Delta\vec{r}}{\Delta t}\)</span></p><p><span class="math inline">\(\lvert \bar{\vec{v}} \rvert = \frac{\vert\Delta \vec{r} \vert}{\Delta t} \neq \frac{\Delta S}{\Deltat}\)</span></p><p>速度 <span class="math inline">\(\vec{v}=\frac{d\vec{r}}{dt}\)</span></p><p>速率<span class="math inline">\(\vert \vec{v} \vert = \frac{dS}{dt} =\lvert \frac{d \vec{r}}{dt} \rvert \neq \frac{dr}{dt}\)</span></p><p>加速度<spanclass="math inline">\(\vec{a}=\frac{d\vec{v}}{dt}\)</span></p><p><strong>自然坐标系</strong> <img data-src="/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/20220417_190021_82995D0C-EBD4-467A-80BB-DE044B58827E.png" class=""> 速度 <spanclass="math inline">\(\vec{v}=v\vec{e_\tau}\)</span></p><p>加速度 <span class="math inline">\(\vec{a} = \frac{d\vec{v}}{dt} =\frac{d(v\vec{e_\tau)}}{dt} = \frac{dv}{dt}\vec{e_\tau}+v\frac{d\vec{e_\tau}}{dt}\)</span></p><p><span class="math inline">\(\frac{dv}{dt}=\vec{a_\tau} \quad\frac{d\vec{e_\tau}}{dt} = \frac{d\theta \vert \vec{e_t}\vert}{dt}\vec{e_n} = \frac{1}{\rho}\frac{dS}{dt} \vec{e_n}\)</span></p><p><span class="math inline">\(\vec{a} = \frac{dv}{dt}\vec{e_\tau}+\frac{v^2}{\rho}\vec{e_n}\)</span></p><p>圆周运动: <spanclass="math inline">\(\vec{a}=\frac{dv}{dt}\vec{e_\tau} + \frac{v^2}{R}\vec{e_n}\)</span></p><p>匀速圆周运动：<span class="math inline">\(\vec{a} = \frac{v^2}{R}\vec{e_n}\)</span></p><p>角速度: <span class="math inline">\(\vec{\omega} =\frac{d\vec{\theta}}{dt}\)</span></p><ul><li>方向:右手定理</li></ul><p>角加速度: <span class="math inline">\(\vec{\beta} =\frac{d\vec{w}}{dt} = \frac{d^2 \vec{\theta}}{dt^2}\)</span></p><p>空间曲线方程: <span class="math inline">\(f(x,y,z) = 0\)</span></p><h3 id="积分特殊情况">积分特殊情况：</h3><ul><li><span class="math inline">\(a=f(t) \rarr f(t) = \frac{dv}{dt}\rArrf(t)dt=dv\)</span><br /></li><li><span class="math inline">\(a=f(v) \rarr f(v) = \frac{dv}{dt} \rArrdt= \frac{dv}{f(v)}\)</span><br /></li><li><span class="math inline">\(a=f(x) \rarr f(x) = \frac{dv}{dt} \rArrf(x) = \frac{dv}{dx} \frac{dx}{dt} \rArr f(x)dx= vdv\)</span></li></ul><h2 id="相对运动">相对运动</h2><p>绝对量：静系测得的量</p><p>相对量：动系测得的量</p><p>牵连量：动系相对静系的量</p><p><span class="math inline">\(\vec{r_绝} = \vec{r_相} +\vec{r_牵}\)</span></p><p><span class="math inline">\(\vec{v_绝} = \vec{v_相} +\vec{v_牵}\)</span></p><p><span class="math inline">\(\vec{a_绝} = \vec{a_相} +\vec{a_牵}\)</span></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
+      <content:encoded><![CDATA[<h3 id="引入">引入</h3><p>力学：研究机械运动的规律</p><ul><li>运动学：只讨论如何描述运动</li><li>动力学：物体间相互运动对机械运动的影响</li></ul><h3 id="参考系与质点">参考系与质点</h3><ul><li>绝对时空观</li><li>质点<ul><li>质点系</li></ul></li><li>参考系</li><li>坐标系</li><li>质点运动学</li></ul><h3 id="位置矢量">位置矢量</h3><p>位置矢量：$\vec{OP}=\vec{r}=r\vec{e_r}$</p><p>直角坐标系： $\vec{r}=x\vec{i}+y\vec{j}+z\vec{k}$</p><p>位移：$\Delta \vec{r}=\vec{r_b}-\vec{r_a}$</p><p>$\vert\Delta\vec{r}\vert \neq \Delta r$</p><p>$\Delta r = \vert\vec{r_b}\vert-\vert\vec{r_a}\vert$</p><p>$\Delta t \to 0, \vert d\vec{r} \vert = d S$</p><p>平均速度 $\bar{\vec{v}} = \frac{\Delta \vec{r}}{\Delta t}$</p><p>$\lvert \bar{\vec{v}} \rvert =  \frac{\vert \Delta \vec{r} \vert}{\Delta t} \neq \frac{\Delta S}{\Delta t}$</p><p>速度 $\vec{v}=\frac{d \vec{r}}{dt}$</p><p>速率$\vert \vec{v} \vert = \frac{dS}{dt} = \lvert \frac{d \vec{r}}{dt} \rvert \neq \frac{dr}{dt}$</p><p>加速度$\vec{a}=\frac{d\vec{v}}{dt}$</p><p><strong>自然坐标系</strong></p><img data-src="/2022/04/17/%E8%B4%A8%E7%82%B9%E8%BF%90%E5%8A%A8%E5%AD%A6/20220417_190021_82995D0C-EBD4-467A-80BB-DE044B58827E.png" class=""><p>速度  $\vec{v}=v\vec{e_\tau}$</p><p>加速度 $\vec{a} = \frac{d\vec{v}}{dt} = \frac{d(v\vec{e_\tau)}}{dt} = \frac{dv}{dt}\vec{e_\tau} +v\frac{d\vec{e_\tau}}{dt}$</p><p>$\frac{dv}{dt}=\vec{a_\tau} \quad \frac{d\vec{e_\tau}}{dt} = \frac{d\theta \vert \vec{e_t}\vert}{dt} \vec{e_n} = \frac{1}{\rho}\frac{dS}{dt} \vec{e_n}$</p><p>$\vec{a} = \frac{dv}{dt}\vec{e_\tau} +\frac{v^2}{\rho}\vec{e_n}$</p><p>圆周运动: $\vec{a}=\frac{dv}{dt}\vec{e_\tau} + \frac{v^2}{R} \vec{e_n}$</p><p>匀速圆周运动：$\vec{a} = \frac{v^2}{R} \vec{e_n}$</p><p>角速度: $\vec{\omega} = \frac{d\vec{\theta}}{dt}$</p><ul><li>方向:右手定理</li></ul><p>角加速度: $\vec{\beta} = \frac{d\vec{w}}{dt} = \frac{d^2 \vec{\theta}}{dt^2}$</p><p>空间曲线方程: $f(x,y,z) = 0$</p><h3 id="积分特殊情况：">积分特殊情况：</h3><ul><li>$a=f(t) \rarr f(t) = \frac{dv}{dt}\rArr f(t)dt=dv$</li><li>$a=f(v) \rarr f(v) = \frac{dv}{dt} \rArr dt= \frac{dv}{f(v)}$</li><li>$a=f(x) \rarr f(x) = \frac{dv}{dt} \rArr f(x) = \frac{dv}{dx} \frac{dx}{dt} \rArr f(x)dx= vdv$</li></ul><h2 id="相对运动">相对运动</h2><p>绝对量：静系测得的量</p><p>相对量：动系测得的量</p><p>牵连量：动系相对静系的量</p><p>$\vec{r_绝} = \vec{r_相} + \vec{r_牵}$</p><p>$\vec{v_绝} = \vec{v_相} + \vec{v_牵}$</p><p>$\vec{a_绝} = \vec{a_相} + \vec{a_牵}$</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
       
       
       <category domain="https://circlecirclezero.cc/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</category>
@@ -135,16 +138,16 @@
       
         
         
-      <description>&lt;p&gt;摘抄自：&lt;a href=&quot;https://vuejs.bootcss.com&quot; title=&quot;vue.js doc&quot;&gt;vue.js
-doc&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;摘抄自：&lt;a href=&quot;https://vuejs.bootcss.com&quot; title=&quot;vue.js doc&quot;&gt;vue.js doc&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;v-xx atrribute&lt;/code&gt; 指令前缀&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;是由Vue 提</description>
+&lt;li&gt;
+&lt;p&gt;是由Vue </description>
         
       
       
       
-      <content:encoded><![CDATA[<p>摘抄自：<a href="https://vuejs.bootcss.com" title="vue.js doc">vue.jsdoc</a></p><p><code>v-xx atrribute</code> 指令前缀</p><ul><li><p>是由Vue 提供的特殊 attribute</p></li><li><p><code>v-bind:title="message"</code></p><ul><li>将这个元素节点的<code>title</code> attribute 和 Vue实例的<code>message</code> property 保持一致</li></ul></li></ul><p><code>v-on</code>-&gt;添加事件监听器，通过它调用在Vue中的实例方法</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">&quot;reverseMessage&quot;</span>&gt;</span>反转<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><p><code>v-model</code> 实现表单输入和应用状态之间的双向绑定</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app-6&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app6 = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#app-6&#x27;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;Hello Vue!&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="组件系统">组件系统</h3><p>一个组件本质上是一个拥有预定义选项的一个 Vue 实例</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
+      <content:encoded><![CDATA[<p>摘抄自：<a href="https://vuejs.bootcss.com" title="vue.js doc">vue.js doc</a></p><p><code>v-xx atrribute</code> 指令前缀</p><ul><li><p>是由Vue 提供的特殊 attribute</p></li><li><p><code>v-bind:title=&quot;message&quot;</code></p><ul><li>将这个元素节点的<code>title</code> attribute 和 Vue 实例的<code>message</code> property 保持一致</li></ul></li></ul><p><code>v-on</code>-&gt; 添加事件监听器，通过它调用在Vue中的实例方法</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">v-on:click</span>=<span class="string">&quot;reverseMessage&quot;</span>&gt;</span>反转<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br></pre></td></tr></table></figure><p><code>v-model</code> 实现表单输入和应用状态之间的双向绑定</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;app-6&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>&#123;&#123; message &#125;&#125;<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">v-model</span>=<span class="string">&quot;message&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> app6 = <span class="keyword">new</span> <span class="title class_">Vue</span>(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#app-6&#x27;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">message</span>: <span class="string">&#x27;Hello Vue!&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="组件系统">组件系统</h3><p>一个组件本质上是一个拥有预定义选项的一个 Vue 实例</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
       
       
       <category domain="https://circlecirclezero.cc/categories/%E5%89%8D%E7%AB%AF/">前端</category>
@@ -162,36 +165,36 @@ doc&lt;/a&gt;&lt;/p&gt;
       <pubDate>Thu, 14 Apr 2022 11:21:22 GMT</pubDate>
       
       <description>&lt;blockquote&gt;
-&lt;h1 id=&quot;相对论&quot;&gt;相对论&lt;/h1&gt;
+&lt;h1&gt;相对论&lt;/h1&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;洛伦兹变换&quot;&gt;洛伦兹变换&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
-\left\{
-\begin{aligned}
-x&amp;#39; &amp;amp; =  \gamma(x-vt) \\
-y&amp;#39; &amp;amp; = y \\
-z &amp;amp; &amp;#39;= z \\
-t&amp;#39; &amp;amp; = \gamma(t - \frac{vx}{c^2}) \\
-\end{aligned}
-\right.
-\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}
-\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;
+\left{&lt;br&gt;
+\begin{aligned}&lt;br&gt;
+x’ &amp;amp; =  \gamma(x-vt) \&lt;br&gt;
+y’ &amp;amp; = y \&lt;br&gt;
+z &amp;amp; ‘= z \&lt;br&gt;
+t’ &amp;amp; = \gamma(t - \frac{vx}{c^2}) \&lt;br&gt;
+\end{aligned}&lt;br&gt;
+\right.&lt;br&gt;
+\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}&lt;br&gt;
+$$&lt;/p&gt;
 &lt;p&gt;洛伦兹逆变换：(将-v替换v)&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;math display&quot;&gt;\[
-\left\{
-\begin{aligned}
-x &amp;amp; =  \gamma(x&amp;#39;+vt) \\
-y &amp;amp; = y&amp;#39; \\
-z &amp;amp; = z&amp;#39; \\
-t &amp;amp; = \gamma(t&amp;#39; + \frac{vx&amp;#39;}{c^2}) \\
-\end{aligned}
-\right.
-\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}
-\]&lt;/span&gt;&lt;/p&gt;</description>
+&lt;p&gt;$$&lt;br&gt;
+\left{&lt;br&gt;
+\begin{aligned}&lt;br&gt;
+x &amp;amp; =  \gamma(x’+vt) \&lt;br&gt;
+y &amp;amp; = y’ \&lt;br&gt;
+z &amp;amp; = z’ \&lt;br&gt;
+t &amp;amp; = \gamma(t’ + \frac{vx’}{c^2}) \&lt;br&gt;
+\end{aligned}&lt;br&gt;
+\right.&lt;br&gt;
+\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}&lt;br&gt;
+$$&lt;/p&gt;</description>
       
       
       
-      <content:encoded><![CDATA[<blockquote><h1 id="相对论">相对论</h1></blockquote><h2 id="洛伦兹变换">洛伦兹变换</h2><p><span class="math display">\[\left\{\begin{aligned}x&#39; &amp; =  \gamma(x-vt) \\y&#39; &amp; = y \\z &amp; &#39;= z \\t&#39; &amp; = \gamma(t - \frac{vx}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}\]</span></p><p>洛伦兹逆变换：(将-v替换v)</p><p><span class="math display">\[\left\{\begin{aligned}x &amp; =  \gamma(x&#39;+vt) \\y &amp; = y&#39; \\z &amp; = z&#39; \\t &amp; = \gamma(t&#39; + \frac{vx&#39;}{c^2}) \\\end{aligned}\right.\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}\]</span></p><span id="more"></span><p><strong>原长最长</strong> 相对参考系静止的长度 $L=L' $<strong>原时最短</strong> 同处的时钟所测量的唯一时间 <spanclass="math inline">\(t&#39;=\frac{t}{\sqrt{1-(\frac{v}{c})^2}}\)</span></p><p><span class="math display">\[\begin{aligned}\Delta t&#39;=\frac{\Delta t - \frac{v}{c^2}\Deltax}{\sqrt{1-(\frac{v}{c})^2}} = &amp;\frac{\Delta t}{\sqrt{1-(\frac{v}{c})^2}}\left(1-\frac{\Delta x\cdot v}{\Delta t \cdotc^2}\right) \\\Delta t=&amp;\frac{\Delta t&#39; + \frac{v}{c^2}\Deltax&#39;}{\sqrt{1-(\frac{v}{c})^2}}\end{aligned}\]</span></p><p><span class="math inline">\(\Delta t \text{与} \Deltat&#39;\text{总是同号}\)</span>，即因果律在相对论中不会变化<strong>洛伦兹速度变换</strong> 推导</p><p><span class="math display">\[\begin{aligned}u_x&#39;= &amp;\frac{dx&#39;}{dt&#39;} = \frac{dx&#39;}{dt} \cdot\frac{dt}{dt&#39;}\\\frac{dx&#39;}{dt} =&amp;\frac{\gamma(x-vt)}{dt} = \gamma(u_x -v)\\\frac{dt&#39;}{dt} =&amp;\gamma(1-\frac{v}{c^2}u_x)\\\end{aligned}\]</span></p><p>结论</p><p><span class="math display">\[\left\{    \begin{aligned}        u_x&#39;&amp;=\frac{u_x-v}{1-\frac{v}{c^2}u_x} \\        u_y&#39;&amp;=\frac{u_y}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2} \\        u_z&#39;&amp;=\frac{u_z}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.\]</span></p><p>S'系变换到S系（将-v替换v）</p><p><span class="math display">\[\left\{    \begin{aligned}        u_x&amp;=\frac{u_x&#39;+v}{1+\frac{v}{c^2}u_x&#39;} \\        u_y&amp;=\frac{u_y&#39;}{1+\frac{v}{c^2}u_x&#39;}\sqrt{1-(\frac{v}{c})^2} \\        u_z&amp;=\frac{u_z&#39;}{1+\frac{v}{c^2}u_x&#39;}\sqrt{1-(\frac{v}{c})^2}    \end{aligned}\right.\]</span></p><h2 id="相对论质量">相对论质量</h2><p><span class="math display">\[\begin{aligned}   m = m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}\\m_0\rightarrow静止质量\]</span></p><h2 id="相对论动能">相对论动能</h2><p><span class="math display">\[\begin{aligned}    \Delta E =&amp; \Delta m c^2\\    E_k=&amp;mc^2-m_0c^2\\       =&amp;(\frac{1}{\sqrt{1-(\frac{u}{c})^2}}-1)m_0c^2 \quad    \text{当u&lt;&lt;c时，} [1-(\frac{u}{c})^2]^{-0.5}=1+\frac{1}{2}    (\frac{u}{c})^2+\cdots\\        =&amp;\frac{1}{2}m_0 u^2 \quad \text{牛顿力学中的形式}\\    m =&amp;m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}\end{aligned}\]</span></p><h2 id="相对能的动能与动量的关系">相对能的动能与动量的关系</h2><p><span class="math display">\[\begin{aligned}    E = &amp; mc^2 \\    P = &amp; mv \\    m = &amp; \frac{m_0}{\sqrt{1-(\frac{v}{c})^2}} \\    E^2 = &amp;P^2c^2+m_0^2c^4 \\    E= &amp;m_0c^2+E_k \\    E_k^2+2E_km_0c^2= &amp;P^2c^2 \\    \text{当v&lt;&lt;c时}，&amp;E_k^2&lt;&lt;m_0c^2,此时：\\    2E_km_0c^2=&amp;P^2c^2 \\    \text{即}E_k=&amp;\frac{P^2}{2m_0}\end{aligned}\]</span></p><p>对于光子:</p><p><span class="math display">\[\begin{aligned}    m_0 = &amp; 0 \\    E^2 = &amp; P^2c^2 \\    P = &amp; \frac{E}{c} \\    m = &amp; \frac{E}{C^2}\end{aligned}\]</span></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
+      <content:encoded><![CDATA[<blockquote><h1>相对论</h1></blockquote><h2 id="洛伦兹变换">洛伦兹变换</h2><p>$$<br>\left{<br>\begin{aligned}<br>x’ &amp; =  \gamma(x-vt) \<br>y’ &amp; = y \<br>z &amp; ‘= z \<br>t’ &amp; = \gamma(t - \frac{vx}{c^2}) \<br>\end{aligned}<br>\right.<br>\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}<br>$$</p><p>洛伦兹逆变换：(将-v替换v)</p><p>$$<br>\left{<br>\begin{aligned}<br>x &amp; =  \gamma(x’+vt) \<br>y &amp; = y’ \<br>z &amp; = z’ \<br>t &amp; = \gamma(t’ + \frac{vx’}{c^2}) \<br>\end{aligned}<br>\right.<br>\gamma = \frac{1}{\sqrt{1-(\frac{v}{c})^2}}<br>$$</p><span id="more"></span><p><strong>原长最长</strong> 相对参考系静止的长度 $L=L’ \sqrt{1-(\frac{v}{c})^2}<br>$<br><strong>原时最短</strong> 同处的时钟所测量的唯一时间 $t’=\frac{t}{\sqrt{1-(\frac{v}{c})^2}}$</p><p>$$<br>\begin{aligned}<br>\Delta t’=\frac{\Delta t - \frac{v}{c^2}\Delta x}{\sqrt{1-(\frac{v}{c})^2}} = &amp;\frac{\Delta t }{\sqrt{1-(\frac{v}{c})^2}}\left(1-\frac{\Delta x\cdot v}{\Delta t \cdot c^2}\right) \<br>\Delta t=&amp;\frac{\Delta t’ + \frac{v}{c^2}\Delta x’}{\sqrt{1-(\frac{v}{c})^2}}<br>\end{aligned}<br>$$</p><p>$\Delta t \text{与} \Delta t’\text{总是同号}$，即因果律在相对论中不会变化<br><strong>洛伦兹速度变换</strong><br>推导</p><p>$$<br>\begin{aligned}<br>u_x’= &amp;\frac{dx’}{dt’} = \frac{dx’}{dt} \cdot \frac{dt}{dt’}\<br>\frac{dx’}{dt} =&amp;\frac{\gamma(x-vt)}{dt} = \gamma(u_x -v)\<br>\frac{dt’}{dt} =&amp;\gamma(1-\frac{v}{c^2}u_x)\<br>\end{aligned}<br>$$</p><p>结论</p><p>$$<br>\left{<br>\begin{aligned}<br>u_x’&amp;=\frac{u_x-v}{1-\frac{v}{c^2}u_x} \<br>u_y’&amp;= \frac{u_y}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2} \<br>u_z’&amp;= \frac{u_z}{1-\frac{v}{c^2}u_x}\sqrt{1-(\frac{v}{c})^2}<br>\end{aligned}<br>\right.<br>$$</p><p>S’系变换到S系（将-v替换v）</p><p>$$<br>\left{<br>\begin{aligned}<br>u_x&amp;=\frac{u_x’+v}{1+\frac{v}{c^2}u_x’} \<br>u_y&amp;= \frac{u_y’}{1+\frac{v}{c^2}u_x’}\sqrt{1-(\frac{v}{c})^2} \<br>u_z&amp;= \frac{u_z’}{1+\frac{v}{c^2}u_x’}\sqrt{1-(\frac{v}{c})^2}<br>\end{aligned}<br>\right.<br>$$</p><h2 id="相对论质量">相对论质量</h2><p>$$<br>\begin{aligned}<br>m = m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}<br>\end{aligned}\<br>m_0\rightarrow静止质量<br>$$</p><h2 id="相对论动能">相对论动能</h2><p>$$<br>\begin{aligned}<br>\Delta E =&amp; \Delta m c^2\<br>E_k=&amp;mc^2-m_0c^2\<br>=&amp;(\frac{1}{\sqrt{1-(\frac{u}{c})^2}}-1)m_0c^2 \quad<br>\text{当u&lt;&lt;c时，} [1-(\frac{u}{c})^2]^{-0.5}=1+\frac{1}{2}<br>(\frac{u}{c})^2+\cdots\<br>=&amp;\frac{1}{2}m_0 u^2 \quad \text{牛顿力学中的形式}\<br>m =&amp;m_0\frac{1}{\sqrt{1-(\frac{u}{c})^2}}<br>\end{aligned}<br>$$</p><h2 id="相对能的动能与动量的关系">相对能的动能与动量的关系</h2><p>$$<br>\begin{aligned}<br>E = &amp; mc^2 \<br>P = &amp; mv \<br>m = &amp; \frac{m_0}{\sqrt{1-(\frac{v}{c})^2}} \<br>E^2 = &amp;P^2c^2+m_0^2c^4 \<br>E= &amp;m_0c^2+E_k \<br>E_k^2+2E_km_0c^2= &amp;P^2c^2 \<br>\text{当v&lt;&lt;c时}，&amp;E_k^2&lt;&lt;m_0c^2,此时：\<br>2E_km_0c^2=&amp;P^2c^2 \<br>\text{即}E_k=&amp;\frac{P^2}{2m_0}<br>\end{aligned}<br>$$</p><p>对于光子:</p><p>$$<br>\begin{aligned}<br>m_0 = &amp; 0 \<br>E^2 = &amp; P^2c^2 \<br>P = &amp; \frac{E}{c} \<br>m = &amp; \frac{E}{C^2}<br>\end{aligned}<br>$$</p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
       
       
       <category domain="https://circlecirclezero.cc/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/">大学物理</category>
@@ -210,16 +213,16 @@ t &amp;amp; = \gamma(t&amp;#39; + \frac{vx&amp;#39;}{c^2}) \\
       
         
         
-      <description>&lt;h1 id=&quot;你好呀&quot;&gt;你好呀~&lt;/h1&gt;
+      <description>&lt;h1&gt;你好呀~&lt;/h1&gt;
 &lt;p&gt;我是CC~&lt;/p&gt;
 &lt;p&gt;欢迎访问我的blog~&lt;/p&gt;
 &lt;img data-src=&quot;/2022/04/14/Hello/20220416_231551__.jpeg&quot; class=&quot;&quot;&gt;
-&lt;script type=&quot;text</description>
+&lt;script type=&quot;text&amp;#x2F;jav</description>
         
       
       
       
-      <content:encoded><![CDATA[<h1 id="你好呀">你好呀~</h1><p>我是CC~</p><p>欢迎访问我的blog~</p><img data-src="/2022/04/14/Hello/20220416_231551__.jpeg" class=""><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
+      <content:encoded><![CDATA[<h1>你好呀~</h1><p>我是CC~</p><p>欢迎访问我的blog~</p><img data-src="/2022/04/14/Hello/20220416_231551__.jpeg" class=""><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content:encoded>
       
       
       

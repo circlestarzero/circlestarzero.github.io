@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"circlecirclezero.cc","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":"trueß","sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#ffd9e6","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="第一型曲线积分 定义与性质 定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取一">
+  <meta name="description" content="第一型曲线积分 定义与性质  定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取">
 <meta property="og:type" content="article">
 <meta property="og:title" content="曲线积分与曲面积分">
 <meta property="og:url" content="https://circlecirclezero.cc/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="CC&#39;blog">
-<meta property="og:description" content="第一型曲线积分 定义与性质 定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取一">
+<meta property="og:description" content="第一型曲线积分 定义与性质  定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T06:06:25.000Z">
-<meta property="article:modified_time" content="2022-04-29T03:27:01.866Z">
+<meta property="article:modified_time" content="2022-04-29T03:32:01.122Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-29 11:27:01" itemprop="dateModified" datetime="2022-04-29T11:27:01+08:00">2022-04-29</time>
+                <time title="修改时间：2022-04-29 11:32:01" itemprop="dateModified" datetime="2022-04-29T11:32:01+08:00">2022-04-29</time>
               </span>
 
           
@@ -278,6 +278,7 @@
       
         <h1 id="第一型曲线积分">第一型曲线积分</h1>
 <h2 id="定义与性质">定义与性质</h2>
+<blockquote>
 <p>定义1 设 <span class="math inline">\(L\)</span>
 是空间一条有限长的分段光滑曲线, <span
 class="math inline">\(f(x,y,z)\)</span> 是定义与L上的有界函数,
@@ -296,9 +297,10 @@ class="math inline">\(\int_{L}^{} f(x,y,z) \mathrm{d}s \quad (或简写作
 \int_{L}^{}f\mathrm{d}s, 若L为闭曲线,则记作
 \oint_{L}^{}f\mathrm{d}s)\)</span>, 即 <span class="math display">\[
 \int_{L}^{}f(x,y,z)\mathrm{d}s = \lim_{\lambda  \to 0} \sum_{i=1}^{n}
-f(P_i)\Delta s_i \]</span></p>
-<p>其中 <span class="math inline">\(f(x,y,z)\)</span> 叫做
-<strong>被积函数</strong>, L称作 <strong>积分弧段</strong></p>
+f(P_i)\Delta s_i \]</span> 其中 <span
+class="math inline">\(f(x,y,z)\)</span> 叫做 <strong>被积函数</strong>,
+L称作 <strong>积分弧段</strong></p>
+</blockquote>
 <span id="more"></span>
 <hr />
 <p>L为平面曲线时: <span
@@ -333,16 +335,17 @@ f  (P)\]</span></li>
 <h2 id="化为定积分">化为定积分</h2>
 <p>计算 <span class="math inline">\(\int_{L}^{}f\mathrm{d}s\)</span>
 的主要方法是引入L的参数方程化为定积分</p>
+<blockquote>
 <p>定理1 设曲线方程L 由以下参数方程给定: <span class="math display">\[ x
 = x  (t) , y = y  (t), z=z  (t)  (\alpha \leq t \leq \beta
-)     \]</span></p>
-<p>其中 <span class="math inline">\(x (t),y (t),z (t) 在区间 [ \alpha,
-\beta ]\)</span>上有连续导数</p>
-<p>且 <span class="math inline">\(x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2}
-(t) \neq 0, 若f (x,y,z) 在 L 上不连续,则\)</span> <span
-class="math display">\[ \int_{L}^{}f\mathrm{d}s = \int_{\alpha }^{\beta
-}f (x (t), y (t), z (t)) \sqrt[2]{x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2}
-(t)} \mathrm{d}t \quad \alpha &lt; \beta  \]</span></p>
+)     \]</span> 其中 <span class="math inline">\(x (t),y (t),z (t)
+在区间 [ \alpha, \beta ]\)</span>上有连续导数 且 <span
+class="math inline">\(x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2} (t) \neq 0,
+若f (x,y,z) 在 L 上不连续,则\)</span> <span class="math display">\[
+\int_{L}^{}f\mathrm{d}s = \int_{\alpha }^{\beta }f (x (t), y (t), z (t))
+\sqrt[2]{x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2} (t)} \mathrm{d}t \quad
+\alpha &lt; \beta  \]</span></p>
+</blockquote>
 <p>弧微分 <span class="math display">\[ \mathrm{d}s = \sqrt[]{x&#39;^{2}
 (t) + y&#39;^{2} (t) + z&#39;^{2} (t)   }\mathrm{d}t \]</span></p>
 <p>不同坐标系下</p>
@@ -379,6 +382,7 @@ r&#39;^{2} (\theta )  }\mathrm{d} \theta  \]</span></li>
 </ul>
 <h1 id="第二型曲线积分">第二型曲线积分</h1>
 <h2 id="定义与性质-1">定义与性质</h2>
+<blockquote>
 <p>定义1 设 <span
 class="math inline">\(P,Q,R\)</span>是定义在分段光滑有向曲线 <span
 class="math inline">\(L\)</span> 上的有界函数, <span
@@ -388,9 +392,10 @@ P,Q,R (或矢量函数 <span class="math inline">\(\mathbf{F})\)</span>
 沿曲线L的 <strong>第二型曲线积分</strong>,记作 <span
 class="math inline">\(\int_{L}^{} \mathbf{F} \cdot \mathrm{d}
 \mathbf{r}\)</span>,即 <span class="math display">\[ \begin{equation}
-    \int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = \int_{L}^{}
+\int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = \int_{L}^{}
 \mathbf{F} \cdot \mathbf{\tau }\mathrm{d}s
 \end{equation} \]</span></p>
+</blockquote>
 <p>其中 <span
 class="math inline">\(P,Q,R\)</span>叫做<strong>被积函数</strong></p>
 <p><span class="math inline">\(L\)</span> 称为 <strong>积分弧段</strong>
@@ -482,15 +487,14 @@ class="math inline">\(\int_{L}^{} \mathbf{F} \cdot
 \]</span></p></li>
 </ul>
 <h2 id="化为定积分-1">化为定积分</h2>
+<blockquote>
 <p>定理1 设曲线 <span class="math inline">\(L\)</span>
 由以下参数方程给定 <span class="math display">\[x = x (t), y= y (t), z =
-z (t) \qquad (t \in I)\]</span></p>
-<ul>
-<li><span class="math inline">\(x (t),y (t),z (t)\)</span>在闭区间 <span
-class="math inline">\(I\)</span> 上有连续导数,且 <span
-class="math inline">\(x&#39;^{2}(t) + y&#39;^{2} (t)+ z&#39;^{2} (t)
-\neq 0\)</span></li>
-<li><span class="math inline">\(I\)</span>的端点 <span
+z (t) \qquad (t \in I)\]</span> * <span class="math inline">\(x (t),y
+(t),z (t)\)</span>在闭区间 <span class="math inline">\(I\)</span>
+上有连续导数,且 <span class="math inline">\(x&#39;^{2}(t) + y&#39;^{2}
+(t)+ z&#39;^{2} (t) \neq 0\)</span> * <span
+class="math inline">\(I\)</span>的端点 <span
 class="math inline">\(\alpha 与 \beta\)</span> 分别对应 <span
 class="math inline">\(L\)</span> 的起点和终点(不必 <span
 class="math inline">\(\alpha &lt; \beta\)</span> ) 若 <span
@@ -500,12 +504,9 @@ class="math display">\[
 \int_{L} P \mathrm{~\mathrm{d}} x+Q \mathrm{~\mathrm{d}} y+R
 \mathrm{~\mathrm{d}} z=\int_{a}^{\beta}\left[P x^{\prime}(t)+Q
 y^{\prime}(t)+R z^{\prime}(t)\right] \mathrm{d} t
-\]</span>
-<ul>
-<li><span class="math inline">\(P\)</span>是 <span
-class="math inline">\(P (x (t) ,y (t) ,z (t) )\)</span>的缩写</li>
-</ul></li>
-</ul>
+\]</span> * <span class="math inline">\(P\)</span>是 <span
+class="math inline">\(P (x (t) ,y (t) ,z (t) )\)</span>的缩写</p>
+</blockquote>
 <p>平面曲线 <span class="math inline">\(L: x=x(t), y=y(t),(t \in
 I)\)</span> 上矢量函数 <span class="math inline">\(F=\{P, Q\}\)</span>
 的曲线积分: <span class="math display">\[
@@ -522,15 +523,17 @@ y^{\prime}(t)\right] \mathrm{d} t .
 <p>设平面闭曲线L围住区域D,若沿L行进时D在它附近的部分总是保持在左边,则称行进的方向为L的<strong>正向</strong>,相反的方向为<strong>负向</strong>,记作
 <span class="math inline">\(L ^{-} or -L\)</span></p>
 <p>分段光滑且自身不相交的闭曲线为 <strong>简单闭曲线</strong></p>
+<blockquote>
 <p>定理2(Green公式) 设区域<span
 class="math inline">\(D\)</span>由xy平面上的简单闭曲线L围成,函数 <span
 class="math inline">\(P,Q\)</span> 在<span
 class="math inline">\(D\)</span>上(包括边界)由连续的一阶偏导数,则: <span
 class="math display">\[ \oint_{L}^{} P\mathrm{d}x+Q\mathrm{d}y =
-\iint_{D}^{} (Q_x- P_y)\mathrm{d}x\mathrm{d}y\]</span></p>
+\iint_{D}^{} (Q_x- P_y)\mathrm{d}x\mathrm{d}y\]</span> *
+左端是沿L正向</p>
+</blockquote>
 <ul>
-<li><p>左端是沿L正向</p></li>
-<li><p>若L不是简单闭曲线,则添加一些辅助线段(最好平行于坐标轴)将L补成闭曲线</p></li>
+<li>若L不是简单闭曲线,则添加一些辅助线段(最好平行于坐标轴)将L补成闭曲线</li>
 </ul>
 <p><span class="math display">\[ \int_{L}^{} P\mathrm{d}x + Q\mathrm{d}y
 = \oint_{L+C}^{} P\mathrm{d}x+Q\mathrm{d}y -
@@ -557,6 +560,7 @@ class="math inline">\(L_1,L_2\)</span>都有 <span
 class="math display">\[\int_{L_1}^{}P\mathrm{d}x+Q\mathrm{d}y=
 \int_{L_2}^{}P\mathrm{d}x+Q\mathrm{d}y   \]</span> 则说积分 <span
 class="math inline">\(\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y\)</span>在D内与路径无关</p>
+<blockquote>
 <p>定理3 设 <span class="math inline">\(D\)</span>是平面单连通区域,<span
 class="math inline">\(P,Q\)</span>在D内有连续一阶偏导数,则下列条件互相等价</p>
 <ul>
@@ -572,6 +576,7 @@ P}{\partial y}\)</span></li>
 class="math inline">\(C\)</span> 有 <span
 class="math inline">\(\oint_{C}^{}P\mathrm{d}x+Q\mathrm{d}y=0\)</span></li>
 </ul>
+</blockquote>
 <p>若已知<span
 class="math inline">\(\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y\)</span>在D内与路径无关,则选择特殊路径L简化计算(通常选平行坐标轴的折线)</p>
 <p>定理4 设除去点 <span class="math inline">\(M_0\)</span> 以外, <span

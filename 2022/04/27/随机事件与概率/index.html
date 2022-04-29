@@ -28,7 +28,7 @@
 <meta property="og:description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析  统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T03:06:09.000Z">
-<meta property="article:modified_time" content="2022-04-29T16:48:28.096Z">
+<meta property="article:modified_time" content="2022-04-29T16:49:16.187Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-30 00:48:28" itemprop="dateModified" datetime="2022-04-30T00:48:28+08:00">2022-04-30</time>
+                <time title="修改时间：2022-04-30 00:49:16" itemprop="dateModified" datetime="2022-04-30T00:49:16+08:00">2022-04-30</time>
               </span>
 
           
@@ -302,52 +302,50 @@
 <ul>
 <li>基本事件和复合事件的区分是相对的</li>
 </ul></li>
-<li>随机事件E产生的所有基本事件的集合称为<strong>样本空间</strong>,记为
-<span class="math inline">\(\Omega\)</span></li>
-<li>样本空间的任一子集即为一个事件,其中<strong>必然事件</strong> 记为
-<span class="math inline">\(\Omega\)</span>,
-<strong>不可能事件</strong>记为 <span
+<li>随机事件E产生的所有基本事件的集合称为<strong>样本空间</strong>,记为<span
+class="math inline">\(\Omega\)</span></li>
+<li>样本空间的任一子集即为一个事件,其中<strong>必然事件</strong>
+记为<span class="math inline">\(\Omega\)</span>,
+<strong>不可能事件</strong>记为<span
 class="math inline">\(\varnothing\)</span></li>
 </ul>
 <h2 id="事件的关系及其运算">事件的关系及其运算</h2>
 <p>设A,B表示两个事件,若A发生必导致B发生,则称 <strong>A包含于B</strong>,
-或 <strong>B包含A</strong>, 记作 <span class="math inline">\(A \subset B
+或 <strong>B包含A</strong>, 记作<span class="math inline">\(A \subset B
 或 B \supset A\)</span></p>
 <p>若<span class="math inline">\(A \subset B 与 B \subset
 A\)</span>同时成立,则称 <strong>A与B相等</strong> 或
-<strong>A与B等价</strong>, 记为 <span
+<strong>A与B等价</strong>, 记为<span
 class="math inline">\(A=B\)</span></p>
-<p>若A与B至少有一个发生,则称之为 <strong>A与B之和(并)</strong> , 记为
-<span class="math inline">\(A \cup B\)</span></p>
+<p>若A与B至少有一个发生,则称之为 <strong>A与B之和(并)</strong> ,
+记为<span class="math inline">\(A \cup B\)</span></p>
 <ul>
-<li>推广到可列无限多个事件
+<li>推广到可列无限多个事件 *<span
+class="math inline">\(\cup_{i=1}^{\infty }A_{i}\)</span>
 <ul>
-<li><span class="math inline">\(\cup_{i=1}^{\infty }A_{i}\)</span></li>
-<li>表示 <span class="math inline">\(A_1,A_2,\cdots
+<li>表示<span class="math inline">\(A_1,A_2,\cdots
 至少有一个事件发生\)</span></li>
 </ul></li>
 </ul>
-<p>若A与B同时发生,则称之为<strong>A与B之积(交)</strong>,记为 <span
-class="math inline">\(A \cap B\)</span>,简记 <span
+<p>若A与B同时发生,则称之为<strong>A与B之积(交)</strong>,记为<span
+class="math inline">\(A \cap B\)</span>,简记<span
 class="math inline">\(AB\)</span></p>
-<ul>
-<li><span class="math inline">\(\cap _{i=1} ^{\infty }\)</span> <span
-class="math inline">\(A_1,A_2,\cdots至少有一个事件发生\)</span></li>
-</ul>
-<p>若 <span class="math inline">\(AB =
+<p>*<span class="math inline">\(\cap _{i=1} ^{\infty }\)</span><span
+class="math inline">\(A_1,A_2,\cdots至少有一个事件发生\)</span></p>
+<p>若<span class="math inline">\(AB =
 \varnothing\)</span>,称A与B<strong>互不相容或互斥</strong></p>
-<p>若 <span class="math inline">\(A \cap B = \varnothing, A \cup B =
-\Omega\)</span> 则称 <strong>A与B互为逆事件</strong> , 记作 <span
+<p>若<span class="math inline">\(A \cap B = \varnothing, A \cup B =
+\Omega\)</span> 则称 <strong>A与B互为逆事件</strong> , 记作<span
 class="math inline">\(B= \overline{A}\)</span></p>
-<p>若A与B互斥,则 <span class="math inline">\(A\)</span>与<span
-class="math inline">\(B\)</span>之和记为 <span
+<p>若A与B互斥,则<span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>之和记为<span
 class="math inline">\(A*B\)</span></p>
-<p>若A发生而B不发生,则称之为<strong>A与B之差</strong>,记为 <span
+<p>若A发生而B不发生,则称之为<strong>A与B之差</strong>,记为<span
 class="math inline">\(A-B\)</span></p>
 <h3 id="运算法则">运算法则</h3>
 <ul>
 <li>交换律 <span class="math display">\[ A \cap B = B \cap A \quad A
-\cup B = B \cup A \]</span></li>
+\cup B = B \cup A\]</span></li>
 <li>结合律 <span class="math display">\[
 \begin{aligned}
 A \cup (B \cup C) &amp;= (A \cup B) \cup C  
@@ -372,7 +370,7 @@ A \cup  (BC) &amp;=(A \cup B)(A \cup C)
 \]</span></li>
 </ul>
 <h2 id="事件的概率及计算">事件的概率及计算</h2>
-<p>概率 <span class="math inline">\(P (A)\)</span>是随机事件 <span
+<p>概率<span class="math inline">\(P (A)\)</span>是随机事件<span
 class="math inline">\(A\)</span>发生可能性大小的度量</p>
 <p><span class="math inline">\(P (A)\)</span>是事件<span
 class="math inline">\(A\)</span>本身固有的,是其发生统计规律性的数量刻画</p>
@@ -390,24 +388,25 @@ class="math inline">\(A\)</span>本身固有的,是其发生统计规律性的�
 \]</span></p>
 <h3 id="古典概型">古典概型</h3>
 <ul>
-<li>有限性 <span class="math inline">\(\Omega = \left\{ \omega_1,\omega
+<li>有限性<span class="math inline">\(\Omega = \left\{ \omega_1,\omega
 _2,\cdots, \omega _n \right\}\)</span></li>
-<li>等可能性 <span class="math inline">\(P (\omega _1) = P (\omega _{2}
-) = \cdots = P (\omega _{n} )\)</span></li>
+<li>等可能性<span class="math inline">\(P (\omega _1) = P (\omega _{2} )
+= \cdots = P (\omega _{n} )\)</span></li>
 </ul>
 <blockquote>
 <p><strong>定义</strong> 设<span class="math inline">\(\Omega = \left\{
-\omega_1,\omega _2,\cdots, \omega _n \right\}\)</span> 为试验 <span
-class="math inline">\(E\)</span>下的样本空间, 事件 $A = { <em>{a1} ,
-</em>{a2} ,,_{am} } $,则 <span class="math display">\[ P (A) =
-\frac{m}{n} \]</span></p>
+\omega_1,\omega _2,\cdots, \omega _n \right\}\)</span> 为试验<span
+class="math inline">\(E\)</span>下的样本空间, 事件<span
+class="math inline">\(A = \left\{ \omega _{a1} , \omega _{a2} ,\cdots
+,\omega _{am} \right\}\)</span>,则 <span class="math display">\[ P (A) =
+\frac{m}{n}\]</span></p>
 </blockquote>
 <p>性质:</p>
 <ul>
-<li>非负性 <span class="math inline">\(P (A) \geq 0\)</span></li>
-<li>规范性 <span class="math inline">\(P (\Omega ) =1\)</span></li>
-<li>可加性 若<span class="math inline">\(AB = \varnothing\)</span>, 则
-$P (A + B ) = P (A) + P (B) $</li>
+<li>非负性<span class="math inline">\(P (A) \geq 0\)</span></li>
+<li>规范性<span class="math inline">\(P (\Omega ) =1\)</span></li>
+<li>可加性 若<span class="math inline">\(AB = \varnothing\)</span>,
+则<span class="math inline">\(P (A + B ) = P (A) + P (B)\)</span></li>
 </ul>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>

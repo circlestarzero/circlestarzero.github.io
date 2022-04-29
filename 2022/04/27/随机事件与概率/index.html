@@ -28,7 +28,7 @@
 <meta property="og:description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析  统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T03:06:09.000Z">
-<meta property="article:modified_time" content="2022-04-29T16:45:51.931Z">
+<meta property="article:modified_time" content="2022-04-29T16:47:47.826Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-30 00:45:51" itemprop="dateModified" datetime="2022-04-30T00:45:51+08:00">2022-04-30</time>
+                <time title="修改时间：2022-04-30 00:47:47" itemprop="dateModified" datetime="2022-04-30T00:47:47+08:00">2022-04-30</time>
               </span>
 
           
@@ -362,10 +362,12 @@ A \cup  (BC) &amp;=(A \cup B)(A \cup C)
 \]</span></li>
 <li>对偶率 <span class="math display">\[
   \begin{aligned}
-    \overline{A \cup B} =\overline{A} \cap \overline{B} \\
-    \overline{A \cap B} = \overline{A} \cup  \overline{B}\\
-    \overline{\cup _{i=1} ^{n}A_i} = \cap _{i=1} ^{n} \overline{A_i}\\
-    \overline{\cap _{i=1} ^{n} A_i}= \cup _{i=1} ^{n} \overline{A_i}
+    \overline{A \cup B} &amp;=\overline{A} \cap \overline{B} \\
+    \overline{A \cap B} &amp;= \overline{A} \cup  \overline{B}\\
+    \overline{\cup _{i=1} ^{n}A_i} &amp;= \cap _{i=1} ^{n}
+\overline{A_i}\\
+    \overline{\cap _{i=1} ^{n} A_i} &amp;= \cup _{i=1} ^{n}
+\overline{A_i}
   \end{aligned}
 \]</span></li>
 </ul>
@@ -381,8 +383,9 @@ class="math inline">\(A\)</span>本身固有的,是其发生统计规律性的�
 <h3 id="统计概率">统计概率</h3>
 <p><span class="math display">\[
   \begin{aligned}
-    f_n (A) = \frac{n_A}{n}=\frac{A\text{发生的次数}}{\text{试验次数}}\\
-    P (A) = \lim_{n \to \infty} \frac{n_A}{n}
+    f_n (A) =
+\frac{n_A}{n}=&amp;\frac{A\text{发生的次数}}{\text{试验次数}}\\
+    P (A) =&amp; \lim_{n \to \infty} \frac{n_A}{n}
   \end{aligned}
 \]</span></p>
 <h3 id="古典概型">古典概型</h3>
@@ -399,9 +402,12 @@ class="math inline">\(E\)</span>下的样本空间, 事件 $A = { <em>{a1} ,
 </em>{a2} ,,_{am} } $,则 <span class="math display">\[ P (A) =
 \frac{m}{n} \]</span></p>
 </blockquote>
-<p>性质: * 非负性 <span class="math inline">\(P (A) \geq 0\)</span> *
-规范性 <span class="math inline">\(P (\Omega ) =1\)</span> * 可加性
-若$AB = $, 则 $P (A + B ) = P (A) + P (B) $</p>
+<p>性质:</p>
+<ul>
+<li>非负性 <span class="math inline">\(P (A) \geq 0\)</span></li>
+<li>规范性 <span class="math inline">\(P (\Omega ) =1\)</span></li>
+<li>可加性 若$AB = $, 则 $P (A + B ) = P (A) + P (B) $</li>
+</ul>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 

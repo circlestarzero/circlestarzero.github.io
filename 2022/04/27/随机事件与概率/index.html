@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"circlecirclezero.cc","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":"trueß","sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#ffd9e6","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="随机试验与随机事件 基本概念   确定性现象一旦某些条件实现就必然会发生的现象   随机现象 在一定条件实现后可能产生也可能不产生的现象   概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析    统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律   随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实">
+  <meta name="description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析  统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随机事件与概率">
 <meta property="og:url" content="https://circlecirclezero.cc/2022/04/27/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/index.html">
 <meta property="og:site_name" content="CC&#39;blog">
-<meta property="og:description" content="随机试验与随机事件 基本概念   确定性现象一旦某些条件实现就必然会发生的现象   随机现象 在一定条件实现后可能产生也可能不产生的现象   概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析    统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律   随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实">
+<meta property="og:description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析  统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T03:06:09.000Z">
-<meta property="article:modified_time" content="2022-04-29T10:04:14.260Z">
+<meta property="article:modified_time" content="2022-04-29T10:10:09.232Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-29 18:04:14" itemprop="dateModified" datetime="2022-04-29T18:04:14+08:00">2022-04-29</time>
+                <time title="修改时间：2022-04-29 18:10:09" itemprop="dateModified" datetime="2022-04-29T18:10:09+08:00">2022-04-29</time>
               </span>
 
           
@@ -257,7 +257,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.2k</span>
+              <span>1.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -276,92 +276,94 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1>随机试验与随机事件</h1>
+        <h1 id="随机试验与随机事件">随机试验与随机事件</h1>
 <h2 id="基本概念">基本概念</h2>
 <ul>
-<li>
-<p><strong>确定性现象</strong>一旦某些条件实现就必然会发生的现象</p>
-</li>
-<li>
-<p><strong>随机现象</strong> 在一定条件实现后可能产生也可能不产生的现象</p>
-</li>
-<li>
-<p><strong>概率论</strong> 研究随机现象统计规律性的科学</p>
+<li><strong>确定性现象</strong>一旦某些条件实现就必然会发生的现象</li>
+<li><strong>随机现象</strong>
+在一定条件实现后可能产生也可能不产生的现象</li>
+<li><strong>概率论</strong> 研究随机现象统计规律性的科学
 <ul>
 <li>寻求随机现象发生的可能性,并对相关特性给出度量和分析</li>
-</ul>
-</li>
-<li>
-<p><strong>统计性规律</strong> 在大量重复实验时随机现象所呈现出的某种必然的规律</p>
-</li>
-<li>
-<p><strong>随机事件</strong> 设有试验E,若E满足</p>
+</ul></li>
+<li><strong>统计性规律</strong>
+在大量重复实验时随机现象所呈现出的某种必然的规律</li>
+<li><strong>随机事件</strong> 设有试验E,若E满足
 <ul>
 <li>试验之前可知试验的一切可能结果</li>
 <li>每次实验之前不能确定此次实验的结果</li>
 <li>实验在相同条件下可重复进行</li>
-</ul>
-</li>
-<li>
-<p>随机实验的每一个结果称为一个 <strong>随机事件</strong>,简称<strong>事件</strong></p>
-</li>
-<li>
-<p>事件一般用A,B,C表示</p>
-</li>
-<li>
-<p>不可能再分解的事件称为<strong>基本事件</strong></p>
-</li>
-<li>
-<p>由若干个基本事件组成的事件称为 <strong>复合事件</strong></p>
+</ul></li>
+<li>随机实验的每一个结果称为一个
+<strong>随机事件</strong>,简称<strong>事件</strong></li>
+<li>事件一般用A,B,C表示</li>
+<li>不可能再分解的事件称为<strong>基本事件</strong></li>
+<li>由若干个基本事件组成的事件称为 <strong>复合事件</strong>
 <ul>
 <li>基本事件和复合事件的区分是相对的</li>
-</ul>
-</li>
-<li>
-<p>随机事件E产生的所有基本事件的集合称为<strong>样本空间</strong>,记为 $\Omega$</p>
-</li>
-<li>
-<p>样本空间的任一子集即为一个事件,其中<strong>必然事件</strong> 记为 $\Omega$, <strong>不可能事件</strong>记为 $\varnothing$</p>
-</li>
+</ul></li>
+<li>随机事件E产生的所有基本事件的集合称为<strong>样本空间</strong>,记为
+<span class="math inline">\(\Omega\)</span></li>
+<li>样本空间的任一子集即为一个事件,其中<strong>必然事件</strong> 记为
+<span class="math inline">\(\Omega\)</span>,
+<strong>不可能事件</strong>记为 <span
+class="math inline">\(\varnothing\)</span></li>
 </ul>
 <h2 id="事件的关系及其运算">事件的关系及其运算</h2>
-<p>设A,B表示两个事件,若A发生必导致B发生,则称 <strong>A包含于B</strong>, 或 <strong>B包含A</strong>, 记作 $A \subset B 或 B \supset A$</p>
-<p>若$A \subset B 与 B \subset A$同时成立,则称 <strong>A与B相等</strong> 或 <strong>A与B等价</strong>, 记为 $A=B$</p>
-<p>若A与B至少有一个发生,则称之为 <strong>A与B之和(并)</strong> , 记为 $A \cup B$</p>
+<p>设A,B表示两个事件,若A发生必导致B发生,则称 <strong>A包含于B</strong>,
+或 <strong>B包含A</strong>, 记作 <span class="math inline">\(A \subset B
+或 B \supset A\)</span></p>
+<p>若<span class="math inline">\(A \subset B 与 B \subset
+A\)</span>同时成立,则称 <strong>A与B相等</strong> 或
+<strong>A与B等价</strong>, 记为 <span
+class="math inline">\(A=B\)</span></p>
+<p>若A与B至少有一个发生,则称之为 <strong>A与B之和(并)</strong> , 记为
+<span class="math inline">\(A \cup B\)</span></p>
 <ul>
 <li>推广到可列无限多个事件
 <ul>
-<li>$\cup_{i=1}^{\infty }A_{i}$</li>
-<li>表示 $A_1,A_2,\cdots 至少有一个事件发生$</li>
+<li><span class="math inline">\(\cup_{i=1}^{\infty }A_{i}\)</span></li>
+<li>表示 <span class="math inline">\(A_1,A_2,\cdots
+至少有一个事件发生\)</span></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p>若A与B同时发生,则称之为<strong>A与B之积(交)</strong>,记为 $A \cap  B$,简记 $AB$</p>
+<p>若A与B同时发生,则称之为<strong>A与B之积(交)</strong>,记为 <span
+class="math inline">\(A \cap B\)</span>,简记 <span
+class="math inline">\(AB\)</span></p>
 <ul>
-<li>$\cap _{i=1} ^{\infty }$ $A_1,A_2,\cdots至少有一个事件发生$</li>
+<li><span class="math inline">\(\cap _{i=1} ^{\infty }\)</span> <span
+class="math inline">\(A_1,A_2,\cdots至少有一个事件发生\)</span></li>
 </ul>
-<p>若 $AB = \varnothing$,称A与B<strong>互不相容或互斥</strong></p>
-<p>若 $A \cap B = \varnothing, A \cup B = \Omega$ 则称 <strong>A与B互为逆事件</strong> , 记作 $B= \overline{A}$</p>
-<p>若A与B互斥,则 $A$与$B$之和记为 $A*B$</p>
-<p>若A发生而B不发生,则称之为<strong>A与B之差</strong>,记为 $A-B$</p>
+<p>若 <span class="math inline">\(AB =
+\varnothing\)</span>,称A与B<strong>互不相容或互斥</strong></p>
+<p>若 <span class="math inline">\(A \cap B = \varnothing, A \cup B =
+\Omega\)</span> 则称 <strong>A与B互为逆事件</strong> , 记作 <span
+class="math inline">\(B= \overline{A}\)</span></p>
+<p>若A与B互斥,则 <span class="math inline">\(A\)</span>与<span
+class="math inline">\(B\)</span>之和记为 <span
+class="math inline">\(A*B\)</span></p>
+<p>若A发生而B不发生,则称之为<strong>A与B之差</strong>,记为 <span
+class="math inline">\(A-B\)</span></p>
 <h3 id="运算法则">运算法则</h3>
 <ul>
-<li>交换律<br>
-$$ A \cap B = B \cap A \ A \cup B = B \cup A $$</li>
-<li>结合律<br>
-$$ A \cup (B \cup C) = (A \cup B) \cup C  \ (AB) C = A (BC) $$</li>
-<li>分配率<br>
-$$ A (B \cup C) = (AB)  \cup (AC) \ A \cup  (BC) =(A \cup B)(A \cup C)   $$</li>
-<li>对偶率<br>
-$$ \overline{A \cup B} =\overline{A} \cap \overline{B} \<br>
-\overline{A \cap B} = \overline{A} \cup  \overline{B}\<br>
-\overline{\cup _{i=1} ^{n}A_i} = \cap _{i=1} ^{n} \overline{A_i}\<br>
-\overline{\cap _{i=1} ^{n} A_i}= \cup _{i=1} ^{n} \overline{A_i}<br>
-$$</li>
+<li>交换律 <span class="math display">\[ A \cap B = B \cap A \\ A \cup B
+= B \cup A \]</span></li>
+<li>结合律 <span class="math display">\[ A \cup (B \cup C) = (A \cup B)
+\cup C  \\ (AB) C = A (BC) \]</span></li>
+<li>分配率 <span class="math display">\[ A (B \cup C) = (AB)  \cup (AC)
+\\ A \cup  (BC) =(A \cup B)(A \cup C)   \]</span></li>
+<li>对偶率 <span class="math display">\[
+    \overline{A \cup B} =\overline{A} \cap \overline{B} \\
+    \overline{A \cap B} = \overline{A} \cup  \overline{B}\\
+    \overline{\cup _{i=1} ^{n}A_i} = \cap _{i=1} ^{n} \overline{A_i}\\
+    \overline{\cap _{i=1} ^{n} A_i}= \cup _{i=1} ^{n} \overline{A_i}
+\]</span></li>
 </ul>
 <h2 id="事件的概率及计算">事件的概率及计算</h2>
-<p>概率 $P (A)$是随机事件 $A$发生可能性大小的度量</p>
-<p>$P (A) $是事件$A$本身固有的,是其发生统计规律性的数量刻画</p>
+<p>概率 <span class="math inline">\(P (A)\)</span>是随机事件 <span
+class="math inline">\(A\)</span>发生可能性大小的度量</p>
+<p>$P (A) <span
+class="math inline">\(是事件\)</span>A$本身固有的,是其发生统计规律性的数量刻画</p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
@@ -460,7 +462,7 @@ $$</li>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -527,7 +529,7 @@ $$</li>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">17k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

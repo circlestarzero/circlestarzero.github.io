@@ -28,7 +28,7 @@
 <meta property="og:description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析  统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T03:06:09.000Z">
-<meta property="article:modified_time" content="2022-04-29T16:22:14.040Z">
+<meta property="article:modified_time" content="2022-04-29T16:45:51.931Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-30 00:22:14" itemprop="dateModified" datetime="2022-04-30T00:22:14+08:00">2022-04-30</time>
+                <time title="修改时间：2022-04-30 00:45:51" itemprop="dateModified" datetime="2022-04-30T00:45:51+08:00">2022-04-30</time>
               </span>
 
           
@@ -257,14 +257,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.4k</span>
+              <span>1.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -346,8 +346,8 @@ class="math inline">\(A*B\)</span></p>
 class="math inline">\(A-B\)</span></p>
 <h3 id="运算法则">运算法则</h3>
 <ul>
-<li>交换律 <span class="math display">\[ A \cap B = B \cap A \\ A \cup B
-= B \cup A \]</span></li>
+<li>交换律 <span class="math display">\[ A \cap B = B \cap A \quad A
+\cup B = B \cup A \]</span></li>
 <li>结合律 <span class="math display">\[
 \begin{aligned}
 A \cup (B \cup C) &amp;= (A \cup B) \cup C  
@@ -372,8 +372,36 @@ A \cup  (BC) &amp;=(A \cup B)(A \cup C)
 <h2 id="事件的概率及计算">事件的概率及计算</h2>
 <p>概率 <span class="math inline">\(P (A)\)</span>是随机事件 <span
 class="math inline">\(A\)</span>发生可能性大小的度量</p>
-<p>$P (A) <span
-class="math inline">\(是事件\)</span>A$本身固有的,是其发生统计规律性的数量刻画</p>
+<p><span class="math inline">\(P (A)\)</span>是事件<span
+class="math inline">\(A\)</span>本身固有的,是其发生统计规律性的数量刻画</p>
+<ul>
+<li>应该具有一定的客观性,不能随意改变</li>
+<li>必须符合一般常情</li>
+</ul>
+<h3 id="统计概率">统计概率</h3>
+<p><span class="math display">\[
+  \begin{aligned}
+    f_n (A) = \frac{n_A}{n}=\frac{A\text{发生的次数}}{\text{试验次数}}\\
+    P (A) = \lim_{n \to \infty} \frac{n_A}{n}
+  \end{aligned}
+\]</span></p>
+<h3 id="古典概型">古典概型</h3>
+<ul>
+<li>有限性 <span class="math inline">\(\Omega = \left\{ \omega_1,\omega
+_2,\cdots, \omega _n \right\}\)</span></li>
+<li>等可能性 <span class="math inline">\(P (\omega _1) = P (\omega _{2}
+) = \cdots = P (\omega _{n} )\)</span></li>
+</ul>
+<blockquote>
+<p><strong>定义</strong> 设<span class="math inline">\(\Omega = \left\{
+\omega_1,\omega _2,\cdots, \omega _n \right\}\)</span> 为试验 <span
+class="math inline">\(E\)</span>下的样本空间, 事件 $A = { <em>{a1} ,
+</em>{a2} ,,_{am} } $,则 <span class="math display">\[ P (A) =
+\frac{m}{n} \]</span></p>
+</blockquote>
+<p>性质: * 非负性 <span class="math inline">\(P (A) \geq 0\)</span> *
+规范性 <span class="math inline">\(P (\Omega ) =1\)</span> * 可加性
+若$AB = $, 则 $P (A + B ) = P (A) + P (B) $</p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
@@ -472,7 +500,7 @@ class="math inline">\(是事件\)</span>A$本身固有的,是其发生统计规�
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E6%A6%82%E7%8E%87"><span class="nav-number">1.3.1.</span> <span class="nav-text">统计概率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.2.</span> <span class="nav-text">古典概型</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -544,7 +572,7 @@ class="math inline">\(是事件\)</span>A$本身固有的,是其发生统计规�
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">15 分钟</span>
+    <span title="站点阅读时长">16 分钟</span>
 </div>
 
 

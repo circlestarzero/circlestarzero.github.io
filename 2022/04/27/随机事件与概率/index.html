@@ -27,10 +27,12 @@
 <meta property="og:site_name" content="CC&#39;blog">
 <meta property="og:description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析  统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://circlecirclezero.cc/2022/04/27/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/2022-05-01-20-56-21.png">
 <meta property="article:published_time" content="2022-04-27T03:06:09.000Z">
-<meta property="article:modified_time" content="2022-05-01T11:12:03.538Z">
+<meta property="article:modified_time" content="2022-05-01T13:32:58.345Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://circlecirclezero.cc/2022/04/27/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/2022-05-01-20-56-21.png">
 
 <link rel="canonical" href="https://circlecirclezero.cc/2022/04/27/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/">
 
@@ -227,7 +229,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-01 19:12:03" itemprop="dateModified" datetime="2022-05-01T19:12:03+08:00">2022-05-01</time>
+                <time title="修改时间：2022-05-01 21:32:58" itemprop="dateModified" datetime="2022-05-01T21:32:58+08:00">2022-05-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -266,14 +268,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>4.2k</span>
+              <span>5.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
+              <span>5 分钟</span>
             </span>
 
         </div>
@@ -401,13 +403,13 @@ class="math inline">\(A\)</span>本身固有的,是其发生统计规律性的�
 <h3 id="古典概型">古典概型</h3>
 <ul>
 <li>有限性<span class="math inline">\(\Omega = \left\{ \omega_1,\omega
-_2,\cdots, \omega _n \right\}\)</span></li>
+_2,\cdots, \omega_n \right\}\)</span></li>
 <li>等可能性<span class="math inline">\(P (\omega _1) = P (\omega_{2} )
 = \cdots = P (\omega_{n} )\)</span></li>
 </ul>
 <blockquote>
 <p><strong>定义</strong> 设<span class="math inline">\(\Omega = \left\{
-\omega_1,\omega _2,\cdots, \omega _n \right\}\)</span> 为试验<span
+\omega_1,\omega _2,\cdots, \omega_n \right\}\)</span> 为试验<span
 class="math inline">\(E\)</span>下的样本空间, 事件<span
 class="math inline">\(A = \left\{ \omega_{a1} , \omega_{a2} ,\cdots
 ,\omega_{am} \right\}\)</span>,则 <span class="math display">\[ P (A) =
@@ -547,6 +549,74 @@ class="math display">\[ P (B|A) = \frac{P (AB) }{ P (A) } \quad P (A)
 }{\longrightarrow} P (AB) = P (B) P (A|B) \\
   \end{aligned}
 \]</span></p>
+<p>推广 <span class="math display">\[ P (A_1A_2\cdots A_n) = P (A_1) P
+(A_2|A_1) P (A_3|A_1A_2)\cdots P (A_n | A_1A_2 \cdots A_n)\]</span></p>
+<p>加法公式 <span class="math inline">\(P (A \cup B|C)= P (A|C) + P
+(B|C) - P (AB|C)\)</span></p>
+<h3 id="全概率公式">全概率公式</h3>
+<blockquote>
+<p><span class="math inline">\(\Omega\)</span> 的划分 对 <span
+class="math inline">\(\forall 1 \leq i \neq j \leq n, A_i A_j =
+\varnothing\)</span> 若 <span class="math inline">\(\sum_{i=1}^{n} A_i=
+\Omega\)</span>, 则称 <span class="math inline">\(A_1,A_2,\cdots,
+A_n\)</span> 为 $$ 的一个划分</p>
+</blockquote>
+<blockquote>
+<p>全概率公式 $ P (B) = _{i=1}^{n}P (A_i) P (B| A_i)$</p>
+</blockquote>
+<p>推导:</p>
+<p><span class="math display">\[
+\begin{aligned}
+P (B) &amp; = P (B\Omega )  \\
+&amp; = P (B\sum_{i=1}^{n}A_i)\\  \\
+&amp; = \sum_{i=1}^{n}P (B A_i)  \\
+&amp; = \sum_{i=1}^{n} P (A_i)P (B|A_i)  \\
+\end{aligned}\]</span></p>
+<p>对于 <span class="math inline">\(B \subseteq \sum_{i=1}^{n}
+A_i\)</span>, <strong>全概率公式依然成立</strong></p>
+<h4 id="贝叶斯公式">贝叶斯公式</h4>
+<ul>
+<li>由果溯因</li>
+</ul>
+<p>设 <span class="math inline">\(A_1,A_2,\cdots ,A_n\)</span> 是对 $$
+的一个划分,则 <span class="math display">\[ P (A_i|B) =\frac{P (A_i) P
+(B|A_i)}{\sum_{j=1}^{n} P (A_j)P (B| A_j)}\]</span></p>
+<blockquote>
+<p>推导</p>
+</blockquote>
+<p><span class="math display">\[
+\begin{aligned}
+P (A_i|B) &amp; = \frac{P (A_iB)}{P (B)}  \\
+&amp; = \frac{P (A_i)P (B|A_i)}{\sum_{j=1}^{n}P (A_j)P (B|A_j)}  \\
+\end{aligned}
+\]</span></p>
+<img data-src="/2022/04/27/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/2022-05-01-20-56-21.png" class="" title="贝叶斯公式">
+<h4 id="事件的独立性">事件的独立性</h4>
+<ul>
+<li>事件 <span class="math inline">\(A\)</span> 与 <span
+class="math inline">\(B\)</span> <strong>相互独立</strong> <span
+class="math display">\[ P (AB)=P (A) P (B) \]</span></li>
+<li><span class="math inline">\(A,B,C\)</span>
+<strong>两两相互独立</strong> <span class="math display">\[
+\begin{aligned}
+P (AB)= P (A) P (B) \\
+P (AC) = P (A) P (C)\\
+P (BC) = P (B) P (C)\\
+\end{aligned} \]</span></li>
+<li><span class="math inline">\(A,B,C\)</span> <strong>相互独立</strong>
+<span class="math display">\[ \begin{aligned}
+P (AB) &amp;= P (A) P (B) \\
+P (AC) &amp;= P (A) P (C)\\
+P (BC) &amp;= P (B) P (C)\\
+P (ABC) &amp;= P (A) P (B) P (C)\\
+\end{aligned} \]</span></li>
+<li><span class="math inline">\(A_1,A_2,\cdots,
+A_n\)</span><strong>相互独立</strong> <span class="math display">\[ P
+(A_{i_1}A_{i_2}\cdots A_{i_n}) = P (A_{i_1})  P (A_{i_2}) \cdots P
+(A_{i_n})\\
+1 \leq i_1 &lt; i_2 &lt; \cdots &lt; i_k \leq n, 2 \leq k \leq
+n\]</span></li>
+</ul>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
@@ -645,7 +715,7 @@ class="math display">\[ P (B|A) = \frac{P (AB) }{ P (A) } \quad P (A)
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E6%A6%82%E7%8E%87"><span class="nav-number">1.3.1.</span> <span class="nav-text">统计概率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.2.</span> <span class="nav-text">古典概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.3.</span> <span class="nav-text">几何概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.</span> <span class="nav-text">概率的公理化定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E4%B8%8E%E4%BA%8B%E4%BB%B6%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%80%A7"><span class="nav-number">1.4.</span> <span class="nav-text">条件概率与事件的独立性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%98%E6%B3%95%E5%85%AC%E5%BC%8F"><span class="nav-number">1.4.1.</span> <span class="nav-text">乘法公式</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E6%A6%82%E7%8E%87"><span class="nav-number">1.3.1.</span> <span class="nav-text">统计概率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.2.</span> <span class="nav-text">古典概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.3.</span> <span class="nav-text">几何概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.</span> <span class="nav-text">概率的公理化定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E4%B8%8E%E4%BA%8B%E4%BB%B6%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%80%A7"><span class="nav-number">1.4.</span> <span class="nav-text">条件概率与事件的独立性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%98%E6%B3%95%E5%85%AC%E5%BC%8F"><span class="nav-number">1.4.1.</span> <span class="nav-text">乘法公式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%A8%E6%A6%82%E7%8E%87%E5%85%AC%E5%BC%8F"><span class="nav-number">1.4.2.</span> <span class="nav-text">全概率公式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%85%AC%E5%BC%8F"><span class="nav-number">1.4.2.1.</span> <span class="nav-text">贝叶斯公式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%80%A7"><span class="nav-number">1.4.2.2.</span> <span class="nav-text">事件的独立性</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -661,7 +731,7 @@ class="math display">\[ P (B|A) = \frac{P (AB) }{ P (A) } \quad P (A)
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">9</span>
+          <span class="site-state-item-count">10</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -712,12 +782,12 @@ class="math display">\[ P (B|A) = \frac{P (AB) }{ P (A) } \quad P (A)
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">20k</span>
+    <span title="站点总字数">23k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">18 分钟</span>
+    <span title="站点阅读时长">21 分钟</span>
 </div>
 
 

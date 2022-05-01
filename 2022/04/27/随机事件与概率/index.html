@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"circlecirclezero.cc","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":"trueß","sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#ffd9e6","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="随机试验与随机事件基本概念 确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学 寻求随机现象发生的可能性,并对相关特性给出度量和分析   统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足 试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相同条件">
+  <meta name="description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析   统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随机事件与概率">
 <meta property="og:url" content="https://circlecirclezero.cc/2022/04/27/%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6%E4%B8%8E%E6%A6%82%E7%8E%87/index.html">
 <meta property="og:site_name" content="CC&#39;blog">
-<meta property="og:description" content="随机试验与随机事件基本概念 确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学 寻求随机现象发生的可能性,并对相关特性给出度量和分析   统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足 试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在相同条件">
+<meta property="og:description" content="随机试验与随机事件 基本概念  确定性现象一旦某些条件实现就必然会发生的现象 随机现象 在一定条件实现后可能产生也可能不产生的现象 概率论 研究随机现象统计规律性的科学  寻求随机现象发生的可能性,并对相关特性给出度量和分析   统计性规律 在大量重复实验时随机现象所呈现出的某种必然的规律 随机事件 设有试验E,若E满足  试验之前可知试验的一切可能结果 每次实验之前不能确定此次实验的结果 实验在">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T03:06:09.000Z">
-<meta property="article:modified_time" content="2022-05-01T08:04:39.208Z">
+<meta property="article:modified_time" content="2022-05-01T10:43:26.593Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-01 16:04:39" itemprop="dateModified" datetime="2022-05-01T16:04:39+08:00">2022-05-01</time>
+                <time title="修改时间：2022-05-01 18:43:26" itemprop="dateModified" datetime="2022-05-01T18:43:26+08:00">2022-05-01</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -266,7 +266,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>3.9k</span>
+              <span>4k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -285,95 +285,121 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="随机试验与随机事件"><a href="#随机试验与随机事件" class="headerlink" title="随机试验与随机事件"></a>随机试验与随机事件</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul>
+        <h1>随机试验与随机事件</h1>
+<h2 id="基本概念">基本概念</h2>
+<ul>
 <li><strong>确定性现象</strong>一旦某些条件实现就必然会发生的现象</li>
 <li><strong>随机现象</strong> 在一定条件实现后可能产生也可能不产生的现象</li>
-<li><strong>概率论</strong> 研究随机现象统计规律性的科学<ul>
+<li><strong>概率论</strong> 研究随机现象统计规律性的科学
+<ul>
 <li>寻求随机现象发生的可能性,并对相关特性给出度量和分析</li>
 </ul>
 </li>
 <li><strong>统计性规律</strong> 在大量重复实验时随机现象所呈现出的某种必然的规律</li>
-<li><strong>随机事件</strong> 设有试验E,若E满足<ul>
+<li><strong>随机事件</strong> 设有试验E,若E满足
+<ul>
 <li>试验之前可知试验的一切可能结果</li>
 <li>每次实验之前不能确定此次实验的结果</li>
-<li>实验在相同条件下可重复进行<span id="more"></span></li>
+<li>实验在相同条件下可重复进行</li>
 </ul>
 </li>
+</ul>
+<span id="more"></span>
+<ul>
 <li>随机实验的每一个结果称为一个 <strong>随机事件</strong>,简称<strong>事件</strong></li>
 <li>事件一般用A,B,C表示</li>
 <li>不可能再分解的事件称为<strong>基本事件</strong></li>
-<li>由若干个基本事件组成的事件称为 <strong>复合事件</strong><ul>
+<li>由若干个基本事件组成的事件称为 <strong>复合事件</strong>
+<ul>
 <li>基本事件和复合事件的区分是相对的</li>
 </ul>
 </li>
 <li>随机事件E产生的所有基本事件的集合称为<strong>样本空间</strong>,记为$\Omega$</li>
-<li>样本空间的任一子集即为一个事件,其中<strong>必然事件</strong> 记为$\Omega$, <strong>不可能事件</strong>记为$\varnothing$  </li>
+<li>样本空间的任一子集即为一个事件,其中<strong>必然事件</strong> 记为$\Omega$, <strong>不可能事件</strong>记为$\varnothing$</li>
 </ul>
-<h2 id="事件的关系及其运算"><a href="#事件的关系及其运算" class="headerlink" title="事件的关系及其运算"></a>事件的关系及其运算</h2><p>设A,B表示两个事件,若A发生必导致B发生,则称 <strong>A包含于B</strong>, 或 <strong>B包含A</strong>, 记作$A \subset B 或 B \supset A$</p>
+<h2 id="事件的关系及其运算">事件的关系及其运算</h2>
+<p>设A,B表示两个事件,若A发生必导致B发生,则称 <strong>A包含于B</strong>, 或 <strong>B包含A</strong>, 记作$A \subset B 或 B \supset A$</p>
 <p>若$A \subset B 与 B \subset A$同时成立,则称 <strong>A与B相等</strong> 或 <strong>A与B等价</strong>, 记为$A=B$</p>
 <p>若A与B至少有一个发生,则称之为 <strong>A与B之和(并)</strong> , 记为$A \cup B$</p>
 <ul>
-<li>推广到可列无限多个事件<ul>
-<li>$\cup<em>{i=1}^{\infty }A</em>{i}$</li>
+<li>推广到可列无限多个事件
+<ul>
+<li>$\cup_{i=1}^{\infty }A_{i}$</li>
 <li>表示$A_1,A_2,\cdots 至少有一个事件发生$</li>
 </ul>
 </li>
 </ul>
-<p>若A与B同时发生,则称之为<strong>A与B之积(交)</strong>,记为$A \cap  B$,简记$AB$  </p>
+<p>若A与B同时发生,则称之为<strong>A与B之积(交)</strong>,记为$A \cap  B$,简记$AB$</p>
 <ul>
 <li>$\cap _{i=1} ^{\infty }$$A_1,A_2,\cdots至少有一个事件发生$</li>
 </ul>
 <p>若$AB = \varnothing$,称A与B<strong>互不相容或互斥</strong></p>
-<p>若$A \cap B = \varnothing, A \cup B = \Omega$ 则称 <strong>A与B互为逆事件</strong> , 记作$B= \overline{A}$  </p>
+<p>若$A \cap B = \varnothing, A \cup B = \Omega$ 则称 <strong>A与B互为逆事件</strong> , 记作$B= \overline{A}$</p>
 <p>若A与B互斥,则$A$与$B$之和记为$A*B$</p>
 <p>若A发生而B不发生,则称之为<strong>A与B之差</strong>,记为$A-B$</p>
-<p>$A$ 与$B$ 的对称差:$A \triangle B = (A-B) \cup (B-A)$ </p>
-<h3 id="运算法则"><a href="#运算法则" class="headerlink" title="运算法则"></a>运算法则</h3><ul>
-<li>交换律<script type="math/tex; mode=display">A \cap B = B \cap A \quad A \cup B = B \cup A</script></li>
-<li>结合律<script type="math/tex; mode=display">
-\begin{aligned}
-A \cup (B \cup C) &= (A \cup B) \cup C  
-\\ (AB) C &= A (BC)
-\end{aligned}</script></li>
-<li>分配率<script type="math/tex; mode=display">
-\begin{aligned}
-A (B \cup C) &= (AB)  \cup (AC) \\ 
-A \cup  (BC) &=(A \cup B)(A \cup C)
-\end{aligned}</script></li>
-<li>对偶率<script type="math/tex; mode=display">
-  \begin{aligned}
-    \overline{A \cup B} &=\overline{A} \cap \overline{B} \\
-    \overline{A \cap B} &= \overline{A} \cup  \overline{B}\\
-    \overline{\cup _{i=1} ^{n}A_i} &= \cap _{i=1} ^{n} \overline{A_i}\\
-    \overline{\cap _{i=1} ^{n} A_i} &= \cup _{i=1} ^{n} \overline{A_i}
-  \end{aligned}</script></li>
+<p>$A$ 与$B$ 的对称差:$A \triangle B = (A-B) \cup (B-A)$</p>
+<h3 id="运算法则">运算法则</h3>
+<ul>
+<li>交换律<br>
+$$ A \cap B = B \cap A \quad A \cup B = B \cup A$$</li>
+<li>结合律<br>
+$$<br>
+\begin{aligned}<br>
+A \cup (B \cup C) &amp;= (A \cup B) \cup C<br>
+\ (AB) C &amp;= A (BC)<br>
+\end{aligned}<br>
+$$</li>
+<li>分配率<br>
+$$<br>
+\begin{aligned}<br>
+A (B \cup C) &amp;= (AB)  \cup (AC) \<br>
+A \cup  (BC) &amp;=(A \cup B)(A \cup C)<br>
+\end{aligned}<br>
+$$</li>
+<li>对偶率<br>
+$$<br>
+\begin{aligned}<br>
+\overline{A \cup B} &amp;=\overline{A} \cap \overline{B} \<br>
+\overline{A \cap B} &amp;= \overline{A} \cup  \overline{B}\<br>
+\overline{\cup _{i=1} ^{n}A_i} &amp;= \cap _{i=1} ^{n} \overline{A_i}\<br>
+\overline{\cap _{i=1} ^{n} A_i} &amp;= \cup _{i=1} ^{n} \overline{A_i}<br>
+\end{aligned}<br>
+$$</li>
 </ul>
-<h2 id="事件的概率及计算"><a href="#事件的概率及计算" class="headerlink" title="事件的概率及计算"></a>事件的概率及计算</h2><p>概率$P (A)$是随机事件$A$发生可能性大小的度量</p>
+<h2 id="事件的概率及计算">事件的概率及计算</h2>
+<p>概率$P (A)$是随机事件$A$发生可能性大小的度量</p>
 <p>$P (A)$是事件$A$本身固有的,是其发生统计规律性的数量刻画</p>
 <ul>
 <li>应该具有一定的客观性,不能随意改变</li>
 <li>必须符合一般常情</li>
 </ul>
-<h3 id="统计概率"><a href="#统计概率" class="headerlink" title="统计概率"></a>统计概率</h3><script type="math/tex; mode=display">
-  \begin{aligned}
-    f_n (A) = \frac{n_A}{n}=&\frac{A\text{发生的次数}}{\text{试验次数}}\\
-    P (A) =& \lim_{n \to \infty} \frac{n_A}{n} 
-  \end{aligned}</script><h3 id="古典概型"><a href="#古典概型" class="headerlink" title="古典概型"></a>古典概型</h3><ul>
-<li>有限性$\Omega = \left{ \omega_1,\omega _2,\cdots, \omega _n \right}$ </li>
-<li>等可能性$P (\omega <em>1) = P (\omega </em>{2} ) = \cdots = P (\omega _{n} )$ </li>
+<h3 id="统计概率">统计概率</h3>
+<p>$$<br>
+\begin{aligned}<br>
+f_n (A) = \frac{n_A}{n}=&amp;\frac{A\text{发生的次数}}{\text{试验次数}}\<br>
+P (A) =&amp; \lim_{n \to \infty} \frac{n_A}{n}<br>
+\end{aligned}<br>
+$$</p>
+<h3 id="古典概型">古典概型</h3>
+<ul>
+<li>有限性$\Omega = \left{ \omega_1,\omega _2,\cdots, \omega _n \right}$</li>
+<li>等可能性$P (\omega _1) = P (\omega _{2} ) = \cdots = P (\omega _{n} )$</li>
 </ul>
 <blockquote>
-<p><strong>定义</strong> 设$\Omega = \left{ \omega<em>1,\omega _2,\cdots, \omega _n \right}$ 为试验$E$下的样本空间, 事件$A = \left{ \omega </em>{a1} , \omega <em>{a2} ,\cdots ,\omega </em>{am} \right}$,则</p>
-<script type="math/tex; mode=display">P (A) = \frac{m}{n}</script></blockquote>
+<p><strong>定义</strong> 设$\Omega = \left{ \omega_1,\omega _2,\cdots, \omega _n \right}$ 为试验$E$下的样本空间, 事件$A = \left{ \omega _{a1} , \omega _{a2} ,\cdots ,\omega _{am} \right}$,则<br>
+$$ P (A) = \frac{m}{n}$$</p>
+</blockquote>
 <p>性质:</p>
 <ul>
 <li>非负性$P (A) \geq 0$</li>
 <li>规范性$P (\Omega ) =1$</li>
 <li>可加性 若$AB = \varnothing$, 则$P (A + B ) = P (A) + P (B)$</li>
 </ul>
-<h3 id="几何概型"><a href="#几何概型" class="headerlink" title="几何概型"></a>几何概型</h3><blockquote>
-<p>定义:</p>
-<script type="math/tex; mode=display">P (A) = \frac{\mu (A) }{\mu (\Omega)}</script><ul>
+<h3 id="几何概型">几何概型</h3>
+<blockquote>
+<p>定义:<br>
+$$ P (A) = \frac{\mu (A) }{\mu (\Omega)}$$</p>
+<ul>
 <li>$\mu (A)$ 表示$A$ 的测度(长度,面积,体积)</li>
 </ul>
 </blockquote>
@@ -388,59 +414,78 @@ A \cup  (BC) &=(A \cup B)(A \cup C)
 <li>是由于样本空间不同导致的</li>
 <li>在定义概率是要事先指明样本空间</li>
 </ul>
-<h3 id="概率的公理化定义"><a href="#概率的公理化定义" class="headerlink" title="概率的公理化定义"></a>概率的公理化定义</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><blockquote>
+<h3 id="概率的公理化定义">概率的公理化定义</h3>
+<h4 id="定义">定义</h4>
+<blockquote>
 <p>$\sigma$ 域</p>
 </blockquote>
 <p>设$\mathfrak{F}$是$\Omega$ 中的一些<strong>子集</strong>组成的集合,具有性质:</p>
 <ul>
 <li>$\Omega \in \mathfrak{F}$</li>
 <li>若$A \in \mathfrak{F}$, 则$\overline{A} = \Omega - A \in \mathfrak{F}$</li>
-<li>若$A<em>n \in \mathfrak{F},n=1,2,\cdots$, 则$\cup </em>{i=1} ^{\infty } A_i \in \mathfrak{F}$<br>则称$\mathfrak{F}$ 是$\Omega$中的一个 <strong> $\sigma$域</strong> ($\sigma$代数) </li>
+<li>若$A_n \in \mathfrak{F},n=1,2,\cdots$, 则$\cup _{i=1} ^{\infty } A_i \in \mathfrak{F}$<br>
+则称$\mathfrak{F}$ 是$\Omega$中的一个 ** $\sigma$域** ($\sigma$代数)</li>
 </ul>
 <blockquote>
 <p>概率空间</p>
 </blockquote>
-<p>设$(\Omega , \mathfrak{F})$ 为可测空间,如果函数$P$ 满足:</p>
-<script type="math/tex; mode=display">
- \begin{aligned}
-   P : \mathfrak{F} &\to \mathbb{R}\\
-   A &\mapsto   P(A)\\
- \end{aligned}</script><ul>
+<p>设$(\Omega , \mathfrak{F})$ 为可测空间,如果函数$P$ 满足:<br>
+$$<br>
+\begin{aligned}<br>
+P : \mathfrak{F} &amp;\to \mathbb{R}\<br>
+A &amp;\mapsto   P(A)\<br>
+\end{aligned}<br>
+$$</p>
+<ul>
 <li>非负性:$\forall A \in \mathfrak{F}, P (A) \geq 0$</li>
 <li>归一性:$P (\Omega ) = 1$</li>
-<li>可数可加性: 如果$A_n \in \mathfrak{F}, \forall n \in \mathbb{N},则 A_i \cap A_j = \varnothing,  i \neq j, i,j \in \mathbb{N}$,则<script type="math/tex; mode=display">P (\cup _{i=1} ^{\infty } A_i) =  \sum_{i=1} ^{\infty } P (A_i)</script>则我们称$P$ 是$(\Omega , \mathfrak{F})$ 为可测空间上的 <strong>概率(测度)</strong>, 称$(\Omega , \mathfrak{F}, P)$为<strong>概率空间</strong></li>
+<li>可数可加性: 如果$A_n \in \mathfrak{F}, \forall n \in \mathbb{N},则 A_i \cap A_j = \varnothing,  i \neq j, i,j \in \mathbb{N}$,则<br>
+$$ P (\cup <em>{i=1} ^{\infty } A_i) =  \sum</em>{i=1} ^{\infty } P (A_i)$$<br>
+则我们称$P$ 是$(\Omega , \mathfrak{F})$ 为可测空间上的 <strong>概率(测度)</strong>, 称$(\Omega , \mathfrak{F}, P)$为<strong>概率空间</strong></li>
 </ul>
 <blockquote>
 <p>性质</p>
 </blockquote>
 <ul>
 <li>$P (\varnothing ) =0 \quad P (\varnothing +\varnothing +\cdots) = P (\varnothing ) + P (\varnothing ) + \cdots =P (\varnothing )$</li>
-<li>有限可加性$P (\sum<em>{i=1}^{n}A_i) = \sum</em>{i=1}^{n} P (A_i)$</li>
+<li>有限可加性$P (\sum_{i=1}^{n}A_i) = \sum_{i=1}^{n} P (A_i)$</li>
 <li>$P (A - B) = P (A)  - P (AB) \quad A = A-B + AB$</li>
-<li>$A \supset B \Rightarrow P (A-B) = P (A) -P (B)$<br>$A \supset B \Rightarrow P (A) \geq P (B)$</li>
+<li>$A \supset B \Rightarrow P (A-B) = P (A) -P (B)$<br>
+$A \supset B \Rightarrow P (A) \geq P (B)$</li>
 <li>$P (\overline{A} ) =1- P (A)  \quad \Omega = A + \overline{A}$</li>
-<li>$P (A \cup B) = P (A) + P (B) -P (A B)$<br>$A \cup B = A + (B-A) = A + (B- AB)$<br>推广(容斥原理):<script type="math/tex; mode=display">\begin{aligned}
-  P (\cup _{i=1} ^{n} A_i) = &\sum _{i=1} ^{n} P (A_i) - \sum_{1 \leq i < j \leq n}^{} P (A_i A_j) +\\
-  &\sum_{1 \leq i < j < k \leq n}^{} P (A_i A_j A_k) + \cdots+\\
-  &(-1) ^{n-1} P (A_1 A_2 \cdots A_n)  
-\end{aligned}</script></li>
-<li>次可加性: 设$A<em>i \in \mathfrak{F}, 1 \leq i \leq n$,则$P (\cup </em>{i=1} ^{n} A<em>i) \leq \sum</em>{i=1}^{n} P (A_i)$</li>
-<li>连续性: 设$A<em>1 \supset A_2 \supset \cdots$, 则$\cap </em>{i=1} ^{\infty } A<em>i = \varnothing$<br>则有$\lim</em>{n \to \infty} P (A_n) =0$<br>有限可加性+连续性$\Leftrightarrow$ 可数可加性</li>
+<li>$P (A \cup B) = P (A) + P (B) -P (A B)$<br>
+$A \cup B = A + (B-A) = A + (B- AB)$<br>
+推广(容斥原理):<br>
+$$ \begin{aligned}<br>
+P (\cup <em>{i=1} ^{n} A_i) = &amp;\sum <em>{i=1} ^{n} P (A_i) - \sum</em>{1 \leq i &lt; j \leq n}^{} P (A_i A_j) +\<br>
+&amp;\sum</em>{1 \leq i &lt; j &lt; k \leq n}^{} P (A_i A_j A_k) + \cdots+\<br>
+&amp;(-1) ^{n-1} P (A_1 A_2 \cdots A_n)<br>
+\end{aligned}$$</li>
+<li>次可加性: 设$A_i \in \mathfrak{F}, 1 \leq i \leq n$,则$P (\cup <em>{i=1} ^{n} A_i) \leq \sum</em>{i=1}^{n} P (A_i)$</li>
+<li>连续性: 设$A_1 \supset A_2 \supset \cdots$, 则$\cap <em>{i=1} ^{\infty } A_i = \varnothing$<br>
+则有$\lim</em>{n \to \infty} P (A_n) =0$<br>
+有限可加性+连续性$\Leftrightarrow$ 可数可加性</li>
 </ul>
-<h2 id="条件概率与事件的独立性"><a href="#条件概率与事件的独立性" class="headerlink" title="条件概率与事件的独立性"></a>条件概率与事件的独立性</h2><blockquote>
-<p>事件$B$ 关于事件$A$ 的<strong>条件概率</strong>为:</p>
-<script type="math/tex; mode=display">P (B|A) = \frac{P (AB) }{ P (A) } \quad P (A) >0</script></blockquote>
+<h2 id="条件概率与事件的独立性">条件概率与事件的独立性</h2>
+<blockquote>
+<p>事件$B$ 关于事件$A$ 的<strong>条件概率</strong>为:<br>
+$$ P (B|A) = \frac{P (AB) }{ P (A) } \quad P (A) &gt;0$$</p>
+</blockquote>
 <p>性质</p>
 <ul>
 <li>$0 \leq P (B | A) \leq 1 \quad AB \subseteq A \Rightarrow P (AB) \leq P (A)$</li>
 <li>$P (\Omega | A) = P (A)  \quad  A \Omega =A$</li>
-<li>$\forall i \neq j, B_i B_j = \varnothing$<script type="math/tex; mode=display">P (\sum_{i=1}^{\infty } B_i | A) = \sum_{i=1}^{\infty } P (B_i|A)</script></li>
+<li>$\forall i \neq j, B_i B_j = \varnothing$<br>
+$$ P (\sum_{i=1}^{\infty } B_i | A) = \sum_{i=1}^{\infty } P (B_i|A)$$</li>
 </ul>
-<h3 id="乘法公式"><a href="#乘法公式" class="headerlink" title="乘法公式"></a>乘法公式</h3><script type="math/tex; mode=display">
-\begin{aligned}
-  P (B |A ) = \frac{P (AB) }{P (A) } \stackrel{P (A) >0}{\longrightarrow} P (AB)  = P (A) P (B|A) \\
-P (A|B) = \frac{P (AB)}{P (B) } \stackrel{P (B)>0 }{\longrightarrow} P (AB) = P (B) P (A|B) \\
-\end{aligned}</script><p>这就是报应嘛<br>$f (x,y,z) $</p>
+<h3 id="乘法公式">乘法公式</h3>
+<p>$$<br>
+\begin{aligned}<br>
+P (B |A ) = \frac{P (AB) }{P (A) } \stackrel{P (A) &gt;0}{\longrightarrow} P (AB)  = P (A) P (B|A) \<br>
+P (A|B) = \frac{P (AB)}{P (B) } \stackrel{P (B)&gt;0 }{\longrightarrow} P (AB) = P (B) P (A|B) \<br>
+\end{aligned}<br>
+$$</p>
+<p><strong>测试</strong> $A$</p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
@@ -539,7 +584,7 @@ P (A|B) = \frac{P (AB)}{P (B) } \stackrel{P (B)>0 }{\longrightarrow} P (AB) = P 
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9A%8F%E6%9C%BA%E8%AF%95%E9%AA%8C%E4%B8%8E%E9%9A%8F%E6%9C%BA%E4%BA%8B%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E6%A6%82%E7%8E%87"><span class="nav-number">1.3.1.</span> <span class="nav-text">统计概率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.2.</span> <span class="nav-text">古典概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.3.</span> <span class="nav-text">几何概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.</span> <span class="nav-text">概率的公理化定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E4%B8%8E%E4%BA%8B%E4%BB%B6%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%80%A7"><span class="nav-number">1.4.</span> <span class="nav-text">条件概率与事件的独立性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%98%E6%B3%95%E5%85%AC%E5%BC%8F"><span class="nav-number">1.4.1.</span> <span class="nav-text">乘法公式</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">随机试验与随机事件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E5%85%B3%E7%B3%BB%E5%8F%8A%E5%85%B6%E8%BF%90%E7%AE%97"><span class="nav-number">1.2.</span> <span class="nav-text">事件的关系及其运算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">1.2.1.</span> <span class="nav-text">运算法则</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%A6%82%E7%8E%87%E5%8F%8A%E8%AE%A1%E7%AE%97"><span class="nav-number">1.3.</span> <span class="nav-text">事件的概率及计算</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9F%E8%AE%A1%E6%A6%82%E7%8E%87"><span class="nav-number">1.3.1.</span> <span class="nav-text">统计概率</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%A4%E5%85%B8%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.2.</span> <span class="nav-text">古典概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%A0%E4%BD%95%E6%A6%82%E5%9E%8B"><span class="nav-number">1.3.3.</span> <span class="nav-text">几何概型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A6%82%E7%8E%87%E7%9A%84%E5%85%AC%E7%90%86%E5%8C%96%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.</span> <span class="nav-text">概率的公理化定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.3.4.1.</span> <span class="nav-text">定义</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%A6%82%E7%8E%87%E4%B8%8E%E4%BA%8B%E4%BB%B6%E7%9A%84%E7%8B%AC%E7%AB%8B%E6%80%A7"><span class="nav-number">1.4.</span> <span class="nav-text">条件概率与事件的独立性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B9%98%E6%B3%95%E5%85%AC%E5%BC%8F"><span class="nav-number">1.4.1.</span> <span class="nav-text">乘法公式</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -606,12 +651,12 @@ P (A|B) = \frac{P (AB)}{P (B) } \stackrel{P (B)>0 }{\longrightarrow} P (AB) = P 
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">18k</span>
+    <span title="站点总字数">19k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">16 分钟</span>
+    <span title="站点阅读时长">17 分钟</span>
 </div>
 
 

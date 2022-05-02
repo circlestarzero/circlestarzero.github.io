@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"circlecirclezero.cc","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":"trueß","sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#ffd9e6","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="第一型曲线积分 定义与性质  定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取">
+  <meta name="description" content="第一型曲线积分定义与性质 定义1 设 $L$ 是空间一条有限长的分段光滑曲线, $f(x,y,z)$  是定义与L上的有界函数, 以任意方式将L分为n小段 $L_1,L_2, \cdots L_n$ ,以 $\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,$ 在每一小段 $L_i$ 上任取一点 $P_i$, 构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="曲线积分与曲面积分">
 <meta property="og:url" content="https://circlecirclezero.cc/2022/04/27/%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/index.html">
 <meta property="og:site_name" content="CC&#39;blog">
-<meta property="og:description" content="第一型曲线积分 定义与性质  定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取">
+<meta property="og:description" content="第一型曲线积分定义与性质 定义1 设 $L$ 是空间一条有限长的分段光滑曲线, $f(x,y,z)$  是定义与L上的有界函数, 以任意方式将L分为n小段 $L_1,L_2, \cdots L_n$ ,以 $\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,$ 在每一小段 $L_i$ 上任取一点 $P_i$, 构">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T06:06:25.000Z">
 <meta property="article:modified_time" content="2022-04-29T16:55:47.147Z">
@@ -266,7 +266,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7.7k</span>
+              <span>7.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -285,383 +285,208 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="第一型曲线积分">第一型曲线积分</h1>
-<h2 id="定义与性质">定义与性质</h2>
-<blockquote>
-<p>定义1 设 <span class="math inline">\(L\)</span>
-是空间一条有限长的分段光滑曲线, <span
-class="math inline">\(f(x,y,z)\)</span> 是定义与L上的有界函数,
-以任意方式将L分为n小段 <span class="math inline">\(L_1,L_2, \cdots
-L_n\)</span> ,以 <span class="math inline">\(\Delta s_i, 记L_i的弧长, 令
-\lambda = \max _{1 \leq i \leq n} \Delta s_i,\)</span> 在每一小段 <span
-class="math inline">\(L_i\)</span> 上任取一点 <span
-class="math inline">\(P_i\)</span>, 构成和式 <span
-class="math inline">\(\sum_{i=1}^{n}f(P_i)\Delta s_i\)</span>, 若极限
-<span class="math display">\[I = \lim_{\lambda  \to 0}
-\sum_{i=1}^{n}f(P_i) \Delta s_i\]</span> 存在, 且与L的取法以及 <span
-class="math inline">\(P_i\)</span> 的取法无关, 则称 <span
-class="math inline">\(I 为 f(x,y,z)沿曲线L\)</span>的
-<strong>第一型曲线积分(对弧长的曲线积分)</strong> , 记作 <span
-class="math inline">\(\int_{L}^{} f(x,y,z) \mathrm{d}s \quad (或简写作
-\int_{L}^{}f\mathrm{d}s, 若L为闭曲线,则记作
-\oint_{L}^{}f\mathrm{d}s)\)</span>, 即 <span class="math display">\[
-\int_{L}^{}f(x,y,z)\mathrm{d}s = \lim_{\lambda  \to 0} \sum_{i=1}^{n}
-f(P_i)\Delta s_i \]</span> 其中 <span
-class="math inline">\(f(x,y,z)\)</span> 叫做 <strong>被积函数</strong>,
-L称作 <strong>积分弧段</strong></p>
+        <h1 id="第一型曲线积分"><a href="#第一型曲线积分" class="headerlink" title="第一型曲线积分"></a>第一型曲线积分</h1><h2 id="定义与性质"><a href="#定义与性质" class="headerlink" title="定义与性质"></a>定义与性质</h2><blockquote>
+<p>定义1 设 $L$ 是空间一条有限长的分段光滑曲线, $f(x,y,z)$  是定义与L上的有界函数, 以任意方式将L分为n小段 $L_1,L_2, \cdots L_n$ ,以 $\Delta s_i, 记L_i的弧长, 令 \lambda = \max _{1 \leq i \leq n} \Delta s_i,$ 在每一小段 $L_i$ 上任取一点 $P_i$, 构成和式 $\sum_{i=1}^{n}f(P_i)\Delta s_i$, 若极限</p>
+<script type="math/tex; mode=display">I = \lim_{\lambda  \to 0} \sum_{i=1}^{n}f(P_i) \Delta s_i</script><p>存在, 且与L的取法以及 $P_i$ 的取法无关, 则称 $I 为 f(x,y,z)沿曲线L$的 <strong>第一型曲线积分(对弧长的曲线积分)</strong> , 记作 $\int_{L}^{} f(x,y,z) \mathrm{d}s \quad (或简写作 \int_{L}^{}f\mathrm{d}s, 若L为闭曲线,则记作 \oint_{L}^{}f\mathrm{d}s)$, 即</p>
+<script type="math/tex; mode=display">\int_{L}^{}f(x,y,z)\mathrm{d}s = \lim_{\lambda  \to 0} \sum_{i=1}^{n} f(P_i)\Delta s_i</script><p>其中 $f(x,y,z)$ 叫做 <strong>被积函数</strong>, L称作 <strong>积分弧段</strong></p>
 </blockquote>
 <span id="more"></span>
-<hr />
-<p>L为平面曲线时: <span
-class="math inline">\(\int_{L}^{}f(x,y)\mathrm{d}s\)</span></p>
-<p>若函数 <span class="math inline">\(f\)</span> 在 <span
-class="math inline">\(L\)</span> 上连续或分段连续,则积分 <span
-class="math inline">\(\int_{L}^{}f \mathrm{d}s 存在\)</span></p>
-<p>若 <span class="math inline">\(f (x,y,z) \equiv 1,则s =
-\int_{L}^{}\mathrm{d}s\)</span></p>
-<p>L为有限长分段光滑曲线, <span class="math inline">\(f,g\)</span>在
-<span class="math inline">\(L\)</span> 上连续,则性质如下</p>
+<hr>
+<p>L为平面曲线时: $\int_{L}^{}f(x,y)\mathrm{d}s$</p>
+<p>若函数 $f$ 在 $L$ 上连续或分段连续,则积分 $\int_{L}^{}f \mathrm{d}s 存在$  </p>
+<p>若 $f  (x,y,z)  \equiv 1,则s = \int_{L}^{}\mathrm{d}s$</p>
+<p>L为有限长分段光滑曲线, $f,g$在 $L$ 上连续,则性质如下</p>
 <ul>
-<li>线性性质 对任何常数 <span
-class="math inline">\(\alpha,\beta\)</span> 有
+<li><p>线性性质 对任何常数 $\alpha,\beta$ 有</p>
 <ul>
-<li><span class="math display">\[\int_{L}^{}  (\alpha f+\beta
-g)\mathrm{d}s=\alpha \int_{L}^{}f\mathrm{d}s + \beta
-\int_{L}^{}g\mathrm{d}s\]</span></li>
-</ul></li>
-<li>可加性 若L 由 两段弧<span class="math inline">\(L_1,
-L_2构成,则\)</span>
-<ul>
-<li><span class="math display">\[ \int_{L}^{} f\mathrm{d}s =
-\int_{L_1}^{}f\mathrm{d}s + \int_{L_2}^{}f\mathrm{d}s\]</span></li>
-</ul></li>
-<li>中值公式, 设 s 是 L 上的弧长, 则L上存在一点P, 使得
-<ul>
-<li><span class="math display">\[\int_{L}^{}f\mathrm{d}s = s
-f  (P)\]</span></li>
-</ul></li>
+<li><script type="math/tex; mode=display">\int_{L}^{}  (\alpha f+\beta g)\mathrm{d}s=\alpha \int_{L}^{}f\mathrm{d}s + \beta \int_{L}^{}g\mathrm{d}s</script></li>
 </ul>
-<h2 id="化为定积分">化为定积分</h2>
-<p>计算 <span class="math inline">\(\int_{L}^{}f\mathrm{d}s\)</span>
-的主要方法是引入L的参数方程化为定积分</p>
+</li>
+<li><p>可加性 若L 由 两段弧$L_1, L_2构成,则$</p>
+<ul>
+<li><script type="math/tex; mode=display">\int_{L}^{} f\mathrm{d}s = \int_{L_1}^{}f\mathrm{d}s + \int_{L_2}^{}f\mathrm{d}s</script></li>
+</ul>
+</li>
+<li><p>中值公式, 设 s 是 L 上的弧长,  则L上存在一点P, 使得</p>
+<ul>
+<li><script type="math/tex; mode=display">\int_{L}^{}f\mathrm{d}s = s f  (P)</script></li>
+</ul>
+</li>
+</ul>
+<h2 id="化为定积分"><a href="#化为定积分" class="headerlink" title="化为定积分"></a>化为定积分</h2><p>计算 $\int_{L}^{}f\mathrm{d}s$ 的主要方法是引入L的参数方程化为定积分</p>
 <blockquote>
-<p>定理1 设曲线方程L 由以下参数方程给定: <span class="math display">\[ x
-= x  (t) , y = y  (t), z=z  (t)  (\alpha \leq t \leq \beta
-)     \]</span> 其中 <span class="math inline">\(x (t),y (t),z (t)
-在区间 [ \alpha, \beta ]\)</span>上有连续导数 且 <span
-class="math inline">\(x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2} (t) \neq 0,
-若f (x,y,z) 在 L 上不连续,则\)</span> <span class="math display">\[
-\int_{L}^{}f\mathrm{d}s = \int_{\alpha }^{\beta }f (x (t), y (t), z (t))
-\sqrt[2]{x&#39;^2(t)+y&#39;^2(t) +z&#39;^{2} (t)} \mathrm{d}t \quad
-\alpha &lt; \beta  \]</span></p>
-</blockquote>
-<p>弧微分 <span class="math display">\[ \mathrm{d}s = \sqrt[]{x&#39;^{2}
-(t) + y&#39;^{2} (t) + z&#39;^{2} (t)   }\mathrm{d}t \]</span></p>
-<p>不同坐标系下</p>
+<p>定理1 设曲线方程L 由以下参数方程给定:</p>
+<script type="math/tex; mode=display">x = x  (t) , y = y  (t), z=z  (t)  (\alpha \leq t \leq \beta )</script><p>其中 $x  (t),y  (t),z  (t) 在区间 [ \alpha, \beta ]$上有连续导数<br>且 $x’^2(t)+y’^2(t) +z’^{2} (t) \neq 0, 若f (x,y,z) 在 L 上不连续,则$</p>
+<script type="math/tex; mode=display">\int_{L}^{}f\mathrm{d}s = \int_{\alpha }^{\beta }f (x (t), y (t), z (t)) \sqrt[2]{x'^2(t)+y'^2(t) +z'^{2} (t)} \mathrm{d}t \quad \alpha < \beta</script></blockquote>
+<p>弧微分</p>
+<script type="math/tex; mode=display">\mathrm{d}s = \sqrt[]{x'^{2} (t) + y'^{2} (t) + z'^{2} (t)   }\mathrm{d}t</script><p>不同坐标系下</p>
 <ul>
-<li>L是xy平面上的曲线 <span class="math inline">\(x= x (t), y= y (t),z =
-0\)</span>
+<li><p>L是xy平面上的曲线 $x= x (t), y= y (t),z = 0$ </p>
 <ul>
-<li><span class="math display">\[ \mathrm{d}s= \sqrt[]{x&#39;^{2} (t)+
-y&#39;^{2} (t)  } \mathrm{d}t\]</span></li>
-</ul></li>
-<li>L是xy平面上的曲线 <span class="math inline">\(y=y (x)\)</span>
+<li><script type="math/tex; mode=display">\mathrm{d}s= \sqrt[]{x'^{2} (t)+ y'^{2} (t)  } \mathrm{d}t</script></li>
+</ul>
+</li>
+<li><p>L是xy平面上的曲线 $y=y (x)$</p>
 <ul>
-<li><span class="math display">\[\mathrm{d}s = \sqrt[]{1 + y&#39;^{2}
-(x)}\mathrm{d}t\]</span></li>
-</ul></li>
-<li>L 是极坐标平面上的曲线 <span class="math inline">\(r = r (\theta
-)\)</span>,则
+<li><script type="math/tex; mode=display">\mathrm{d}s = \sqrt[]{1 + y'^{2} (x)}\mathrm{d}t</script></li>
+</ul>
+</li>
+<li><p>L 是极坐标平面上的曲线 $r = r (\theta )$,则 </p>
 <ul>
-<li><span class="math display">\[ \mathrm{d}s =\sqrt[]{r ^{2} (\theta )+
-r&#39;^{2} (\theta )  }\mathrm{d} \theta  \]</span></li>
-</ul></li>
-<li>L是空间柱面坐标系 <span class="math inline">\((r,\theta
-,z)\)</span>上的曲线 <span class="math display">\[
+<li><script type="math/tex; mode=display">\mathrm{d}s =\sqrt[]{r ^{2} (\theta )+ r'^{2} (\theta )  }\mathrm{d} \theta</script></li>
+</ul>
+</li>
+<li><p>L是空间柱面坐标系 $(r,\theta ,z)$上的曲线</p>
+<script type="math/tex; mode=display">
   \left \{
       \begin{aligned}
           r = r (\theta )\\
-          z = z (\theta ) \\
+          z = z (\theta ) \\ 
       \end{aligned}
-  \right.\\
-\]</span> <span class="math display">\[\begin{equation}
-  \mathrm{d}s = \sqrt[]{r ^{2} (\theta ) +r&#39;^{2} (\theta )
-+z&#39;^{2} (\theta ) }\mathrm{d} \theta
-\end{equation}\]</span></li>
+  \right.\\</script><script type="math/tex; mode=display">\begin{equation}
+  \mathrm{d}s = \sqrt[]{r ^{2} (\theta ) +r'^{2} (\theta ) +z'^{2} (\theta ) }\mathrm{d} \theta 
+\end{equation}</script></li>
 </ul>
-<h1 id="第二型曲线积分">第二型曲线积分</h1>
-<h2 id="定义与性质-1">定义与性质</h2>
-<blockquote>
-<p>定义1 设 <span
-class="math inline">\(P,Q,R\)</span>是定义在分段光滑有向曲线 <span
-class="math inline">\(L\)</span> 上的有界函数, <span
-class="math inline">\(\mathbf{F} = \{P,Q,R\}. 若积分 \int_{L}^{}
-\mathbf{F} \cdot \mathbf{\tau } \mathrm{d}s\)</span>存在,则称它为函数组
-P,Q,R (或矢量函数 <span class="math inline">\(\mathbf{F})\)</span>
-沿曲线L的 <strong>第二型曲线积分</strong>,记作 <span
-class="math inline">\(\int_{L}^{} \mathbf{F} \cdot \mathrm{d}
-\mathbf{r}\)</span>,即 <span class="math display">\[ \begin{equation}
-\int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = \int_{L}^{}
-\mathbf{F} \cdot \mathbf{\tau }\mathrm{d}s
-\end{equation} \]</span></p>
-</blockquote>
-<p>其中 <span
-class="math inline">\(P,Q,R\)</span>叫做<strong>被积函数</strong></p>
-<p><span class="math inline">\(L\)</span> 称为 <strong>积分弧段</strong>
-或 <strong>积分路径</strong></p>
-<p>以 <span class="math inline">\(\mathbf{r}\)</span> 记 <span
-class="math inline">\(L\)</span> 上的动点的矢径</p>
-<p>以 <span class="math inline">\(\mathbf{\tau}\)</span> 记为 <span
-class="math inline">\(L\)</span> 的单位切矢量,其方向与<span
-class="math inline">\(L\)</span>一致</p>
-<p>以 <span class="math inline">\(\cos \alpha ,\cos \beta ,\cos \gamma记
-\mathbf{\tau }\)</span>的方向余弦 令 <span
-class="math inline">\(\mathbf{r}= \left\{ x,y,z \right\}, 则 \mathrm{d}
-\mathbf{r} = \left\{ \mathrm{d}x,\mathrm{d}y,\mathrm{d}z
-\right\}\)</span></p>
-<p>则 <span class="math inline">\(\mathrm{d}s ^{2} =\mathrm{d}
-\mathbf{r} ^{2}, \mathrm{d} \mathbf{r} = \mathbf{\tau
-}\mathrm{d}s\)</span></p>
-<p><span class="math display">\[
+<h1 id="第二型曲线积分"><a href="#第二型曲线积分" class="headerlink" title="第二型曲线积分"></a>第二型曲线积分</h1><h2 id="定义与性质-1"><a href="#定义与性质-1" class="headerlink" title="定义与性质"></a>定义与性质</h2><blockquote>
+<p>定义1 设 $P,Q,R$是定义在分段光滑有向曲线 $L$ 上的有界函数, $\mathbf{F} = \{P,Q,R\}. 若积分 \int_{L}^{} \mathbf{F} \cdot \mathbf{\tau } \mathrm{d}s$存在,则称它为函数组 P,Q,R (或矢量函数 $\mathbf{F})$ 沿曲线L的 <strong>第二型曲线积分</strong>,记作 $\int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r}$,即</p>
+<script type="math/tex; mode=display">\begin{equation}
+    \int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = \int_{L}^{} \mathbf{F} \cdot \mathbf{\tau }\mathrm{d}s
+\end{equation}</script></blockquote>
+<p>其中 $P,Q,R$叫做<strong>被积函数</strong></p>
+<p>$L$  称为 <strong>积分弧段</strong> 或 <strong>积分路径</strong></p>
+<p>以 $\mathbf{r}$ 记 $L$ 上的动点的矢径</p>
+<p>以 $\mathbf{\tau}$ 记为 $L$ 的单位切矢量,其方向与$L$一致</p>
+<p>以 $\cos \alpha ,\cos \beta ,\cos \gamma记 \mathbf{\tau }$的方向余弦<br>令 $\mathbf{r}= \left\{ x,y,z \right\}, 则 \mathrm{d} \mathbf{r} =<br>\left\{ \mathrm{d}x,\mathrm{d}y,\mathrm{d}z \right\}$</p>
+<p>则 $\mathrm{d}s ^{2} =\mathrm{d} \mathbf{r} ^{2}, \mathrm{d} \mathbf{r} = \mathbf{\tau }\mathrm{d}s$ </p>
+<script type="math/tex; mode=display">
 \begin{equation}
-    P\mathrm{d}x + Q\mathrm{d}y + R\mathrm{d}z = (P \cos \alpha +Q \cos
-\beta + R \cos \gamma ) \mathrm{d}s = \mathbf{F}\mathrm{d} \cdot
-\mathbf{r} = \mathbf{F} \cdot \mathbf{\tau } \mathrm{d}s
-\end{equation}
-\]</span></p>
-<p><span class="math display">\[
+    P\mathrm{d}x + Q\mathrm{d}y + R\mathrm{d}z = (P \cos \alpha +Q \cos \beta + R \cos \gamma ) \mathrm{d}s = \mathbf{F}\mathrm{d} \cdot \mathbf{r} = \mathbf{F} \cdot \mathbf{\tau } \mathrm{d}s
+\end{equation}</script><script type="math/tex; mode=display">
 \begin{equation}
-    \int_{L}^{} \mathbf{F} \cdot \mathrm{d}\mathbf{r} = \int_{L}^ {}
-P\mathrm{d}x +Q\mathrm{d}y+ R\mathrm{d}z
-\end{equation}
-\]</span></p>
-<p><span class="math display">\[ \begin{equation}
-    \int_{L}^ {} P\mathrm{d}x +Q\mathrm{d}y+ R\mathrm{d}z= \int_{L}^{}
-(P \cos \alpha + Q \cos \beta +R \cos \gamma ) \mathrm{d}s
-\end{equation} \]</span></p>
-<p>也称第二型曲线积分为 <strong>对坐标的曲线积分</strong></p>
-<p>平面曲线情况 <span class="math display">\[ \int_{L}^{} \mathbf{F}
-\cdot \mathrm{d}\mathbf{r} = \int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y
-\]</span></p>
-<p>对 <strong>矢量函数 F</strong>的第二型曲线积分 <span
-class="math inline">\(\leftrightarrow\)</span>对数量函数 <span
-class="math inline">\(\mathbf{F} \cdot \mathbf{\tau }\)</span>
-的第一型曲线积分</p>
+    \int_{L}^{} \mathbf{F} \cdot \mathrm{d}\mathbf{r} = \int_{L}^ {} P\mathrm{d}x +Q\mathrm{d}y+ R\mathrm{d}z
+\end{equation}</script><script type="math/tex; mode=display">\begin{equation}
+    \int_{L}^ {} P\mathrm{d}x +Q\mathrm{d}y+ R\mathrm{d}z= \int_{L}^{} (P \cos \alpha + Q \cos \beta +R \cos \gamma ) \mathrm{d}s
+\end{equation}</script><p>也称第二型曲线积分为 <strong>对坐标的曲线积分</strong></p>
+<p>平面曲线情况</p>
+<script type="math/tex; mode=display">\int_{L}^{} \mathbf{F} \cdot \mathrm{d}\mathbf{r} = \int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y</script><p>对 <strong>矢量函数 F</strong>的第二型曲线积分 $\leftrightarrow$对数量函数 $\mathbf{F} \cdot \mathbf{\tau }$ 的第一型曲线积分</p>
 <p><strong>性质如下</strong></p>
 <ul>
-<li><p>曲线积分 <span class="math inline">\(\int_{L}^{} \mathbf{F} \cdot
-\mathrm{d} \mathbf{r}\)</span>存在的条件</p>
+<li><p>曲线积分 $\int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r}$存在的条件</p>
 <ul>
-<li><span class="math inline">\(L\)</span>
-为分段光滑有限长的有向曲线</li>
-<li><span class="math inline">\(F = \left\{ P,Q,R \right\}\)</span>是
-<span class="math inline">\(L\)</span> 上的分段连续的矢量函数</li>
-</ul></li>
-<li><p>若记 <span class="math inline">\(-L 为 L\)</span>
-的反向曲线,则有</p>
+<li>$L$  为分段光滑有限长的有向曲线</li>
+<li>$F = \left\{ P,Q,R \right\}$是 $L$ 上的分段连续的矢量函数</li>
+</ul>
+</li>
+<li><p>若记 $-L 为 L$ 的反向曲线,则有</p>
 <ul>
-<li><span class="math display">\[ \begin{equation}
-  \int_{-L}^{} \mathbf{F} \cdot \mathrm{d}
-\mathbf{r}=-\int_{L}^{}\mathbf{F} \cdot \mathrm{d} \mathbf{r}
-\end{equation} \]</span></li>
-</ul></li>
-<li><p>设 <span class="math inline">\(\mathbf{F}=a \mathbf{G} + b
-\mathbf{H}\)</span> 则</p>
+<li><script type="math/tex; mode=display">\begin{equation}
+  \int_{-L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r}=-\int_{L}^{}\mathbf{F} \cdot \mathrm{d} \mathbf{r}
+\end{equation}</script></li>
+</ul>
+</li>
+<li><p>设 $\mathbf{F}=a \mathbf{G} + b \mathbf{H}$ 则</p>
 <ul>
-<li><span class="math display">\[ \begin{equation}
-  \int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = a \int_{L}^{}
-\mathbf{G} \cdot  \mathrm{d} \mathbf{r} + b \int_{L}^{} \mathbf{H}
-\cdot  \mathrm{d} \mathbf{r}
-\end{equation} \]</span></li>
-</ul></li>
-<li><p>设 <span class="math inline">\(L = L_1 + L_2\)</span>
-(方向一致)则</p>
+<li><script type="math/tex; mode=display">\begin{equation}
+  \int_{L}^{} \mathbf{F} \cdot \mathrm{d} \mathbf{r} = a \int_{L}^{} \mathbf{G} \cdot  \mathrm{d} \mathbf{r} + b \int_{L}^{} \mathbf{H} \cdot  \mathrm{d} \mathbf{r}
+\end{equation}</script></li>
+</ul>
+</li>
+<li><p>设 $L = L_1 + L_2$ (方向一致)则</p>
 <ul>
-<li><span class="math display">\[ \begin{equation}
-  \int_{L}^{} \mathbf{F} \cdot \mathrm{d}\mathbf{r}=
-\int_{L_1}^{}\mathbf{F} \cdot \mathrm{d}\mathbf{r}+
-\int_{L_2}^{}\mathbf{F} \cdot \mathrm{d}\mathbf{r}
-\end{equation} \]</span></li>
-</ul></li>
-<li><p>若在 <span class="math inline">\(L\)</span> 上处处有 <span
-class="math inline">\(\mathbf{F} \bot \mathbf{\tau}\)</span>,则 <span
-class="math inline">\(\int_{L}^{} \mathbf{F} \cdot
-\mathrm{d}\mathbf{r}=0\)</span></p></li>
-<li><p>拆分 <span class="math display">\[
+<li><script type="math/tex; mode=display">\begin{equation}
+  \int_{L}^{} \mathbf{F} \cdot \mathrm{d}\mathbf{r}= \int_{L_1}^{}\mathbf{F} \cdot \mathrm{d}\mathbf{r}+ \int_{L_2}^{}\mathbf{F} \cdot \mathrm{d}\mathbf{r}
+\end{equation}</script></li>
+</ul>
+</li>
+<li><p>若在 $L$ 上处处有 $\mathbf{F} \bot \mathbf{\tau}$,则 $\int_{L}^{} \mathbf{F} \cdot \mathrm{d}\mathbf{r}=0$  </p>
+</li>
+<li><p>拆分</p>
+<script type="math/tex; mode=display">
 \begin{equation}
-  \int_{L}^{} P\mathrm{d}x + Q\mathrm{d}y + R\mathrm{d}z
-=\int_{L}^{}P\mathrm{d}x + \int_{L}^{}Q\mathrm{d}y + \int_{L}^{} R
-\mathrm{d}z
-\end{equation}
-\]</span></p></li>
+  \int_{L}^{} P\mathrm{d}x + Q\mathrm{d}y + R\mathrm{d}z =\int_{L}^{}P\mathrm{d}x + \int_{L}^{}Q\mathrm{d}y + \int_{L}^{} R \mathrm{d}z
+\end{equation}</script></li>
 </ul>
-<h2 id="化为定积分-1">化为定积分</h2>
-<blockquote>
-<p>定理1 设曲线 <span class="math inline">\(L\)</span>
-由以下参数方程给定 <span class="math display">\[x = x (t), y= y (t), z =
-z (t) \qquad (t \in I)\]</span> * <span class="math inline">\(x (t),y
-(t),z (t)\)</span>在闭区间 <span class="math inline">\(I\)</span>
-上有连续导数,且 <span class="math inline">\(x&#39;^{2}(t) + y&#39;^{2}
-(t)+ z&#39;^{2} (t) \neq 0\)</span> * <span
-class="math inline">\(I\)</span>的端点 <span
-class="math inline">\(\alpha 与 \beta\)</span> 分别对应 <span
-class="math inline">\(L\)</span> 的起点和终点(不必 <span
-class="math inline">\(\alpha &lt; \beta\)</span> ) 若 <span
-class="math inline">\(P,Q,R\)</span>在 <span
-class="math inline">\(L\)</span> 上连续 ,则 <span
-class="math display">\[
-\int_{L} P \mathrm{~\mathrm{d}} x+Q \mathrm{~\mathrm{d}} y+R
-\mathrm{~\mathrm{d}} z=\int_{a}^{\beta}\left[P x^{\prime}(t)+Q
-y^{\prime}(t)+R z^{\prime}(t)\right] \mathrm{d} t
-\]</span> * <span class="math inline">\(P\)</span>是 <span
-class="math inline">\(P (x (t) ,y (t) ,z (t) )\)</span>的缩写</p>
+<h2 id="化为定积分-1"><a href="#化为定积分-1" class="headerlink" title="化为定积分"></a>化为定积分</h2><blockquote>
+<p>定理1 设曲线 $L$ 由以下参数方程给定</p>
+<script type="math/tex; mode=display">x = x (t), y= y (t), z = z (t) \qquad (t \in I)</script><ul>
+<li>$x (t),y (t),z (t)$在闭区间 $I$ 上有连续导数,且 $x’^{2}(t) + y’^{2} (t)+ z’^{2} (t) \neq 0$</li>
+<li>$I$的端点 $\alpha 与 \beta$ 分别对应 $L$ 的起点和终点(不必 $\alpha &lt; \beta$ )<br>若 $P,Q,R$在 $L$ 上连续 ,则<script type="math/tex; mode=display">
+\int_{L} P \mathrm{~\mathrm{d}} x+Q \mathrm{~\mathrm{d}} y+R \mathrm{~\mathrm{d}} z=\int_{a}^{\beta}\left[P x^{\prime}(t)+Q y^{\prime}(t)+R z^{\prime}(t)\right] \mathrm{d} t</script></li>
+<li>$P$是 $P (x (t) ,y (t) ,z (t) )$的缩写</li>
+</ul>
 </blockquote>
-<p>平面曲线 <span class="math inline">\(L: x=x(t), y=y(t),(t \in
-I)\)</span> 上矢量函数 <span class="math inline">\(F=\{P, Q\}\)</span>
-的曲线积分: <span class="math display">\[
-\int_{L} P \mathrm{~\mathrm{d}} x+Q \mathrm{~\mathrm{d}}
-y=\int_{\alpha}^{\beta}\left[P(x(t), y(t)) x^{\prime}(t)+Q(x(t), y(t))
-y^{\prime}(t)\right] \mathrm{d} t .
-\]</span></p>
-<h2 id="green公式">Green公式</h2>
-<p>设D是一平面区域.若D内任何闭曲线可不越过D的边界而连续地缩为一点，则称D为<strong>单连通区域</strong>（这一定义亦适合空间区域,否则称D为<strong>复连通区域</strong>（或<strong>多连通区域</strong>)</p>
+<p>平面曲线 $L: x=x(t), y=y(t),(t \in I)$ 上矢量函数 $F=\{P, Q\}$ 的曲线积分:</p>
+<script type="math/tex; mode=display">
+\int_{L} P \mathrm{~\mathrm{d}} x+Q \mathrm{~\mathrm{d}} y=\int_{\alpha}^{\beta}\left[P(x(t), y(t)) x^{\prime}(t)+Q(x(t), y(t)) y^{\prime}(t)\right] \mathrm{d} t .</script><h2 id="Green公式"><a href="#Green公式" class="headerlink" title="Green公式"></a>Green公式</h2><p>设D是一平面区域.若D内任何闭曲线可不越过D的边界而连续地缩为一点，则称D为<strong>单连通区域</strong>（这一定义亦适合空间区域,否则称D为<strong>复连通区域</strong>（或<strong>多连通区域</strong>)</p>
 <ul>
-<li><p>直观上，若D是单连通的，则其边界曲线内部全部属于D;</p></li>
-<li><p>复连通区域则是从单连通区域挖去若干个“洞”而得的区域</p></li>
+<li><p>直观上，若D是单连通的，则其边界曲线内部全部属于D;</p>
+</li>
+<li><p>复连通区域则是从单连通区域挖去若干个“洞”而得的区域</p>
+</li>
 </ul>
-<p>设平面闭曲线L围住区域D,若沿L行进时D在它附近的部分总是保持在左边,则称行进的方向为L的<strong>正向</strong>,相反的方向为<strong>负向</strong>,记作
-<span class="math inline">\(L ^{-} or -L\)</span></p>
+<p>设平面闭曲线L围住区域D,若沿L行进时D在它附近的部分总是保持在左边,则称行进的方向为L的<strong>正向</strong>,相反的方向为<strong>负向</strong>,记作 $L ^{-} or -L$</p>
 <p>分段光滑且自身不相交的闭曲线为 <strong>简单闭曲线</strong></p>
 <blockquote>
-<p>定理2(Green公式) 设区域<span
-class="math inline">\(D\)</span>由xy平面上的简单闭曲线L围成,函数 <span
-class="math inline">\(P,Q\)</span> 在<span
-class="math inline">\(D\)</span>上(包括边界)由连续的一阶偏导数,则: <span
-class="math display">\[ \oint_{L}^{} P\mathrm{d}x+Q\mathrm{d}y =
-\iint_{D}^{} (Q_x- P_y)\mathrm{d}x\mathrm{d}y\]</span> *
-左端是沿L正向</p>
+<p>定理2(Green公式) 设区域$D$由xy平面上的简单闭曲线L围成,函数 $P,Q$ 在$D$上(包括边界)由连续的一阶偏导数,则:</p>
+<script type="math/tex; mode=display">\oint_{L}^{} P\mathrm{d}x+Q\mathrm{d}y = \iint_{D}^{} (Q_x- P_y)\mathrm{d}x\mathrm{d}y</script><ul>
+<li>左端是沿L正向</li>
+</ul>
 </blockquote>
 <ul>
 <li>若L不是简单闭曲线,则添加一些辅助线段(最好平行于坐标轴)将L补成闭曲线</li>
 </ul>
-<p><span class="math display">\[ \int_{L}^{} P\mathrm{d}x + Q\mathrm{d}y
-= \oint_{L+C}^{} P\mathrm{d}x+Q\mathrm{d}y -
-\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y\]</span></p>
-<p><span class="math inline">\(\mathbf{n}\)</span>是<span
-class="math inline">\(L\)</span>的单位外法矢, <span
-class="math inline">\(\mathbf{\tau}\)</span>是 <span
-class="math inline">\(L\)</span> 正向单位切矢量,则</p>
-<p><span class="math display">\[\int_{L}^{} \left\{ P,Q \right\} \cdot
-\mathbf{n}\mathrm{d}s= \int_{L}^{} \left\{ -Q,P\right\} \cdot
-\mathbf{\tau }\mathrm{d}s
-=\int_{L}^{}-Q\mathrm{d}x+P\mathrm{d}y\]</span></p>
-<p>二重积分化为曲线积分简化计算:</p>
-<p><span class="math display">\[ \sigma
-=\iint_{D}^{}\mathrm{d}x\mathrm{d}y=\frac{1}{2}\oint_{L}^{}
-x\mathrm{d}y-y\mathrm{d}x\]</span></p>
-<h2 id="平面曲线积分与路径无关的条件">平面曲线积分与路径无关的条件</h2>
-<p>设 <span class="math inline">\(D\)</span> 是 <span
-class="math inline">\(xy\)</span> 平面上的区域, <span
-class="math inline">\(P,Q\)</span> 是定义与 <span
-class="math inline">\(D\)</span> 内的连续函数 ,
-若对D内任何两条共起点和终点的分段光滑曲线 <span
-class="math inline">\(L_1,L_2\)</span>都有 <span
-class="math display">\[\int_{L_1}^{}P\mathrm{d}x+Q\mathrm{d}y=
-\int_{L_2}^{}P\mathrm{d}x+Q\mathrm{d}y   \]</span> 则说积分 <span
-class="math inline">\(\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y\)</span>在D内与路径无关</p>
+<script type="math/tex; mode=display">\int_{L}^{} P\mathrm{d}x + Q\mathrm{d}y = \oint_{L+C}^{} P\mathrm{d}x+Q\mathrm{d}y - \int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y</script><p>$\mathbf{n}$是$L$的单位外法矢, $\mathbf{\tau}$是 $L$ 正向单位切矢量,则</p>
+<script type="math/tex; mode=display">\int_{L}^{} \left\{ P,Q \right\} \cdot \mathbf{n}\mathrm{d}s= \int_{L}^{} \left\{ -Q,P\right\} \cdot \mathbf{\tau }\mathrm{d}s =\int_{L}^{}-Q\mathrm{d}x+P\mathrm{d}y</script><p>二重积分化为曲线积分简化计算:</p>
+<script type="math/tex; mode=display">\sigma =\iint_{D}^{}\mathrm{d}x\mathrm{d}y=\frac{1}{2}\oint_{L}^{} x\mathrm{d}y-y\mathrm{d}x</script><h2 id="平面曲线积分与路径无关的条件"><a href="#平面曲线积分与路径无关的条件" class="headerlink" title="平面曲线积分与路径无关的条件"></a>平面曲线积分与路径无关的条件</h2><p>设 $D$ 是 $xy$ 平面上的区域, $P,Q$ 是定义与 $D$ 内的连续函数 , 若对D内任何两条共起点和终点的分段光滑曲线 $L_1,L_2$都有</p>
+<script type="math/tex; mode=display">\int_{L_1}^{}P\mathrm{d}x+Q\mathrm{d}y= \int_{L_2}^{}P\mathrm{d}x+Q\mathrm{d}y</script><p>则说积分 $\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y$在D内与路径无关</p>
 <blockquote>
-<p>定理3 设 <span class="math inline">\(D\)</span>是平面单连通区域,<span
-class="math inline">\(P,Q\)</span>在D内有连续一阶偏导数,则下列条件互相等价</p>
+<p>定理3 设 $D$是平面单连通区域,$P,Q$在D内有连续一阶偏导数,则下列条件互相等价</p>
 <ul>
-<li>曲线积分<span
-class="math inline">\(\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y\)</span>在D内与路径无关</li>
-<li>存在可微函数 <span class="math inline">\(u\)</span> 使 <span
-class="math inline">\(\mathrm{d}u=P\mathrm{d}x +
-Q\mathrm{d}y\)</span></li>
-<li>在 <span class="math inline">\(D\)</span> 内, <span
-class="math inline">\(\frac{\partial Q}{\partial x} = \frac{\partial
-P}{\partial y}\)</span></li>
-<li>对 <span class="math inline">\(D\)</span> 内任何分段光滑闭曲线 <span
-class="math inline">\(C\)</span> 有 <span
-class="math inline">\(\oint_{C}^{}P\mathrm{d}x+Q\mathrm{d}y=0\)</span></li>
+<li>曲线积分$\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y$在D内与路径无关</li>
+<li>存在可微函数 $u$  使 $\mathrm{d}u=P\mathrm{d}x + Q\mathrm{d}y$</li>
+<li>在 $D$  内, $\frac{\partial Q}{\partial x} = \frac{\partial P}{\partial y}$</li>
+<li>对 $D$ 内任何分段光滑闭曲线 $C$ 有 $\oint_{C}^{}P\mathrm{d}x+Q\mathrm{d}y=0$</li>
 </ul>
 </blockquote>
-<p>若已知<span
-class="math inline">\(\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y\)</span>在D内与路径无关,则选择特殊路径L简化计算(通常选平行坐标轴的折线)</p>
-<p>定理4 设除去点 <span class="math inline">\(M_0\)</span> 以外, <span
-class="math inline">\(P,Q\)</span>处处都有连续的一阶偏导数, 且 <span
-class="math inline">\(Q_x \equiv P_y\)</span>, 则对任何包含点 <span
-class="math inline">\(M_0\)</span> 的简单正向闭曲线<span
-class="math inline">\(L\)</span>,积分 <span
-class="math inline">\(\oint_{L}^{} P\mathrm{d}x
-+Q\mathrm{d}y\)</span>取同一值, 即与环路路径无关</p>
-<h2 id="二元函数的全微分求积">二元函数的全微分求积</h2>
-<blockquote>
-<p>定理5 设<span class="math inline">\(D\)</span>是平面单连通区域,<span
-class="math inline">\(P,Q\)</span> 在 <span
-class="math inline">\(D\)</span> 内有连续的一阶偏导数,且在 <span
-class="math inline">\(D\)</span> 内, <span
-class="math inline">\(\frac{\partial Q}{\partial x} = \frac{\partial
-P}{\partial y}\)</span>, 若我们能找到某一函数 <span
-class="math inline">\(v (x,y)\)</span>使得 <span class="math display">\[
-\mathrm{d}v(x,y)=P\mathrm{d}x+Q\mathrm{d}y \]</span> 则 <span
-class="math display">\[
+<p>若已知$\int_{L}^{}P\mathrm{d}x+Q\mathrm{d}y$在D内与路径无关,则选择特殊路径L简化计算(通常选平行坐标轴的折线)</p>
+<p>定理4 设除去点 $M_0$ 以外, $P,Q$处处都有连续的一阶偏导数, 且 $Q_x \equiv P_y$, 则对任何包含点 $M_0$ 的简单正向闭曲线$L$,积分 $\oint_{L}^{} P\mathrm{d}x +Q\mathrm{d}y$取同一值, 即与环路路径无关</p>
+<h2 id="二元函数的全微分求积"><a href="#二元函数的全微分求积" class="headerlink" title="二元函数的全微分求积"></a>二元函数的全微分求积</h2><blockquote>
+<p>定理5 设$D$是平面单连通区域,$P,Q$ 在 $D$ 内有连续的一阶偏导数,且在 $D$ 内, $\frac{\partial Q}{\partial x} = \frac{\partial P}{\partial y}$, 若我们能找到某一函数 $v (x,y)$使得</p>
+<script type="math/tex; mode=display">\mathrm{d}v(x,y)=P\mathrm{d}x+Q\mathrm{d}y</script><p>则</p>
+<script type="math/tex; mode=display">
 \begin{aligned}
-\int_{(x_0,y_0) }^{(x_1,y_1) } P\mathrm{d}x +Q\mathrm{d}y &amp;=
-\left.v(x, y)\right\vert_{\left(x_{0}, y_{0}\right)} ^{\left(x_{1},
-y_{1}\right)} \\&amp;= v(x_1,y_1) -v(x_0,y_0)
-\end{aligned}
-\]</span></p>
-</blockquote>
+  \int_{(x_0,y_0) }^{(x_1,y_1) } P\mathrm{d}x +Q\mathrm{d}y &= \left.v(x, y)\right\vert_{\left(x_{0}, y_{0}\right)} ^{\left(x_{1}, y_{1}\right)} \\&= v(x_1,y_1) -v(x_0,y_0)
+\end{aligned}</script></blockquote>
 <ul>
-<li><span class="math inline">\(v (x,y)\)</span>称为 <span
-class="math inline">\(P\mathrm{d}x+Q\mathrm{d}y\)</span>的原函数,<span
-class="math inline">\(P\mathrm{d}x+Q\mathrm{d}y\)</span>称为<strong>全微分</strong>或恰当微分</li>
-<li>适用条件 <span class="math inline">\(Q_x =
-P_y\)</span>成立的范围是单连通区域</li>
+<li>$v (x,y)$称为 $P\mathrm{d}x+Q\mathrm{d}y$的原函数,$P\mathrm{d}x+Q\mathrm{d}y$称为<strong>全微分</strong>或恰当微分</li>
+<li>适用条件 $Q_x = P_y$成立的范围是单连通区域</li>
 </ul>
-<p>求 原函数<span class="math inline">\(v(x,y)\)</span> 方法</p>
+<p>求 原函数$v(x,y)$ 方法</p>
 <ul>
-<li>曲线积分法
-<ul>
+<li>曲线积分法<ul>
 <li>选择平行于坐标轴的折线</li>
-</ul></li>
-<li>不定积分法
-<ul>
-<li>将一个变元先看做常数</li>
-</ul></li>
-<li>凑微分法(部分是全微分也可以凑来化简)
-<ul>
-<li><span class="math inline">\(\mathrm{d} (xy)=y \mathrm{d} x +x
-\mathrm{d}y\)</span></li>
-<li><span class="math inline">\(\mathrm{d}
-(\frac{y}{x})=\frac{x\mathrm{d}y-y\mathrm{d}x}{x^2}\)</span></li>
-<li><span class="math inline">\(\mathrm{d} \ln(x^2+y^2)= \frac{2 (x
-\mathrm{d} x +y \mathrm{d} y) }{x^2+y^2}\)</span></li>
-</ul></li>
 </ul>
-<h2 id="全微分方程">全微分方程</h2>
-<blockquote>
-<p><span class="math display">\[
-P (x,y) \mathrm{d} x + Q (x,y) \mathrm{d} y=0 \tag{1}\label{a}
-\]</span> 有时更利于求解,若该式左端为<strong>全微分</strong>,即存在函数
-<span class="math inline">\(u\)</span> , 使得 <span
-class="math inline">\(\mathrm{d} u= P \mathrm{d} x + Q\mathrm{d}
-y\)</span>,则称 <span
-class="math inline">\(\eqref{a}\)</span>为全微分方程 通解为 <span
-class="math inline">\(u (x,y) = C\)</span> 若 <span
-class="math inline">\(P,Q\)</span> 在 在平面单连通区域<span
-class="math inline">\(D\)</span>内有连续一阶偏导数 , 则<span
-class="math inline">\(\eqref{a}\)</span>是全微分方程的充要条件是在 <span
-class="math inline">\(D\)</span> 内 <span class="math inline">\(Q_x =
-P_y\)</span>, 此时通解为: * 沿x轴,再沿y轴</p>
-</blockquote>
-<p><span class="math display">\[ u (x,y) = \int_{x_0}^{x}P(x,y_0)
-\mathrm{d} x + \int_{y_0}^{y}Q(x,y) \mathrm{d} y =C\]</span></p>
+</li>
+<li>不定积分法<ul>
+<li>将一个变元先看做常数</li>
+</ul>
+</li>
+<li>凑微分法(部分是全微分也可以凑来化简)<ul>
+<li>$\mathrm{d}  (xy)=y \mathrm{d} x  +x \mathrm{d}y$</li>
+<li>$\mathrm{d} (\frac{y}{x})=\frac{x\mathrm{d}y-y\mathrm{d}x}{x^2}$</li>
+<li>$\mathrm{d} \ln(x^2+y^2)= \frac{2 (x \mathrm{d}  x +y \mathrm{d}  y) }{x^2+y^2}$</li>
+</ul>
+</li>
+</ul>
+<h2 id="全微分方程"><a href="#全微分方程" class="headerlink" title="全微分方程"></a>全微分方程</h2><blockquote>
+<script type="math/tex; mode=display">
+P (x,y) \mathrm{d} x + Q (x,y) \mathrm{d} y=0 \tag{1}\label{a}</script><p>有时更利于求解,若该式左端为<strong>全微分</strong>,即存在函数 $u$ , 使得 $\mathrm{d} u= P \mathrm{d} x + Q\mathrm{d} y$,则称 $\eqref{a}$为全微分方程<br>通解为 $u (x,y) = C$<br>若 $P,Q$ 在 在平面单连通区域$D$内有连续一阶偏导数 , 则$\eqref{a}$是全微分方程的充要条件是在 $D$ 内 $Q_x = P_y$, 此时通解为:</p>
 <ul>
-<li>沿y轴,再沿x轴 <span class="math display">\[ u (x,y) =
-\int_{y_0}^{y}Q(x_0,y) \mathrm{d} y + \int_{x_0}^{x} P (x,y) \mathrm{d}
-x = C\]</span></li>
+<li>沿x轴,再沿y轴</li>
+</ul>
+</blockquote>
+<script type="math/tex; mode=display">u (x,y) = \int_{x_0}^{x}P(x,y_0) \mathrm{d} x + \int_{y_0}^{y}Q(x,y) \mathrm{d} y =C</script><ul>
+<li>沿y轴,再沿x轴<script type="math/tex; mode=display">u (x,y) = \int_{y_0}^{y}Q(x_0,y) \mathrm{d} y + \int_{x_0}^{x} P (x,y) \mathrm{d} x = C</script></li>
 </ul>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
@@ -761,7 +586,7 @@ x = C\]</span></li>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">化为定积分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">第二型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8-1"><span class="nav-number">2.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86-1"><span class="nav-number">2.2.</span> <span class="nav-text">化为定积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#green%E5%85%AC%E5%BC%8F"><span class="nav-number">2.3.</span> <span class="nav-text">Green公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B3%E9%9D%A2%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E6%97%A0%E5%85%B3%E7%9A%84%E6%9D%A1%E4%BB%B6"><span class="nav-number">2.4.</span> <span class="nav-text">平面曲线积分与路径无关的条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%85%A8%E5%BE%AE%E5%88%86%E6%B1%82%E7%A7%AF"><span class="nav-number">2.5.</span> <span class="nav-text">二元函数的全微分求积</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">2.6.</span> <span class="nav-text">全微分方程</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">化为定积分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">第二型曲线积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8-1"><span class="nav-number">2.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E5%AE%9A%E7%A7%AF%E5%88%86-1"><span class="nav-number">2.2.</span> <span class="nav-text">化为定积分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Green%E5%85%AC%E5%BC%8F"><span class="nav-number">2.3.</span> <span class="nav-text">Green公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B9%B3%E9%9D%A2%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86%E4%B8%8E%E8%B7%AF%E5%BE%84%E6%97%A0%E5%85%B3%E7%9A%84%E6%9D%A1%E4%BB%B6"><span class="nav-number">2.4.</span> <span class="nav-text">平面曲线积分与路径无关的条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E5%85%A8%E5%BE%AE%E5%88%86%E6%B1%82%E7%A7%AF"><span class="nav-number">2.5.</span> <span class="nav-text">二元函数的全微分求积</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%A8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="nav-number">2.6.</span> <span class="nav-text">全微分方程</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

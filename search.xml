@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>离散作业5.2</title>
+      <link href="/2022/05/02/%E7%A6%BB%E6%95%A3%E4%BD%9C%E4%B8%9A5-2/"/>
+      <url>/2022/05/02/%E7%A6%BB%E6%95%A3%E4%BD%9C%E4%B8%9A5-2/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>P11 T39.d</p></blockquote><p>构造下列各复合命题的真值表</p><ol start="4" type="a"><li><span class="math inline">\((p \to q) \land (\neg p \toq)\)</span></li></ol><table><colgroup><col style="width: 7%" /><col style="width: 7%" /><col style="width: 15%" /><col style="width: 22%" /><col style="width: 47%" /></colgroup><thead><tr class="header"><th><span class="math inline">\(p\)</span></th><th><span class="math inline">\(q\)</span></th><th><span class="math inline">\(p \to q\)</span></th><th><span class="math inline">\(\neg p \to q\)</span></th><th><span class="math inline">\((p \to q) \land (\neg p \toq)\)</span></th></tr></thead><tbody><tr class="odd"><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td></tr><tr class="even"><td>0</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr class="odd"><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td></tr><tr class="even"><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table><blockquote><p>P25,T27</p></blockquote><p>证明 <span class="math inline">\(\neg (p \leftrightarrow q)\)</span>和 <span class="math inline">\(\neg p \leftrightarrow q\)</span> 等价<span class="math display">\[ \begin{aligned}\neg (p \leftrightarrow q) &amp;\equiv \neg ((p \to q) \land  (q \top))\\&amp;\equiv \neg (p \to  q) \lor \neg (q \to p)\\&amp; \equiv \neg (\neg p \lor q) \lor  \neg (\neg q \lor p)\\&amp; \equiv (p \land \neg q) \lor  (q \land \neg p)\\&amp; \equiv (p \lor (q \land \neg p)) \land (\neg q \lor  (q \land \negp))\\&amp; \equiv (p \lor q) \land (\neg q \lor  \neg p)\\&amp; \equiv (\neg p \to q) \land (q \to  \neg p)\\&amp; \equiv \neg p \leftrightarrow q\end{aligned} \]</span></p><blockquote><p>p25,T29</p></blockquote><p>证明 <span class="math inline">\((p \to r)\lor (q \to r)\)</span> 与<span class="math inline">\((p \land q) \to r\)</span> 逻辑等价</p><p><span class="math display">\[\begin{aligned}(p \land  q) \to r \equiv &amp; (\neg (p \land q)\lor r)\\\equiv &amp;((\neg p \lor \neg  q) \lor r)\\\equiv &amp; \neg p \lor (r \lor r) \lor \neg q\\\equiv &amp; (\neg p \lor r) \lor (\neg q \lor r)\\\equiv &amp; (p \to r) \lor (q \to r)\end{aligned}\]</span></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数理逻辑</title>
+      <link href="/2022/05/02/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/"/>
+      <url>/2022/05/02/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/</url>
+      
+        <content type="html"><![CDATA[<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 离散数学 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>shortcuts</title>
       <link href="/2022/05/01/shortcuts/"/>
       <url>/2022/05/01/shortcuts/</url>

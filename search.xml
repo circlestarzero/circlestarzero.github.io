@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>热力学第二定律的统计意义和熵的概念</title>
+      <link href="/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/"/>
+      <url>/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="克劳修斯熵">克劳修斯熵</h1><p>卡诺定理</p><ul><li>工作在两确定的热源之间的一切<strong>可逆机</strong>的效率相等<ul><li><span class="math inline">\(\displaystyle h_{\text{可}} = 1 -\frac{T_2}{T_1}\)</span></li></ul></li><li>一切<strong>不可逆机</strong>的效率小于可逆热机的效率<ul><li><span class="math inline">\(\displaystyle h_{\text{不可}} &lt; 1 -\frac{T_2}{T_1}\)</span></li></ul></li></ul><p>对可逆卡诺循环</p><p><span class="math display">\[ \begin{aligned}\frac{Q_1}{T_1} = \frac{\left\vert Q_2 \right\vert }{T_2}\\\frac{Q_1}{T_1}+\frac{Q_2}{T_2}=0\end{aligned} \]</span></p><p>任意一个可逆循环，都可以看成由无数( <spanclass="math inline">\(N\)</span> )个卡诺循环所组成 对其中第 i 个有:<span class="math inline">\(\displaystyle \frac{Q_{1i}}{T_{1i}} +\frac{Q_{2i}}{T_{2i}} = 0\)</span></p><p>对N个卡诺循环: <span class="math inline">\(\displaystyle\sum_{i=1}^{2N} \frac{Q_i}{T_i} = 0\)</span></p><p>克劳修斯等式( <span class="math inline">\(T\)</span> 是热源温度):</p><p><span class="math display">\[ \begin{equation}\lim_{N \to \infty} \sum_{i=1}^{2N} \frac{Q_i}{T_i} =0  \\\end{equation}\]</span></p><p><span class="math display">\[ \begin{equation}    \circ \frac{\mathrm{d}Q}{T} =0\end{equation} \]</span></p><h2 id="熵的定义">熵的定义</h2><p><img src = "热力学第二定律的统计意义和熵的概念/2022-05-06-14-42-41.png" width = "30%"></p><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">]]></content>
+      
+      
+      <categories>
+          
+          <category> 大学物理 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>循环过程-卡诺循环</title>
       <link href="/2022/05/06/%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B-%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF/"/>
       <url>/2022/05/06/%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B-%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF/</url>

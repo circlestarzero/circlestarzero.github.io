@@ -193,6 +193,143 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="CC">
+      <meta itemprop="description" content="keep curious">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CC'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/" class="post-title-link" itemprop="url">热力学第二定律的统计意义和熵的概念</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-06 14:27:48 / 修改时间：14:46:39" itemprop="dateCreated datePublished" datetime="2022-05-06T14:27:48+08:00">2022-05-06</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">大学物理</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/" class="post-meta-item leancloud_visitors" data-flag-title="热力学第二定律的统计意义和熵的概念" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>602</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="克劳修斯熵">克劳修斯熵</h1>
+<p>卡诺定理</p>
+<ul>
+<li>工作在两确定的热源之间的一切<strong>可逆机</strong>的效率相等
+<ul>
+<li><span class="math inline">\(\displaystyle h_{\text{可}} = 1 -
+\frac{T_2}{T_1}\)</span></li>
+</ul></li>
+<li>一切<strong>不可逆机</strong>的效率小于可逆热机的效率
+<ul>
+<li><span class="math inline">\(\displaystyle h_{\text{不可}} &lt; 1 -
+\frac{T_2}{T_1}\)</span></li>
+</ul></li>
+</ul>
+<p>对可逆卡诺循环</p>
+<p><span class="math display">\[ \begin{aligned}
+\frac{Q_1}{T_1} = \frac{\left\vert Q_2 \right\vert }{T_2}\\
+\frac{Q_1}{T_1}+\frac{Q_2}{T_2}=0
+\end{aligned} \]</span></p>
+<p>任意一个可逆循环，都可以看成由无数( <span
+class="math inline">\(N\)</span> )个卡诺循环所组成 对其中第 i 个有:
+<span class="math inline">\(\displaystyle \frac{Q_{1i}}{T_{1i}} +
+\frac{Q_{2i}}{T_{2i}} = 0\)</span></p>
+<p>对N个卡诺循环: <span class="math inline">\(\displaystyle
+\sum_{i=1}^{2N} \frac{Q_i}{T_i} = 0\)</span></p>
+<p>克劳修斯等式( <span class="math inline">\(T\)</span> 是热源温度):</p>
+<p><span class="math display">\[ \begin{equation}
+\lim_{N \to \infty} \sum_{i=1}^{2N} \frac{Q_i}{T_i} =0  \\
+\end{equation}\]</span></p>
+<p><span class="math display">\[ \begin{equation}
+    \circ \frac{\mathrm{d}Q}{T} =0
+\end{equation} \]</span></p>
+<h2 id="熵的定义">熵的定义</h2>
+<p><img src = "热力学第二定律的统计意义和熵的概念/2022-05-06-14-42-41.png" width = "30%"></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/06/%E5%BE%AA%E7%8E%AF%E8%BF%87%E7%A8%8B-%E5%8D%A1%E8%AF%BA%E5%BE%AA%E7%8E%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1352,162 +1489,6 @@ C_{V,m} &amp;= \frac{i}{2} R\\
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/04/17/%E5%8A%9B%E5%AD%A6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="CC">
-      <meta itemprop="description" content="keep curious">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CC'blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/17/%E5%8A%9B%E5%AD%A6/" class="post-title-link" itemprop="url">力学</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-04-17 20:58:06" itemprop="dateCreated datePublished" datetime="2022-04-17T20:58:06+08:00">2022-04-17</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-18 14:43:06" itemprop="dateModified" datetime="2022-04-18T14:43:06+08:00">2022-04-18</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">大学物理</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/04/17/%E5%8A%9B%E5%AD%A6/" class="post-meta-item leancloud_visitors" data-flag-title="力学" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/04/17/%E5%8A%9B%E5%AD%A6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/17/%E5%8A%9B%E5%AD%A6/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>362</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="牛顿第二定律">牛顿第二定律</h3>
-<p><span class="math inline">\(\vec{F} = \frac{d\vec{P}}{dt} =
-\frac{d(md\vec{v})}{dt} = m\frac{d\vec{v}}{dt} +
-\frac{dm}{dt}\vec{v}\)</span></p>
-<p>when m is constant <span class="math inline">\(\vec{F} = m
-\vec{a}\)</span></p>
-<p>惯性质量:<span class="math inline">\(m_I: \vec{F} = m
-\vec{a}\)</span></p>
-<p>引力质量:<span class="math inline">\(m_g:\vec{F} = G \frac{Mm}{r^3}
-\vec{r}\)</span></p>
-<p><span class="math inline">\(m_I = m_g\)</span></p>
-<h3 id="惯性系">惯性系</h3>
-<p>惯性系</p>
-<ul>
-<li>牛顿定理成立的参考系</li>
-<li>相对惯性系作匀速直线运动的参考系</li>
-</ul>
-<p>非惯性系</p>
-<ul>
-<li>相对惯性系作加速运动的参考系</li>
-</ul>
-<h3 id="伽利略相对性原理">伽利略相对性原理</h3>
-<p>伽利略相对性原理：一切惯性系中力学规律相同</p>
-<p>惯性系的绝对速度不可测量</p>
-<h3 id="牛顿运动定律">牛顿运动定律</h3>
-<ul>
-<li>第一定律
-<ul>
-<li>前提和基础</li>
-</ul></li>
-<li>第二定律
-<ul>
-<li>核心</li>
-</ul></li>
-<li>第三定律
-<ul>
-<li>对第二定律的补充</li>
-</ul></li>
-</ul>
-<h3 id="基本力">基本力</h3>
-<p>基本力</p>
-<ul>
-<li>万有引力</li>
-<li>电磁力</li>
-<li>强力</li>
-<li>弱力</li>
-</ul>
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1579,7 +1560,7 @@ C_{V,m} &amp;= \frac{i}{2} R\\
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1630,7 +1611,7 @@ C_{V,m} &amp;= \frac{i}{2} R\\
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">40k</span>
+    <span title="站点总字数">41k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

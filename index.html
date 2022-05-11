@@ -193,6 +193,272 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/11/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="CC">
+      <meta itemprop="description" content="keep curious">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CC'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/11/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-title-link" itemprop="url">曲面积分</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-11 14:47:01 / 修改时间：15:23:51" itemprop="dateCreated datePublished" datetime="2022-05-11T14:47:01+08:00">2022-05-11</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/" itemprop="url" rel="index"><span itemprop="name">微积分</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/05/11/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" class="post-meta-item leancloud_visitors" data-flag-title="曲面积分" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/05/11/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/11/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="第一型曲面积分">第一型曲面积分</h1>
+<h2 id="定义与性质">定义与性质</h2>
+<p>定义1 设 <span class="math inline">\(S\)</span> 是具有有限面积的曲面,
+<span class="math inline">\(f (x,y,z)\)</span> 是定义于 <span
+class="math inline">\(S\)</span> 上的有界函数,以任意方式将 <span
+class="math inline">\(S\)</span> 划分成 <span
+class="math inline">\(n\)</span> 小块 <span
+class="math inline">\(S_1,S_2,\cdots, S_n\)</span> , 以 <span
+class="math inline">\(\Delta S_i\)</span> 记 <span
+class="math inline">\(S_i (1 \leq i \leq n)\)</span> 的面积, 令 <span
+class="math inline">\(\lambda = \max_{1 \leq i \leq n} d (S_i)\)</span>.
+在每个 <span class="math inline">\(S_i\)</span> 上任取一点 <span
+class="math inline">\(P_{i}\)</span>,构成和式 $ <em>{i=1}^{n} f
+(P</em>{i}) S_i$. 若极限 <span class="math display">\[ I =
+\lim_{\lambda  \to 0} \sum_{i=1}^{n} f (P_{i})\Delta S_i \]</span>
+存在,且与 <span class="math inline">\(S\)</span> 的分法, 以及 <span
+class="math inline">\(P_{i}\)</span> 的取法无关,则称 <span
+class="math inline">\(I\)</span> 为 <span
+class="math inline">\(f(x,y,z)\)</span> 在 <span
+class="math inline">\(S\)</span>
+上的<strong>第一型曲面积分</strong>(亦称为<strong>对面积的曲线积分</strong>,
+记作 <span class="math inline">\(\displaystyle \iint_{S} f (x,y,z)
+\mathrm{d}S\)</span> 或 <span class="math inline">\(\displaystyle
+\iint_{S} f \mathrm{d}S\)</span> ,若 <span
+class="math inline">\(S\)</span> 为封闭曲面, 则记为 <span
+class="math inline">\(\displaystyle \int\kern{-8pt}\int \kern{-24mu}
+\bigcirc f\mathrm{d}S\)</span> ),即 <span class="math display">\[
+\iint_{S} f (x,y,z)\mathrm{d}S = \lim_{\lambda  \to 0} \sum_{i=1}^{n} f
+(P_{i})\Delta S_i\]</span></p>
+<p>若 <span class="math inline">\(f\)</span> 在 <span
+class="math inline">\(S\)</span> 上连续,则积分 <span
+class="math inline">\(\displaystyle \iint_{S}f\mathrm{d}s\)</span>
+存在</p>
+<p><span class="math display">\[
+    S\text{的面积} = \iint_{S}\mathrm{d}S
+\]</span></p>
+<h3 id="性质">性质</h3>
+<ul>
+<li>线性性质 <span class="math display">\[ \iint_{S} (af+bg)\mathrm{d}S
+= a \iint_{S}f\mathrm{d}S + b \iint_{S}g \mathrm{d}S \]</span></li>
+<li>区域可分性 <span class="math display">\[ \iint_{S}f\mathrm{d}S =
+\iint_{S_1}f\mathrm{d}S + \iint_{S_2}f\mathrm{d}s \]</span></li>
+<li>中值定理 <span class="math display">\[ \iint_{S}f\mathrm{d}S = f (P)
+\sigma  \]</span></li>
+</ul>
+<h2 id="化为二重积分">化为二重积分</h2>
+<p>定理1 设曲面 <span class="math inline">\(S\)</span> 有方程 <span
+class="math inline">\(z=z (x,y) ((x,y) \in D)\)</span> 给定, $z = z(x,y)
+$ 在有界闭区域 <span class="math inline">\(D\)</span>
+上有定义且有连续的一阶偏导数, 若 <span class="math inline">\(f
+(x,y,z)\)</span> 在 <span class="math inline">\(S\)</span> 上连续,则
+<span class="math display">\[ \iint_{S}f\mathrm{d}S = \iint_{D} f (x,y,z
+(x,y) ) \sqrt{1 + z_{x}^{2}+z_{y}^{2}}
+\mathrm{d}x\mathrm{d}y\]</span></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/11/%E5%85%8B%E5%8A%B3%E4%BF%AE%E6%96%AF%E7%86%B5%E5%85%AC%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="CC">
+      <meta itemprop="description" content="keep curious">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CC'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/11/%E5%85%8B%E5%8A%B3%E4%BF%AE%E6%96%AF%E7%86%B5%E5%85%AC%E5%BC%8F/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-11 08:23:46 / 修改时间：08:29:40" itemprop="dateCreated datePublished" datetime="2022-05-11T08:23:46+08:00">2022-05-11</time>
+            </span>
+
+          
+            <span id="/2022/05/11/%E5%85%8B%E5%8A%B3%E4%BF%AE%E6%96%AF%E7%86%B5%E5%85%AC%E5%BC%8F/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/05/11/%E5%85%8B%E5%8A%B3%E4%BF%AE%E6%96%AF%E7%86%B5%E5%85%AC%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/11/%E5%85%8B%E5%8A%B3%E4%BF%AE%E6%96%AF%E7%86%B5%E5%85%AC%E5%BC%8F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>358</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><span class="math display">\[
+\begin{aligned}
+\int_{L_1} \frac{\mathrm{d}Q}{T} = \int_{L_2} \frac{\mathrm{d}Q}{T} =
+\cdots =\int_{A}^{B} \frac{\mathrm{d}Q}{T}\\
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+S_{B} - S_{A} =\int_{A}^{B} \frac{\mathrm{d}Q}{T}\\
+\mathrm{d}S =\frac{\mathrm{d}Q}{T}\\
+S = S_0+\int_{x_0}^{x} \frac{\mathrm{d}Q}{T}\\
+\oint \frac{\mathrm{d}Q}{T} =0\\
+\oint \frac{\mathrm{d}Q}{T} &lt; 0\\
+\end{aligned}
+\]</span></p>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -217,10 +483,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-05-06 14:27:48 / 修改时间：17:23:19" itemprop="dateCreated datePublished" datetime="2022-05-06T14:27:48+08:00">2022-05-06</time>
+              <time title="创建时间：2022-05-06 14:27:48" itemprop="dateCreated datePublished" datetime="2022-05-06T14:27:48+08:00">2022-05-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-05-09 12:27:04" itemprop="dateModified" datetime="2022-05-09T12:27:04+08:00">2022-05-09</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -258,7 +530,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>945</span>
+              <span>951</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -282,13 +554,13 @@
 <ul>
 <li>工作在两确定的热源之间的一切<strong>可逆机</strong>的效率相等
 <ul>
-<li><span class="math inline">\(\displaystyle h_{\text{可}} = 1 -
+<li><span class="math inline">\(\displaystyle \eta_{\text{可}} = 1 -
 \frac{T_2}{T_1}\)</span></li>
 </ul></li>
 <li>一切<strong>不可逆机</strong>的效率小于可逆热机的效率
 <ul>
-<li><span class="math inline">\(\displaystyle h_{\text{不可}} &lt; 1 -
-\frac{T_2}{T_1}\)</span></li>
+<li><span class="math inline">\(\displaystyle \eta_{\text{不可}} &lt; 1
+- \frac{T_2}{T_1}\)</span></li>
 </ul></li>
 </ul>
 <p>对可逆卡诺循环</p>
@@ -333,8 +605,8 @@ class="math inline">\(S\)</span>"</li>
 <li><span class="math inline">\(S_B\)</span>: 末态的熵</li>
 </ul>
 <p>对无限小的可逆过程</p>
-<p><span class="math display">\[ \mathrm{d}S =
-\frac{\mathrm{d}Q}{T}\]</span></p>
+<p><span class="math display">\[ \mathrm{d}S = \frac{\mathrm{d}Q}{T}
+\]</span></p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
       
     </div>
@@ -910,7 +1182,7 @@ p))\\
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-30 00:55:47" itemprop="dateModified" datetime="2022-04-30T00:55:47+08:00">2022-04-30</time>
+                <time title="修改时间：2022-05-11 14:46:00" itemprop="dateModified" datetime="2022-05-11T14:46:00+08:00">2022-05-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -949,7 +1221,7 @@ p))\\
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7.7k</span>
+              <span>7.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1289,230 +1561,6 @@ C_{V,m} &amp;= \frac{i}{2} R\\
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/04/27/%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="CC">
-      <meta itemprop="description" content="keep curious">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CC'blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/27/%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA/" class="post-title-link" itemprop="url">气体动理论</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-04-27 08:00:34" itemprop="dateCreated datePublished" datetime="2022-04-27T08:00:34+08:00">2022-04-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-06 09:47:57" itemprop="dateModified" datetime="2022-05-06T09:47:57+08:00">2022-05-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">大学物理</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/04/27/%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA/" class="post-meta-item leancloud_visitors" data-flag-title="气体动理论" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/04/27/%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/27/%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>11k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>10 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="热学">热学</h1>
-<ul>
-<li><p>研究对象</p></li>
-<li><p>研究内容</p>
-<ul>
-<li>热现象</li>
-<li>热运动</li>
-</ul></li>
-<li><p>研究方法</p>
-<ul>
-<li>微观</li>
-<li>宏观</li>
-</ul></li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/04/27/%E6%B0%94%E4%BD%93%E5%8A%A8%E7%90%86%E8%AE%BA/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/04/25/python-opencv/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="CC">
-      <meta itemprop="description" content="keep curious">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CC'blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/25/python-opencv/" class="post-title-link" itemprop="url">python-opencv</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-04-25 10:45:06" itemprop="dateCreated datePublished" datetime="2022-04-25T10:45:06+08:00">2022-04-25</time>
-            </span>
-
-          
-            <span id="/2022/04/25/python-opencv/" class="post-meta-item leancloud_visitors" data-flag-title="python-opencv" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/04/25/python-opencv/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/25/python-opencv/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1584,7 +1632,7 @@ C_{V,m} &amp;= \frac{i}{2} R\\
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1635,12 +1683,12 @@ C_{V,m} &amp;= \frac{i}{2} R\\
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">41k</span>
+    <span title="站点总字数">43k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">37 分钟</span>
+    <span title="站点阅读时长">39 分钟</span>
 </div>
 
 

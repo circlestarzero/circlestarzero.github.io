@@ -28,7 +28,7 @@
 <meta property="og:description" content="第一型曲线积分 定义与性质  定义1 设 \(L\) 是空间一条有限长的分段光滑曲线, \(f(x,y,z)\) 是定义与L上的有界函数, 以任意方式将L分为n小段 \(L_1,L_2, \cdots L_n\) ,以 \(\Delta s_i, 记L_i的弧长, 令 \lambda &#x3D; \max _{1 \leq i \leq n} \Delta s_i,\) 在每一小段 \(L_i\) 上任取">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-27T06:06:25.000Z">
-<meta property="article:modified_time" content="2022-04-29T16:55:47.147Z">
+<meta property="article:modified_time" content="2022-05-11T06:46:00.804Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-30 00:55:47" itemprop="dateModified" datetime="2022-04-30T00:55:47+08:00">2022-04-30</time>
+                <time title="修改时间：2022-05-11 14:46:00" itemprop="dateModified" datetime="2022-05-11T14:46:00+08:00">2022-05-11</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -266,7 +266,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>7.7k</span>
+              <span>7.9k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -641,11 +641,12 @@ P_y\)</span>成立的范围是单连通区域</li>
 </ul></li>
 </ul>
 <h2 id="全微分方程">全微分方程</h2>
-<blockquote>
 <p><span class="math display">\[
-P (x,y) \mathrm{d} x + Q (x,y) \mathrm{d} y=0 \tag{1}\label{a}
-\]</span> 有时更利于求解,若该式左端为<strong>全微分</strong>,即存在函数
-<span class="math inline">\(u\)</span> , 使得 <span
+P(x,y) \mathrm{d} x + Q (x,y) \mathrm{d} y=0 \tag{1}
+\]</span></p>
+<blockquote>
+<p>有时更利于求解,若该式左端为<strong>全微分</strong>,即存在函数 <span
+class="math inline">\(u\)</span> , 使得 <span
 class="math inline">\(\mathrm{d} u= P \mathrm{d} x + Q\mathrm{d}
 y\)</span>,则称 <span
 class="math inline">\(\eqref{a}\)</span>为全微分方程 通解为 <span
@@ -654,15 +655,27 @@ class="math inline">\(P,Q\)</span> 在 在平面单连通区域<span
 class="math inline">\(D\)</span>内有连续一阶偏导数 , 则<span
 class="math inline">\(\eqref{a}\)</span>是全微分方程的充要条件是在 <span
 class="math inline">\(D\)</span> 内 <span class="math inline">\(Q_x =
-P_y\)</span>, 此时通解为: * 沿x轴,再沿y轴</p>
+P_y\)</span>, 此时通解为:</p>
 </blockquote>
-<p><span class="math display">\[ u (x,y) = \int_{x_0}^{x}P(x,y_0)
-\mathrm{d} x + \int_{y_0}^{y}Q(x,y) \mathrm{d} y =C\]</span></p>
 <ul>
-<li>沿y轴,再沿x轴 <span class="math display">\[ u (x,y) =
-\int_{y_0}^{y}Q(x_0,y) \mathrm{d} y + \int_{x_0}^{x} P (x,y) \mathrm{d}
-x = C\]</span></li>
+<li><p>沿x轴,再沿y轴 <span class="math display">\[ u (x,y) =
+\int_{x_0}^{x}P(x,y_0) \mathrm{d} x + \int_{y_0}^{y}Q(x,y) \mathrm{d} y
+=C\]</span></p></li>
+<li><p>沿y轴,再沿x轴 <span class="math display">\[
+u (x,y) = \int_{y_0}^{y}Q(x_0,y) \mathrm{d} y + \int_{x_0}^{x} P (x,y)
+\mathrm{d} x = C
+\]</span></p></li>
 </ul>
+<p>当 <span class="math inline">\((1)\)</span>
+本身不是全微分方程,但能找到一个非零因子 <span
+class="math inline">\(\displaystyle \mu = \mu (x,y)\)</span> 使得 <span
+class="math display">\[ \mu P (x,y) + \mu  Q(x,y) =0 \tag{2}\]</span>
+是全微分方程,则问题归结于与 <span class="math inline">\((1)\)</span>
+等价的 <span class="math inline">\((2)\)</span> , 称如上 <span
+class="math inline">\(\mu\)</span> 为方程 <span
+class="math inline">\((1)\)</span> 的<strong>积分因子</strong>. 只要
+<span class="math inline">\(P,Q\)</span> 有连续的偏导数,就能证明方程
+<span class="math inline">\((1)\)</span> 必有积分因子</p>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
@@ -777,7 +790,7 @@ x = C\]</span></li>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -828,12 +841,12 @@ x = C\]</span></li>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">41k</span>
+    <span title="站点总字数">43k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">37 分钟</span>
+    <span title="站点阅读时长">39 分钟</span>
 </div>
 
 

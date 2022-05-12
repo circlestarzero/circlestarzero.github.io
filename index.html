@@ -217,10 +217,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2022-05-11 14:47:01 / 修改时间：15:23:51" itemprop="dateCreated datePublished" datetime="2022-05-11T14:47:01+08:00">2022-05-11</time>
+              <time title="创建时间：2022-05-11 14:47:01" itemprop="dateCreated datePublished" datetime="2022-05-11T14:47:01+08:00">2022-05-11</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-05-12 11:03:25" itemprop="dateModified" datetime="2022-05-12T11:03:25+08:00">2022-05-12</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -258,14 +264,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.1k</span>
+              <span>3.5k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -331,6 +337,123 @@ $ 在有界闭区域 <span class="math inline">\(D\)</span>
 <span class="math display">\[ \iint_{S}f\mathrm{d}S = \iint_{D} f (x,y,z
 (x,y) ) \sqrt{1 + z_{x}^{2}+z_{y}^{2}}
 \mathrm{d}x\mathrm{d}y\]</span></p>
+<p>锥面 <span class="math inline">\(z = \sqrt{x_2+y_2}\)</span>
+的面积元公式 <span class="math inline">\(\displaystyle \mathrm{d} S =
+\sqrt{2} \mathrm{d}x\mathrm{d}y\)</span></p>
+<p>球面 <span class="math inline">\(\displaystyle z =
+\sqrt{a^{2}-x^{2}-y^{2}}\)</span> 的面积元公式 <span
+class="math inline">\(\displaystyle \mathrm{d}S =
+\frac{a}{z}\mathrm{d}x\mathrm{d}y\)</span></p>
+<h1 id="第二型曲面积分">第二型曲面积分</h1>
+<h2 id="定义与性质-1">定义与性质</h2>
+<p>设 <span class="math inline">\(S\)</span> 是一光滑曲面,在 <span
+class="math inline">\(S\)</span> 上任意一点 <span
+class="math inline">\(P\)</span> 处作曲面的单位法矢量 <span
+class="math inline">\(\mathbf{n}\)</span>, 因而它确定了一个指向, 当
+<span class="math inline">\(P\)</span> 在 <span
+class="math inline">\(S\)</span> 上连续移动(不越过曲面边界)时, <span
+class="math inline">\(\mathbf{n}\)</span> 也连续变动. 若 <span
+class="math inline">\(P\)</span> 作任何连续移动回到起点时,法矢量 <span
+class="math inline">\(\mathbf{n}\)</span> 与原先的法矢量指向相同, 则说
+<span class="math inline">\(S\)</span> 是可定向的, 且说 <span
+class="math inline">\(\mathbf{n}\)</span> 指定了 <span
+class="math inline">\(S\)</span> 的一侧, 而 <span
+class="math inline">\(- \mathbf{n}\)</span> 则指向了 <span
+class="math inline">\(S\)</span> 的另一侧. 可定向曲面恰有两侧, 因而称
+<span class="math inline">\(S\)</span> 为<strong>双侧曲面</strong>.
+已指定一侧的双侧曲面称为 <strong>定向曲面</strong></p>
+<p><span class="math inline">\(S\)</span> 是分片光滑的定向曲面, <span
+class="math inline">\(\mathbf{n}\)</span> 是 <span
+class="math inline">\(S\)</span> 的单位法矢量, 它指向 <span
+class="math inline">\(S\)</span> 的指定的一侧, 其方向余弦为 $, ,$ 若
+<span class="math inline">\(S\)</span> 由方程 $z = z (x,y) $ 给定, 则
+<span class="math display">\[
+\mathbf{n} = \frac{1}{\sqrt{1 + z_{x}^{2} + z_{y}^{2}}  }
+\left\{  -z_{x}, - z_{y}, 1\right\}
+\]</span> 指向 <span class="math inline">\(S\)</span> 的上侧,
+相反的一侧是下侧.</p>
+<p>若 <span class="math inline">\(S\)</span> 是包围区域 <span
+class="math inline">\(V\)</span> 的闭曲面,则 <span
+class="math inline">\(\mathbf{n}\)</span> 指向 <span
+class="math inline">\(V\)</span> 内部时,称 <span
+class="math inline">\(S\)</span> 取内侧,相反的一侧是外侧</p>
+<hr />
+<p>定义1 设 <span class="math inline">\(S\)</span>
+是分片光滑的定向曲面,指定 <span class="math inline">\(S\)</span>
+一侧上的单位法矢量为 <span class="math inline">\(\mathbf{n}\)</span>,
+<span class="math inline">\(P,Q,R\)</span> 为定义在 <span
+class="math inline">\(S\)</span> 上的有界函数, $ = { P,Q,R } $ , 若积分
+<span class="math inline">\(\displaystyle \iint_{S} \mathbf{F} \cdot
+\mathbf{n} \mathrm{d}S\)</span> 存在,则称它为函数组 <span
+class="math inline">\(P,Q,R\)</span> 或矢量函数 <span
+class="math inline">\(\mathbf{F}\)</span>, 在曲面指定一侧上的
+<strong>第二型曲面积分</strong>, 也记作 <span
+class="math inline">\(\displaystyle \iint_{S} \mathbf{F}\cdot
+\mathrm{d}S\)</span></p>
+<table style="width:6%;">
+<colgroup>
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>也称第二型曲面积分为 <strong>对坐标的曲面积分</strong> <span
+class="math display">\[ \begin{aligned}
+\iint_{S}\mathbf{F}\cdot \mathrm{d}S  &amp;= \iint_{S} \left(  P \cos
+\alpha + Q \cos \beta + R \cos \gamma \right) \mathrm{d}S\\
+&amp;= \iint_{S} P \mathrm{d}y \mathrm{d}z+ Q\mathrm{d}z\mathrm{d}x + R
+\mathrm{d}x\mathrm{d}y
+\end{aligned} \]</span></td>
+</tr>
+</tbody>
+</table>
+<p>性质</p>
+<ul>
+<li><p>若 <span class="math inline">\(S\)</span>
+为分片光滑有有限面积的定向曲面, $ = { P,Q,R } $ 是 <span
+class="math inline">\(S\)</span> 上的分片连续的矢量函数,则曲面积分 <span
+class="math inline">\(\displaystyle \iint_{S} \mathbf{F} \cdot
+\mathrm{d}\mathbf{S}\)</span> 存在</p></li>
+<li><p>(线性性质) 设 <span class="math inline">\(\mathbf{F} = a
+\mathbf{G} + b \mathbf{H}\)</span>, 则 <span class="math display">\[
+\iint_{S} \mathbf{F} \cdot \mathrm{d} \mathbf{S} = a \iint_{S}
+\mathbf{G} \cdot \mathrm{d}\mathbf{S} + b
+\iint_{S}\mathbf{H}\cdot  \mathrm{d}\mathbf{S} \]</span></p></li>
+<li><p>(分块积分) 设 <span class="math inline">\(S\)</span> 分割为 <span
+class="math inline">\(S_1\)</span> 和 <span
+class="math inline">\(S_2\)</span> (定向保持一致),则</p></li>
+</ul>
+<p><span class="math display">\[ \iint_{S}\mathbf{F} \cdot
+\mathrm{d}\mathbf{S}= \iint_{S_1}\mathbf{F} \cdot \mathrm{d}\mathbf{S} +
+\iint_{S_2}\mathbf{F} \cdot \mathrm{d}\mathbf{S}\]</span></p>
+<ul>
+<li>若记 <span class="math inline">\(-S\)</span> 为 <span
+class="math inline">\(S\)</span> 的反向曲面,则</li>
+</ul>
+<p><span class="math display">\[ \iint_{-S} \mathbf{F} \cdot \mathrm{d}
+\mathbf{S} = - \iint_{S} \mathbf{F} \cdot \mathrm{d}\mathbf{S}
+\]</span></p>
+<ul>
+<li><p>若在 <span class="math inline">\(S\)</span> 上处处有 <span
+class="math inline">\(\mathbf{F} \perp \mathbf{n}\)</span> 则 <span
+class="math display">\[ \iint_{S}\mathbf{F}\cdot \mathrm{d}\mathbf{S} =
+0 \]</span></p></li>
+<li><p><span class="math display">\[ \iint_{S} P\mathrm{d}z\mathrm{d}y
++Q\mathrm{d}x\mathrm{d}z + R \mathrm{d}x\mathrm{d}y =
+\iint_{S}P\mathrm{d}z\mathrm{d}y + \iint_{S}Q\mathrm{d}x\mathrm{d}z +
+\iint_{S}R\mathrm{d}x\mathrm{d}y \]</span></p></li>
+</ul>
+<h2 id="化为二重积分-1">化为二重积分</h2>
+<p>定理1 设曲面 <span class="math inline">\(S\)</span> 由方程 <span
+class="math inline">\(z = z (x,y) ((x,y) \in D)\)</span> 给定, 函数 $z=
+z (x,y) $ 在有界闭区域 <span class="math inline">\(D\)</span>
+上有连续的一阶偏导数, <span class="math inline">\(R (x,y,z)\)</span> 在
+<span class="math inline">\(S\)</span> 上连续,则 <span
+class="math display">\[ \iint_{S} R (x,y,z)\mathrm{d}x\mathrm{d}y= \pm
+\iint_{D}R (x,y, z (x,y) )\mathrm{d}x\mathrm{d}y \]</span></p>
+<ul>
+<li>当取 <span class="math inline">\(S\)</span> 上侧 (下侧)时,
+右端积分前取 正号 (负号)</li>
+</ul>
 <script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
       
     </div>
@@ -1683,12 +1806,12 @@ C_{V,m} &amp;= \frac{i}{2} R\\
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">43k</span>
+    <span title="站点总字数">45k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">39 分钟</span>
+    <span title="站点阅读时长">41 分钟</span>
 </div>
 
 

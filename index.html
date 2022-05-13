@@ -219,7 +219,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2022-05-13 10:12:13 / 修改时间：10:54:17" itemprop="dateCreated datePublished" datetime="2022-05-13T10:12:13+08:00">2022-05-13</time>
+              <time title="创建时间：2022-05-13 10:12:13 / 修改时间：10:57:42" itemprop="dateCreated datePublished" datetime="2022-05-13T10:12:13+08:00">2022-05-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -258,7 +258,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>5.2k</span>
+              <span>5.3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -396,7 +396,8 @@ class="math inline">\(\Delta\)</span> 为 Laplace 算子</p>
 <p>设 <span class="math inline">\(r=\{x, y, z\}, r=|r|\)</span>,
 则有以下常用公式:</p>
 <p><span class="math display">\[
-\nabla r=\frac{1}{r} r, \nabla \cdot r=3, \nabla \times r=0
+\nabla r=\frac{1}{r} \mathbf{r}, \nabla \cdot \mathbf{r}=3, \nabla
+\times \mathbf{r}=0
 \]</span></p>
 <h1 id="gauss-公式">Gauss 公式</h1>
 <p>定理 1 设空间闭区域 <span class="math inline">\(V\)</span>
@@ -406,8 +407,8 @@ class="math inline">\(P,Q,R\)</span></p>
 上有连续的一阶偏导数, <span class="math inline">\(\mathbf{F}=\{P, Q,
 R\}\)</span>, 则成立如下 的"Gauss 公式”:</p>
 <p><span class="math display">\[
-\oiint_{S}(\mathbf{F} \cdot n) \mathrm{d} S=\iiint_{V}(\nabla \cdot
-\mathbf{F}) \mathrm{d} v,
+\oiint_{S}(\mathbf{F} \cdot \mathbf{n}) \mathrm{d} S=\iiint_{V}(\nabla
+\cdot \mathbf{F}) \mathrm{d} v,
 \]</span></p>
 <p>即</p>
 <p><span class="math display">\[
@@ -436,20 +437,21 @@ b, c&gt;0), h\)</span> 是 原点到 <span class="math inline">\(S\)</span>
 的切平面之距离.</p>
 <p>解 以 <span class="math inline">\(V\)</span> 记 <span
 class="math inline">\(S\)</span> 所雨区域, 以 <span
-class="math inline">\(n\)</span> 记 <span
+class="math inline">\(\mathbf{n}\)</span> 记 <span
 class="math inline">\(S\)</span> 的单位外法矢, 令 <span
 class="math inline">\(r=\)</span> <span class="math inline">\(\{x, y,
-z\}\)</span>, 则 <span class="math inline">\(h=r \cdot n\)</span>
-(这是要点 !), 由于椭球体的体积为 <span class="math inline">\(\frac{4}{3}
-\pi a b c\)</span>, 于是 用 Gauss 公式得</p>
+z\}\)</span>, 则 <span class="math inline">\(h=r \cdot
+\mathbf{n}\)</span> (这是要点 !), 由于椭球体的体积为 <span
+class="math inline">\(\frac{4}{3} \pi a b c\)</span>, 于是 用 Gauss
+公式得</p>
 <p><span class="math display">\[
-I=\oiint_{S} r \cdot n \mathrm{~d} S=\iiint_{V}(\nabla \cdot r)
+I=\oiint_{S} r \cdot \mathbf{n} \mathrm{~d} S=\iiint_{V}(\nabla \cdot r)
 \mathrm{d} v=3 \iiint_{V} \mathrm{~d} v=4 \pi a b c
 \]</span></p>
 <h2
 id="gauss公式常用来证明某些含曲面积分与三重积分的公式">Gauss公式常用来证明某些含曲面积分与三重积分的公式</h2>
 <p>Green第一公式</p>
-<p>设 <span class="math inline">\(S, V, n\)</span> 如定理 <span
+<p>设 <span class="math inline">\(S, V, \mathbf{n}\)</span> 如定理 <span
 class="math inline">\(1, u\)</span> 在 <span
 class="math inline">\(V\)</span> 及 <span
 class="math inline">\(S\)</span> 上有迭续的二阶偏导数, 则</p>
@@ -487,7 +489,7 @@ class="math inline">\(S\)</span> (包括边界!)</p>
 R\}\)</span>, 则成立如下的 “Stokes 公式”</p>
 <p><span class="math display">\[
 \oint_{L} \mathbf{F} \cdot \mathrm{d} r=\iint_{S}(\nabla \times
-\mathbf{F}) \cdot n \mathrm{d} S,
+\mathbf{F}) \cdot \mathbf{n} \mathrm{d} S,
 \]</span></p>
 <p>或改成坐标形式</p>
 <p><span class="math display">\[
@@ -2095,7 +2097,7 @@ L称作 <strong>积分弧段</strong></p>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">46 分钟</span>
+    <span title="站点阅读时长">47 分钟</span>
 </div>
 
 

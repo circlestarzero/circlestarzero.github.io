@@ -193,6 +193,473 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/13/GaussAndStroke/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="CC">
+      <meta itemprop="description" content="keep curious">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CC'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/13/GaussAndStroke/" class="post-title-link" itemprop="url">GaussAndStroke</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-13 10:12:13 / 修改时间：10:43:18" itemprop="dateCreated datePublished" datetime="2022-05-13T10:12:13+08:00">2022-05-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%BE%AE%E7%A7%AF%E5%88%86/" itemprop="url" rel="index"><span itemprop="name">微积分</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/05/13/GaussAndStroke/" class="post-meta-item leancloud_visitors" data-flag-title="GaussAndStroke" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/05/13/GaussAndStroke/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/13/GaussAndStroke/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="散度与旋度">散度与旋度</h1>
+<h2 id="矢量函数">矢量函数</h2>
+<p>设 <span class="math inline">\(u, P, Q, R\)</span> 是定义于某空间区域
+<span class="math inline">\(\Omega\)</span> 内的函数.称</p>
+<p><span class="math display">\[
+F=\{P, Q, R\}=P i+Q j+R k,
+\]</span></p>
+<p>为定义于 <span class="math inline">\(\Omega\)</span> 上的矢量函数.称
+<span class="math inline">\(F\)</span> 可微, 若 <span
+class="math inline">\(P, Q, R\)</span> 均可微, 称 <span
+class="math inline">\(F\)</span> 有连续 偏导数, 若 <span
+class="math inline">\(P, Q, R\)</span> 有连续偏导数.</p>
+<h2 id="散度旋度">散度;旋度</h2>
+<p>定以1 分别称</p>
+<p><span class="math display">\[
+\operatorname{div} F=P_{x}+Q_{y}+R_{z}
+\]</span></p>
+<p>与</p>
+<p><span class="math display">\[
+\operatorname{rot} F=\left\{R_{y}-Q_{z}, P_{z}-R_{x},
+Q_{x}-P_{y}\right\}
+\]</span></p>
+<p>为 <span class="math inline">\(F=\{P, Q, R\}\)</span>
+的散度与旋度.</p>
+<h2 id="hamilton算子">Hamilton算子</h2>
+<p>注意 <span class="math inline">\(\operatorname{div} F\)</span>
+是数量,而 <span class="math inline">\(\operatorname{rot}F\)</span>
+是矢量. 为了便于记忆,引人一个“符号矢量" <span
+class="math inline">\(\nabla\)</span> :</p>
+<p><span class="math display">\[
+\nabla=\left\{\frac{\partial}{\partial x}, \frac{\partial}{\partial y},
+\frac{\partial}{\partial z}\right\}
+\]</span></p>
+<p>称 <span class="math inline">\(\nabla\)</span> 为 Hamilton算子. 将
+<span class="math inline">\(\nabla\)</span> 与 <span
+class="math inline">\(\mathbf{F}\)</span> 形式上作"点积" 与
+"叉积",就得出 <span class="math inline">\(\operatorname{div}
+\mathbf{F}\)</span> 与 <span
+class="math inline">\(\operatorname{rot}\mathbf{F}\)</span> :</p>
+<p><span class="math display">\[
+\begin{gathered}
+\operatorname{div} \mathbf{F}=\frac{\partial P}{\partial
+x}+\frac{\partial Q}{\partial y}+\frac{\partial R}{\partial z}=\nabla
+\cdot \mathbf{F} ; \\
+\operatorname{rot} \mathbf{F}=\left|\begin{array}{ccc}
+i &amp; j &amp; k \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp;
+\frac{\partial}{\partial z} \\
+P &amp; Q &amp; R
+\end{array}\right|=\nabla \times \mathbf{F} .
+\end{gathered}
+\]</span></p>
+<p>其次, 梯度 <span class="math inline">\(\operatorname{grad} u\)</span>
+形式上可看作是“数量 <span class="math inline">\(u\)</span> 乘矢量 <span
+class="math inline">\(\nabla\)</span> ”;</p>
+<p><span class="math display">\[
+\operatorname{grad} u=\left\{\frac{\partial u}{\partial x},
+\frac{\partial u}{\partial y}, \frac{\partial u}{\partial
+z}\right\}=\left\{\frac{\partial}{\partial x}, \frac{\partial}{\partial
+y}, \frac{\partial}{\partial z}\right\} u=\nabla u
+\]</span></p>
+<h3 id="梯度-散度-旋度的算子表示">梯度, 散度, 旋度的算子表示</h3>
+<ul>
+<li>梯度 <span class="math inline">\(\nabla u\)</span></li>
+<li>散度 <span class="math inline">\(\nabla \cdot
+\mathbf{F}\)</span></li>
+<li>旋度 <span class="math inline">\(\nabla \times
+\mathbf{F}\)</span></li>
+</ul>
+<h3 id="满足的微分规则">满足的微分规则</h3>
+<ul>
+<li>线性规则:</li>
+</ul>
+<p><span class="math display">\[
+\left\{\begin{array}{l}
+\nabla(\alpha u+\beta v)=\alpha \nabla u+\beta \nabla v \\
+\nabla \cdot(\alpha \boldsymbol{F}+\beta \boldsymbol{G})=\alpha \nabla
+\cdot F+\beta \nabla \cdot G, \\
+\nabla \times(\alpha \boldsymbol{F}+\beta \boldsymbol{G})=\alpha \nabla
+\times \boldsymbol{F}+\beta \nabla \times \boldsymbol{G} .
+\end{array}\right.
+\]</span></p>
+<ul>
+<li>积规则</li>
+</ul>
+<p><span class="math display">\[
+\left\{\begin{array}{l}
+\nabla(u v)=v \nabla u+u \nabla u, \\
+\nabla \cdot(u F)=\nabla u \cdot F+u \nabla \cdot F, \\
+\nabla \times(u F)=\nabla u \times F+u \nabla \times F, \\
+\nabla \cdot(F \times G)=(\nabla \times F) \cdot G - F \cdot(\nabla
+\times G) .
+\end{array}\right.
+\]</span></p>
+<ul>
+<li>链规则</li>
+</ul>
+<p><span class="math display">\[
+\nabla f(u)=f&#39;(u) \nabla u .
+\]</span></p>
+<h3 id="组合公式">组合公式</h3>
+<p><span class="math display">\[
+\left\{\begin{array}{l}
+\nabla \cdot(\nabla \times \mathbf{F})=\text { divrot } F=0 \\
+\nabla \times \nabla u= \operatorname{rotgrad} u=0 \\
+\nabla \cdot \nabla u=\nabla^{2} u=u_{x x}+u_{y y}+u_{zz}
+\end{array}\right.
+\]</span></p>
+<h3 id="laplace算子">Laplace算子</h3>
+<p>通常记 <span class="math inline">\(\nabla^{2} u\)</span> 为 <span
+class="math inline">\(\Delta u\)</span>,称 <span
+class="math inline">\(\Delta\)</span> 为 Laplace 算子</p>
+<h3 id="常用公式">常用公式</h3>
+<p>设 <span class="math inline">\(r=\{x, y, z\}, r=|r|\)</span>,
+则有以下常用公式:</p>
+<p><span class="math display">\[
+\nabla r=\frac{1}{r} r, \nabla \cdot r=3, \nabla \times r=0
+\]</span></p>
+<h1 id="gauss-公式">Gauss 公式</h1>
+<p>定理 1 设空间闭区域 <span class="math inline">\(V\)</span>
+由分片光滑曲面 <span class="math inline">\(S\)</span> 所围成,函数 <span
+class="math inline">\(P,Q,R\)</span></p>
+<p>在 <span class="math inline">\(V\)</span> (包括边界!)
+上有连续的一阶偏导数, <span class="math inline">\(F=\{P, Q,
+R\}\)</span>, 则成立如下 的"Gauss 公式”:</p>
+<p><span class="math display">\[
+\oiint_{S}(\mathbf{F} \cdot n) \mathrm{d} S=\iiint_{V}(\nabla \cdot
+\mathbf{F}) d v,
+\]</span></p>
+<p>即</p>
+<p><span class="math display">\[
+\oiint_{S} P \mathrm{~d} y \mathrm{~d} z+Q \mathrm{~d} z \mathrm{~d} x+R
+\mathrm{~d} x \mathrm{~d} y=\iiint_{V}\left(P_{x}+Q_{y}+R_{z}\right)
+\mathrm{d} v,
+\]</span></p>
+<p>其中曲面积分取 <span class="math inline">\(S\)</span> 的外侧, <span
+class="math inline">\(\mathbf{n}\)</span> 为 <span
+class="math inline">\(S\)</span> 的外单位法矢量.</p>
+<ul>
+<li>Gauss公式主要用于化曲面积分为三重积分</li>
+<li>补成闭曲面
+<ul>
+<li>若s不是闭曲面,则不能直接用Gauss公式，此时可考虑用添加
+辅助曲面的方法将S补成闭曲面;"补块"是平行于坐标平面的平面块
+较为有利.</li>
+</ul></li>
+</ul>
+<h2
+id="某些特殊的第一型曲面积分亦可用gauss公式">某些特殊的第一型曲面积分亦可用Gauss公式</h2>
+<p>例 8 求 <span class="math inline">\(I=\iint_{S} h \mathrm{~d} S,
+S\)</span> 是椭球面 <span
+class="math inline">\(\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}+\frac{z^{2}}{c^{2}}=1(a,
+b, c&gt;0), h\)</span> 是 原点到 <span class="math inline">\(S\)</span>
+的切平面之距离.</p>
+<p>解 以 <span class="math inline">\(V\)</span> 记 <span
+class="math inline">\(S\)</span> 所雨区域, 以 <span
+class="math inline">\(n\)</span> 记 <span
+class="math inline">\(S\)</span> 的单位外法矢, 令 <span
+class="math inline">\(r=\)</span> <span class="math inline">\(\{x, y,
+z\}\)</span>, 则 <span class="math inline">\(h=r \cdot n\)</span>
+(这是要点 !), 由于椭球体的体积为 <span class="math inline">\(\frac{4}{3}
+\pi a b c\)</span>, 于是 用 Gauss 公式得</p>
+<p><span class="math display">\[
+I=\oiint_{S} r \cdot n \mathrm{~d} S=\iiint_{V}(\nabla \cdot r)
+\mathrm{d} v=3 \iiint_{V} \mathrm{~d} v=4 \pi a b c
+\]</span></p>
+<h2
+id="gauss公式常用来证明某些含曲面积分与三重积分的公式">Gauss公式常用来证明某些含曲面积分与三重积分的公式</h2>
+<p>Green第一公式</p>
+<p>设 <span class="math inline">\(S, V, n\)</span> 如定理 <span
+class="math inline">\(1, u\)</span> 在 <span
+class="math inline">\(V\)</span> 及 <span
+class="math inline">\(S\)</span> 上有迭续的二阶偏导数, 则</p>
+<p><span class="math display">\[
+\iint_{V}|\nabla u|^{2} \mathrm{~d} v=\iint_{S} u \frac{\partial
+u}{\partial n} \mathrm{~d} S-\iiint_{V} u \Delta u \mathrm{~d} v
+\]</span></p>
+<h1 id="stokes-公式">Stokes 公式</h1>
+<h2 id="基本定义">基本定义</h2>
+<ul>
+<li><p>简单闭曲线</p>
+<ul>
+<li>"简单闭曲线"意指分段光滑且自身不相交的闭曲线</li>
+</ul></li>
+<li><p>单连通;定向一致</p>
+<ul>
+<li>若 <span class="math inline">\(\mathrm{S}\)</span>
+内任一闭曲线可不越过边界而连续地缩为 一点，则说 <span
+class="math inline">\(\mathrm{S}\)</span> 是单连通的.若一人立于 <span
+class="math inline">\(\mathrm{S}\)</span> 的 指定一侧沿 <span
+class="math inline">\(L\)</span> 行进时， <span
+class="math inline">\(\mathrm{S}\)</span> 的指定一侧总在 左
+侧(如图11-29), 则说L与 <span class="math inline">\(S\)</span>
+的定向一致.</li>
+</ul></li>
+</ul>
+<p>定理 2(Stokes公式) 设分片光滑的定向曲面 <span
+class="math inline">\(S\)</span> 以分段光滑的有 向闭曲线 <span
+class="math inline">\(L\)</span> 为边界, <span
+class="math inline">\(L\)</span> 与 <span
+class="math inline">\(S\)</span> 的定向一致; 函数 <span
+class="math inline">\(P, Q, R\)</span> 在 <span
+class="math inline">\(S\)</span> (包括边界!)</p>
+<p>上有连续的一阶偏导数, <span class="math inline">\(F=\{P, Q,
+R\}\)</span>, 则成立如下的 “Stokes 公式”</p>
+<p><span class="math display">\[
+\oint_{L} \mathbf{F} \cdot d r=\iint_{S}(\nabla \times \mathbf{F}) \cdot
+n d S,
+\]</span></p>
+<p>或改成坐标形式</p>
+<p><span class="math display">\[
+\begin{aligned}
+\oint_{L} P \mathrm{~d} x+Q \mathrm{~d} y+R \mathrm{~d} z=&amp;
+\iint_{S}\left(R_{y}-Q_{z}\right) \mathrm{d} y \mathrm{~d}
+z+\left(P_{z}-R_{x}\right) \mathrm{d} z \mathrm{~d} x \\
+&amp;+\left(Q_{x}-P_{y}\right) \mathrm{d} x \mathrm{~d} y .
+\end{aligned}
+\]</span></p>
+<p>为了便于记忆, 利用行列式记号将 Stokes 公式(11)写成</p>
+<p><span class="math display">\[
+\oint_{L} P \mathrm{~d} x+Q \mathrm{~d} y+R \mathrm{~d}
+z=\iint_{s}\left|\begin{array}{ccc}
+\mathrm{d} y \mathrm{~d} z &amp; \mathrm{~d} z \mathrm{~d} x &amp;
+\mathrm{~d} x \mathrm{~d} y \\
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp;
+\frac{\partial}{\partial z} \\
+P &amp; Q &amp; R
+\end{array}\right| .
+\]</span></p>
+<ul>
+<li>Stokes公式是Green公式的推广</li>
+<li>利用 Stokes公式 可将某些曲线积分的计算转化为曲面积分的 计算</li>
+</ul>
+<h2
+id="平面曲线积分与路径无关的条件推广">平面曲线积分与路径无关的条件推广</h2>
+<p>定理 3 设 <span class="math inline">\(\Omega\)</span>
+是单连通的空间区域,函数 <span class="math inline">\(P, Q, R\)</span> 在
+<span class="math inline">\(\Omega\)</span> 内有连续的 一阶偏导数,
+则以下条件相互等价:</p>
+<ul>
+<li>曲线积分 <span class="math inline">\(\int_{L} P \mathrm{~d} x+Q
+\mathrm{~d} y+R \mathrm{~d} z\)</span> 在 <span
+class="math inline">\(\Omega\)</span> 内与路径无关 (即只决定 于 <span
+class="math inline">\(L\)</span> 的起点与终点);</li>
+<li>存在可微函数 <span class="math inline">\(u\)</span> 使 <span
+class="math inline">\(\mathrm{d} u=P \mathrm{~d} x+Q \mathrm{~d} y+R
+\mathrm{~d} z\)</span>, 即 <span class="math inline">\(P \mathrm{~d} x+Q
+\mathrm{~d} y+\)</span> <span class="math inline">\(R \mathrm{~d}
+z\)</span> 是全微分;</li>
+<li>在 <span class="math inline">\(\Omega\)</span> 内 <span
+class="math inline">\(\nabla \times F=0, F=\{P, Q, R\}\)</span>, 即
+<span class="math inline">\(\frac{\partial R}{\partial y}=\frac{\partial
+Q}{\partial z}, \frac{\partial P}{\partial z}=\frac{\partial R}{\partial
+x}\)</span>, <span class="math inline">\(\frac{\partial Q}{\partial
+x}=\frac{\partial P}{\partial y} ;\)</span></li>
+<li>对 <span class="math inline">\(\Omega\)</span> 内任何分段光滑闭由线
+<span class="math inline">\(C\)</span>, 有 <span
+class="math inline">\(\oint_{C} P \mathrm{~d} x+Q \mathrm{~d} y+R
+\mathrm{~d} z=0\)</span>.</li>
+</ul>
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%911/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="CC">
+      <meta itemprop="description" content="keep curious">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CC'blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%911/" class="post-title-link" itemprop="url">数理逻辑1</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-12 14:36:44 / 修改时间：14:37:05" itemprop="dateCreated datePublished" datetime="2022-05-12T14:36:44+08:00">2022-05-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">离散数学</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/05/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%911/" class="post-meta-item leancloud_visitors" data-flag-title="数理逻辑1" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/05/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%911/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%911/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>0</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
+<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/11/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -225,7 +692,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-12 11:29:51" itemprop="dateModified" datetime="2022-05-12T11:29:51+08:00">2022-05-12</time>
+                <time title="修改时间：2022-05-12 11:52:25" itemprop="dateModified" datetime="2022-05-12T11:52:25+08:00">2022-05-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -296,9 +763,11 @@ class="math inline">\(S_i (1 \leq i \leq n)\)</span> 的面积, 令 <span
 class="math inline">\(\lambda = \max_{1 \leq i \leq n} d (S_i)\)</span>.
 在每个 <span class="math inline">\(S_i\)</span> 上任取一点 <span
 class="math inline">\(P_{i}\)</span>,构成和式 $ <em>{i=1}^{n} f
-(P</em>{i}) S_i$. 若极限 <span class="math display">\[ I =
-\lim_{\lambda  \to 0} \sum_{i=1}^{n} f (P_{i})\Delta S_i \]</span>
-存在,且与 <span class="math inline">\(S\)</span> 的分法, 以及 <span
+(P</em>{i}) S_i$. 若极限</p>
+<p><span class="math display">\[
+I = \lim_{\lambda  \to 0} \sum_{i=1}^{n} f (P_{i})\Delta S_i
+\]</span></p>
+<p>存在,且与 <span class="math inline">\(S\)</span> 的分法, 以及 <span
 class="math inline">\(P_{i}\)</span> 的取法无关,则称 <span
 class="math inline">\(I\)</span> 为 <span
 class="math inline">\(f(x,y,z)\)</span> 在 <span
@@ -309,34 +778,49 @@ class="math inline">\(S\)</span>
 \iint_{S} f \mathrm{d}S\)</span> ,若 <span
 class="math inline">\(S\)</span> 为封闭曲面, 则记为 <span
 class="math inline">\(\displaystyle \int\kern{-8pt}\int \kern{-24mu}
-\bigcirc f\mathrm{d}S\)</span> ),即 <span class="math display">\[
+\bigcirc f\mathrm{d}S\)</span> ),即</p>
+<p><span class="math display">\[
 \iint_{S} f (x,y,z)\mathrm{d}S = \lim_{\lambda  \to 0} \sum_{i=1}^{n} f
-(P_{i})\Delta S_i\]</span></p>
+(P_{i})\Delta S_i
+\]</span></p>
 <p>若 <span class="math inline">\(f\)</span> 在 <span
 class="math inline">\(S\)</span> 上连续,则积分 <span
 class="math inline">\(\displaystyle \iint_{S}f\mathrm{d}s\)</span>
 存在</p>
 <p><span class="math display">\[
-    S\text{的面积} = \iint_{S}\mathrm{d}S
+S\text{的面积} = \iint_{S}\mathrm{d}S
 \]</span></p>
 <h3 id="性质">性质</h3>
 <ul>
-<li>线性性质 <span class="math display">\[ \iint_{S} (af+bg)\mathrm{d}S
-= a \iint_{S}f\mathrm{d}S + b \iint_{S}g \mathrm{d}S \]</span></li>
-<li>区域可分性 <span class="math display">\[ \iint_{S}f\mathrm{d}S =
-\iint_{S_1}f\mathrm{d}S + \iint_{S_2}f\mathrm{d}s \]</span></li>
-<li>中值定理 <span class="math display">\[ \iint_{S}f\mathrm{d}S = f (P)
-\sigma  \]</span></li>
+<li>线性性质</li>
 </ul>
+<p><span class="math display">\[
+\iint_{S} (af+bg)\mathrm{d}S = a \iint_{S}f\mathrm{d}S + b \iint_{S}g
+\mathrm{d}S
+\]</span></p>
+<ul>
+<li>区域可分性</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}f\mathrm{d}S = \iint_{S_1}f\mathrm{d}S +
+\iint_{S_2}f\mathrm{d}s
+\]</span></p>
+<ul>
+<li>中值定理</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}f\mathrm{d}S = f (P) \sigma
+\]</span></p>
 <h2 id="化为二重积分">化为二重积分</h2>
 <p>定理1 设曲面 <span class="math inline">\(S\)</span> 有方程 <span
 class="math inline">\(z=z (x,y) ((x,y) \in D)\)</span> 给定, $z = z(x,y)
 $ 在有界闭区域 <span class="math inline">\(D\)</span>
 上有定义且有连续的一阶偏导数, 若 <span class="math inline">\(f
-(x,y,z)\)</span> 在 <span class="math inline">\(S\)</span> 上连续,则
-<span class="math display">\[ \iint_{S}f\mathrm{d}S = \iint_{D} f (x,y,z
-(x,y) ) \sqrt{1 + z_{x}^{2}+z_{y}^{2}}
-\mathrm{d}x\mathrm{d}y\]</span></p>
+(x,y,z)\)</span> 在 <span class="math inline">\(S\)</span> 上连续,则</p>
+<p><span class="math display">\[
+\iint_{S}f\mathrm{d}S = \iint_{D} f (x,y,z (x,y) ) \sqrt{1 +
+z_{x}^{2}+z_{y}^{2}} \mathrm{d}x\mathrm{d}y
+\]</span></p>
 <p>锥面 <span class="math inline">\(z = \sqrt{x_2+y_2}\)</span>
 的面积元公式 <span class="math inline">\(\displaystyle \mathrm{d} S =
 \sqrt{2} \mathrm{d}x\mathrm{d}y\)</span></p>
@@ -366,11 +850,13 @@ class="math inline">\(S\)</span> 的另一侧. 可定向曲面恰有两侧, 因�
 class="math inline">\(\mathbf{n}\)</span> 是 <span
 class="math inline">\(S\)</span> 的单位法矢量, 它指向 <span
 class="math inline">\(S\)</span> 的指定的一侧, 其方向余弦为 $, ,$ 若
-<span class="math inline">\(S\)</span> 由方程 $z = z (x,y) $ 给定, 则
-<span class="math display">\[
+<span class="math inline">\(S\)</span> 由方程 $z = z (x,y) $ 给定,
+则</p>
+<p><span class="math display">\[
 \mathbf{n} = \frac{1}{\sqrt{1 + z_{x}^{2} + z_{y}^{2}}  }
 \left\{  -z_{x}, - z_{y}, 1\right\}
-\]</span> 指向 <span class="math inline">\(S\)</span> 的上侧,
+\]</span></p>
+<p>指向 <span class="math inline">\(S\)</span> 的上侧,
 相反的一侧是下侧.</p>
 <p>若 <span class="math inline">\(S\)</span> 是包围区域 <span
 class="math inline">\(V\)</span> 的闭曲面,则 <span
@@ -390,92 +876,88 @@ class="math inline">\(\mathbf{F}\)</span>, 在曲面指定一侧上的
 <strong>第二型曲面积分</strong>, 也记作 <span
 class="math inline">\(\displaystyle \iint_{S} \mathbf{F}\cdot
 \mathrm{d}S\)</span></p>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 5%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>也称第二型曲面积分为 <strong>对坐标的曲面积分</strong> <span
-class="math display">\[ \begin{aligned}
+<hr />
+<p>也称第二型曲面积分为 <strong>对坐标的曲面积分</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
 \iint_{S}\mathbf{F}\cdot \mathbf{n} \mathrm{d}S  &amp;= \iint_{S}
 \left(  P \cos \alpha + Q \cos \beta + R \cos \gamma \right)
 \mathrm{d}S\\
 &amp;= \iint_{S} P \mathrm{d}y \mathrm{d}z+ Q\mathrm{d}z\mathrm{d}x + R
 \mathrm{d}x\mathrm{d}y
-\end{aligned} \]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>性质</td>
-</tr>
-<tr class="even">
-<td>* 若 <span class="math inline">\(S\)</span>
+\end{aligned}
+\]</span></p>
+<hr />
+<p>性质</p>
+<ul>
+<li>若 <span class="math inline">\(S\)</span>
 为分片光滑有有限面积的定向曲面, $ = { P,Q,R } $ 是 <span
 class="math inline">\(S\)</span> 上的分片连续的矢量函数,则曲面积分 <span
 class="math inline">\(\displaystyle \iint_{S} \mathbf{F} \cdot
-\mathrm{d}\mathbf{S}\)</span> 存在 * (线性性质) 设 <span
-class="math inline">\(\mathbf{F} = a \mathbf{G} + b \mathbf{H}\)</span>,
-则 <span class="math display">\[ \iint_{S} \mathbf{F} \cdot \mathrm{d}
-\mathbf{S} = a \iint_{S} \mathbf{G} \cdot \mathrm{d}\mathbf{S} + b
-\iint_{S}\mathbf{H}\cdot  \mathrm{d}\mathbf{S} \]</span></td>
-</tr>
-<tr class="odd">
-<td>* (分块积分) 设 <span class="math inline">\(S\)</span> 分割为 <span
+\mathrm{d}\mathbf{S}\)</span> 存在</li>
+<li>(线性性质) 设 <span class="math inline">\(\mathbf{F} = a \mathbf{G}
++ b \mathbf{H}\)</span>, 则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S} \mathbf{F} \cdot \mathrm{d} \mathbf{S} = a \iint_{S}
+\mathbf{G} \cdot \mathrm{d}\mathbf{S} + b
+\iint_{S}\mathbf{H}\cdot  \mathrm{d}\mathbf{S}
+\]</span></p>
+<ul>
+<li>(分块积分) 设 <span class="math inline">\(S\)</span> 分割为 <span
 class="math inline">\(S_1\)</span> 和 <span
-class="math inline">\(S_2\)</span> (定向保持一致),则</td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ \iint_{S}\mathbf{F} \cdot
-\mathrm{d}\mathbf{S}= \iint_{S_1}\mathbf{F} \cdot \mathrm{d}\mathbf{S} +
-\iint_{S_2}\mathbf{F} \cdot \mathrm{d}\mathbf{S}\]</span></td>
-</tr>
-<tr class="odd">
-<td>* 若记 <span class="math inline">\(-S\)</span> 为 <span
-class="math inline">\(S\)</span> 的反向曲面,则</td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ \iint_{-S} \mathbf{F} \cdot \mathrm{d}
-\mathbf{S} = - \iint_{S} \mathbf{F} \cdot \mathrm{d}\mathbf{S}
-\]</span></td>
-</tr>
-<tr class="odd">
-<td>* 若在 <span class="math inline">\(S\)</span> 上处处有 <span
-class="math inline">\(\mathbf{F} \perp \mathbf{n}\)</span> 则 <span
-class="math display">\[ \iint_{S}\mathbf{F}\cdot \mathrm{d}\mathbf{S} =
-0 \]</span></td>
-</tr>
-<tr class="even">
-<td>* <span class="math display">\[ \iint_{S} P\mathrm{d}z\mathrm{d}y
-+Q\mathrm{d}x\mathrm{d}z + R \mathrm{d}x\mathrm{d}y =
-\iint_{S}P\mathrm{d}z\mathrm{d}y + \iint_{S}Q\mathrm{d}x\mathrm{d}z +
-\iint_{S}R\mathrm{d}x\mathrm{d}y \]</span></td>
-</tr>
-<tr class="odd">
-<td>## 化为二重积分</td>
-</tr>
-<tr class="even">
-<td>定理1 设曲面 <span class="math inline">\(S\)</span> 由方程 <span
+class="math inline">\(S_2\)</span> (定向保持一致),则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}\mathbf{F} \cdot \mathrm{d}\mathbf{S}= \iint_{S_1}\mathbf{F}
+\cdot \mathrm{d}\mathbf{S} + \iint_{S_2}\mathbf{F} \cdot
+\mathrm{d}\mathbf{S}
+\]</span></p>
+<ul>
+<li>若记 <span class="math inline">\(-S\)</span> 为 <span
+class="math inline">\(S\)</span> 的反向曲面,则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{-S} \mathbf{F} \cdot \mathrm{d} \mathbf{S} = - \iint_{S}
+\mathbf{F} \cdot \mathrm{d}\mathbf{S}
+\]</span></p>
+<ul>
+<li>若在 <span class="math inline">\(S\)</span> 上处处有 <span
+class="math inline">\(\mathbf{F} \perp \mathbf{n}\)</span> 则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}\mathbf{F}\cdot \mathrm{d}\mathbf{S} = 0
+\]</span></p>
+<ul>
+<li><span class="math display">\[
+\iint_{S} P\mathrm{d}z\mathrm{d}y +Q\mathrm{d}x\mathrm{d}z + R
+\mathrm{d}x\mathrm{d}y = \iint_{S}P\mathrm{d}z\mathrm{d}y +
+\iint_{S}Q\mathrm{d}x\mathrm{d}z + \iint_{S}R\mathrm{d}x\mathrm{d}y
+\]</span></li>
+</ul>
+<h2 id="化为二重积分-1">化为二重积分</h2>
+<p>定理1 设曲面 <span class="math inline">\(S\)</span> 由方程 <span
 class="math inline">\(z = z (x,y) ((x,y) \in D)\)</span> 给定, 函数 $z=
 z (x,y) $ 在有界闭区域 <span class="math inline">\(D\)</span>
 上有连续的一阶偏导数, <span class="math inline">\(R (x,y,z)\)</span> 在
-<span class="math inline">\(S\)</span> 上连续,则 <span
-class="math display">\[ \iint_{S} R (x,y,z)\mathrm{d}x\mathrm{d}y= \pm
-\iint_{D}R (x,y, z (x,y) )\mathrm{d}x\mathrm{d}y \]</span></td>
-</tr>
-<tr class="odd">
-<td>* 当取 <span class="math inline">\(S\)</span> 上侧 (下侧)时,
-右端积分前取 正号 (负号)</td>
-</tr>
-</tbody>
-</table>
+<span class="math inline">\(S\)</span> 上连续,则</p>
+<p><span class="math display">\[
+\iint_{S} R (x,y,z)\mathrm{d}x\mathrm{d}y= \pm \iint_{D}R (x,y, z (x,y)
+)\mathrm{d}x\mathrm{d}y
+\]</span></p>
+<ul>
+<li>当取 <span class="math inline">\(S\)</span> 上侧 (下侧)时,
+右端积分前取 正号 (负号)</li>
+</ul>
+<hr />
 <p>分散投影法 将</p>
-<p><span class="math display">\[ \begin{aligned}
+<p><span class="math display">\[
+\begin{aligned}
 \iint_{S}\mathbf{F}\cdot \mathbf{n}\mathrm{d}S  &amp;= \iint_{S} P
 \mathrm{d}y \mathrm{d}z+ Q\mathrm{d}z\mathrm{d}x + R
 \mathrm{d}x\mathrm{d}y
-\end{aligned} \]</span></p>
+\end{aligned}
+\]</span></p>
 <p>右端三个积分的积分曲面分别向各坐标曲面投影求投影区域,化为计算三个二重积分</p>
 <hr />
 <p>统一投影法</p>
@@ -484,12 +966,14 @@ class="math display">\[ \iint_{S} R (x,y,z)\mathrm{d}x\mathrm{d}y= \pm
 \iint_{S}Q \mathrm{d}x\mathrm{d}z +
 \iint_{S}R\mathrm{d}y\mathrm{d}x\)</span>
 右端三个积分转换为同一坐标面上的二重积分</p>
-<p><span class="math display">\[ \begin{align}
-    &amp;\iint_{S} P \mathrm{d}y\mathrm{d}z + Q\mathrm{d}x\mathrm{d}z+
+<p><span class="math display">\[
+\begin{align}
+&amp;\iint_{S} P \mathrm{d}y\mathrm{d}z + Q\mathrm{d}x\mathrm{d}z+
 R\mathrm{d}x\mathrm{d}y\\
 &amp;= \pm \iint_{D} \left[  P \cdot (- z_{x}(x,y))+Q \cdot (-z_y (x,y))
 +R \right]\mathrm{d}x\mathrm{d}y \\
-\end{align}  \]</span></p>
+\end{align}
+\]</span></p>
 <hr />
 <p>计算积分 <span class="math inline">\(\displaystyle \iint_{S} P
 \mathrm{d}y\mathrm{d}z+Q\mathrm{d}z\mathrm{d}x+
@@ -1097,110 +1581,6 @@ p))\\
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/02/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="CC">
-      <meta itemprop="description" content="keep curious">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CC'blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/05/02/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/" class="post-title-link" itemprop="url">数理逻辑</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-05-02 18:21:35 / 修改时间：18:21:52" itemprop="dateCreated datePublished" datetime="2022-05-02T18:21:35+08:00">2022-05-02</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" itemprop="url" rel="index"><span itemprop="name">离散数学</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/05/02/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/" class="post-meta-item leancloud_visitors" data-flag-title="数理逻辑" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/05/02/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/05/02/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%91/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/05/01/shortcuts/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1346,7 +1726,7 @@ p))\\
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-11 14:46:00" itemprop="dateModified" datetime="2022-05-11T14:46:00+08:00">2022-05-11</time>
+                <time title="修改时间：2022-05-13 09:45:04" itemprop="dateModified" datetime="2022-05-13T09:45:04+08:00">2022-05-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1584,147 +1964,6 @@ L称作 <strong>积分弧段</strong></p>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://circlecirclezero.cc/2022/04/27/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="CC">
-      <meta itemprop="description" content="keep curious">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="CC'blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/04/27/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/" class="post-title-link" itemprop="url">热力学第一定律</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2022-04-27 09:31:50" itemprop="dateCreated datePublished" datetime="2022-04-27T09:31:50+08:00">2022-04-27</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-06 09:52:41" itemprop="dateModified" datetime="2022-05-06T09:52:41+08:00">2022-05-06</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/" itemprop="url" rel="index"><span itemprop="name">大学物理</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/04/27/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/" class="post-meta-item leancloud_visitors" data-flag-title="热力学第一定律" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/04/27/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/04/27/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="热力学基础">热力学基础</h1>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 5%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><span class="math display">\[ \begin{aligned}
-p V  &amp;= vRT\\
-Q  &amp;= \Delta E + A\\
-Q &amp;= vC \Delta T\\
-\Delta E &amp;= vC_{V,m} \Delta T\\
-A &amp;= \int p \mathrm{d}v\\
-\Delta T &amp;=T_2-T_1\\
-\Delta E &amp;= E_2 -E_1\\
-C_{P,m} &amp;= C_{V,m}  + R\\
-C_{V,m} &amp;= \frac{i}{2} R\\
-\gamma &amp;= \frac{C_{P,m}}{C_{V,m}}
-\end{aligned} \]</span></td>
-</tr>
-<tr class="even">
-<td><img data-src="/2022/04/27/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/2022-05-06-09-27-18.png" class=""></td>
-</tr>
-</tbody>
-</table>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/04/27/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%B8%80%E5%AE%9A%E5%BE%8B/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1796,7 +2035,7 @@ C_{V,m} &amp;= \frac{i}{2} R\\
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1847,12 +2086,12 @@ C_{V,m} &amp;= \frac{i}{2} R\\
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">46k</span>
+    <span title="站点总字数">51k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">42 分钟</span>
+    <span title="站点阅读时长">46 分钟</span>
 </div>
 
 

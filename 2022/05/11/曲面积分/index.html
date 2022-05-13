@@ -28,7 +28,7 @@
 <meta property="og:description" content="第一型曲面积分 定义与性质 定义1 设 \(S\) 是具有有限面积的曲面, \(f (x,y,z)\) 是定义于 \(S\) 上的有界函数,以任意方式将 \(S\) 划分成 \(n\) 小块 \(S_1,S_2,\cdots, S_n\) , 以 \(\Delta S_i\) 记 \(S_i (1 \leq i \leq n)\) 的面积, 令 \(\lambda &#x3D; \max_{1 \leq i">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-11T06:47:01.000Z">
-<meta property="article:modified_time" content="2022-05-12T03:29:51.293Z">
+<meta property="article:modified_time" content="2022-05-12T03:52:25.760Z">
 <meta property="article:author" content="CC">
 <meta name="twitter:card" content="summary">
 
@@ -227,7 +227,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-05-12 11:29:51" itemprop="dateModified" datetime="2022-05-12T11:29:51+08:00">2022-05-12</time>
+                <time title="修改时间：2022-05-12 11:52:25" itemprop="dateModified" datetime="2022-05-12T11:52:25+08:00">2022-05-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -298,9 +298,11 @@ class="math inline">\(S_i (1 \leq i \leq n)\)</span> 的面积, 令 <span
 class="math inline">\(\lambda = \max_{1 \leq i \leq n} d (S_i)\)</span>.
 在每个 <span class="math inline">\(S_i\)</span> 上任取一点 <span
 class="math inline">\(P_{i}\)</span>,构成和式 $ <em>{i=1}^{n} f
-(P</em>{i}) S_i$. 若极限 <span class="math display">\[ I =
-\lim_{\lambda  \to 0} \sum_{i=1}^{n} f (P_{i})\Delta S_i \]</span>
-存在,且与 <span class="math inline">\(S\)</span> 的分法, 以及 <span
+(P</em>{i}) S_i$. 若极限</p>
+<p><span class="math display">\[
+I = \lim_{\lambda  \to 0} \sum_{i=1}^{n} f (P_{i})\Delta S_i
+\]</span></p>
+<p>存在,且与 <span class="math inline">\(S\)</span> 的分法, 以及 <span
 class="math inline">\(P_{i}\)</span> 的取法无关,则称 <span
 class="math inline">\(I\)</span> 为 <span
 class="math inline">\(f(x,y,z)\)</span> 在 <span
@@ -311,34 +313,49 @@ class="math inline">\(S\)</span>
 \iint_{S} f \mathrm{d}S\)</span> ,若 <span
 class="math inline">\(S\)</span> 为封闭曲面, 则记为 <span
 class="math inline">\(\displaystyle \int\kern{-8pt}\int \kern{-24mu}
-\bigcirc f\mathrm{d}S\)</span> ),即 <span class="math display">\[
+\bigcirc f\mathrm{d}S\)</span> ),即</p>
+<p><span class="math display">\[
 \iint_{S} f (x,y,z)\mathrm{d}S = \lim_{\lambda  \to 0} \sum_{i=1}^{n} f
-(P_{i})\Delta S_i\]</span></p>
+(P_{i})\Delta S_i
+\]</span></p>
 <p>若 <span class="math inline">\(f\)</span> 在 <span
 class="math inline">\(S\)</span> 上连续,则积分 <span
 class="math inline">\(\displaystyle \iint_{S}f\mathrm{d}s\)</span>
 存在</p>
 <p><span class="math display">\[
-    S\text{的面积} = \iint_{S}\mathrm{d}S
+S\text{的面积} = \iint_{S}\mathrm{d}S
 \]</span></p>
 <h3 id="性质">性质</h3>
 <ul>
-<li>线性性质 <span class="math display">\[ \iint_{S} (af+bg)\mathrm{d}S
-= a \iint_{S}f\mathrm{d}S + b \iint_{S}g \mathrm{d}S \]</span></li>
-<li>区域可分性 <span class="math display">\[ \iint_{S}f\mathrm{d}S =
-\iint_{S_1}f\mathrm{d}S + \iint_{S_2}f\mathrm{d}s \]</span></li>
-<li>中值定理 <span class="math display">\[ \iint_{S}f\mathrm{d}S = f (P)
-\sigma  \]</span></li>
+<li>线性性质</li>
 </ul>
+<p><span class="math display">\[
+\iint_{S} (af+bg)\mathrm{d}S = a \iint_{S}f\mathrm{d}S + b \iint_{S}g
+\mathrm{d}S
+\]</span></p>
+<ul>
+<li>区域可分性</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}f\mathrm{d}S = \iint_{S_1}f\mathrm{d}S +
+\iint_{S_2}f\mathrm{d}s
+\]</span></p>
+<ul>
+<li>中值定理</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}f\mathrm{d}S = f (P) \sigma
+\]</span></p>
 <h2 id="化为二重积分">化为二重积分</h2>
 <p>定理1 设曲面 <span class="math inline">\(S\)</span> 有方程 <span
 class="math inline">\(z=z (x,y) ((x,y) \in D)\)</span> 给定, $z = z(x,y)
 $ 在有界闭区域 <span class="math inline">\(D\)</span>
 上有定义且有连续的一阶偏导数, 若 <span class="math inline">\(f
-(x,y,z)\)</span> 在 <span class="math inline">\(S\)</span> 上连续,则
-<span class="math display">\[ \iint_{S}f\mathrm{d}S = \iint_{D} f (x,y,z
-(x,y) ) \sqrt{1 + z_{x}^{2}+z_{y}^{2}}
-\mathrm{d}x\mathrm{d}y\]</span></p>
+(x,y,z)\)</span> 在 <span class="math inline">\(S\)</span> 上连续,则</p>
+<p><span class="math display">\[
+\iint_{S}f\mathrm{d}S = \iint_{D} f (x,y,z (x,y) ) \sqrt{1 +
+z_{x}^{2}+z_{y}^{2}} \mathrm{d}x\mathrm{d}y
+\]</span></p>
 <p>锥面 <span class="math inline">\(z = \sqrt{x_2+y_2}\)</span>
 的面积元公式 <span class="math inline">\(\displaystyle \mathrm{d} S =
 \sqrt{2} \mathrm{d}x\mathrm{d}y\)</span></p>
@@ -368,11 +385,13 @@ class="math inline">\(S\)</span> 的另一侧. 可定向曲面恰有两侧, 因�
 class="math inline">\(\mathbf{n}\)</span> 是 <span
 class="math inline">\(S\)</span> 的单位法矢量, 它指向 <span
 class="math inline">\(S\)</span> 的指定的一侧, 其方向余弦为 $, ,$ 若
-<span class="math inline">\(S\)</span> 由方程 $z = z (x,y) $ 给定, 则
-<span class="math display">\[
+<span class="math inline">\(S\)</span> 由方程 $z = z (x,y) $ 给定,
+则</p>
+<p><span class="math display">\[
 \mathbf{n} = \frac{1}{\sqrt{1 + z_{x}^{2} + z_{y}^{2}}  }
 \left\{  -z_{x}, - z_{y}, 1\right\}
-\]</span> 指向 <span class="math inline">\(S\)</span> 的上侧,
+\]</span></p>
+<p>指向 <span class="math inline">\(S\)</span> 的上侧,
 相反的一侧是下侧.</p>
 <p>若 <span class="math inline">\(S\)</span> 是包围区域 <span
 class="math inline">\(V\)</span> 的闭曲面,则 <span
@@ -392,92 +411,88 @@ class="math inline">\(\mathbf{F}\)</span>, 在曲面指定一侧上的
 <strong>第二型曲面积分</strong>, 也记作 <span
 class="math inline">\(\displaystyle \iint_{S} \mathbf{F}\cdot
 \mathrm{d}S\)</span></p>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 5%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>也称第二型曲面积分为 <strong>对坐标的曲面积分</strong> <span
-class="math display">\[ \begin{aligned}
+<hr />
+<p>也称第二型曲面积分为 <strong>对坐标的曲面积分</strong></p>
+<p><span class="math display">\[
+\begin{aligned}
 \iint_{S}\mathbf{F}\cdot \mathbf{n} \mathrm{d}S  &amp;= \iint_{S}
 \left(  P \cos \alpha + Q \cos \beta + R \cos \gamma \right)
 \mathrm{d}S\\
 &amp;= \iint_{S} P \mathrm{d}y \mathrm{d}z+ Q\mathrm{d}z\mathrm{d}x + R
 \mathrm{d}x\mathrm{d}y
-\end{aligned} \]</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>性质</td>
-</tr>
-<tr class="even">
-<td>* 若 <span class="math inline">\(S\)</span>
+\end{aligned}
+\]</span></p>
+<hr />
+<p>性质</p>
+<ul>
+<li>若 <span class="math inline">\(S\)</span>
 为分片光滑有有限面积的定向曲面, $ = { P,Q,R } $ 是 <span
 class="math inline">\(S\)</span> 上的分片连续的矢量函数,则曲面积分 <span
 class="math inline">\(\displaystyle \iint_{S} \mathbf{F} \cdot
-\mathrm{d}\mathbf{S}\)</span> 存在 * (线性性质) 设 <span
-class="math inline">\(\mathbf{F} = a \mathbf{G} + b \mathbf{H}\)</span>,
-则 <span class="math display">\[ \iint_{S} \mathbf{F} \cdot \mathrm{d}
-\mathbf{S} = a \iint_{S} \mathbf{G} \cdot \mathrm{d}\mathbf{S} + b
-\iint_{S}\mathbf{H}\cdot  \mathrm{d}\mathbf{S} \]</span></td>
-</tr>
-<tr class="odd">
-<td>* (分块积分) 设 <span class="math inline">\(S\)</span> 分割为 <span
+\mathrm{d}\mathbf{S}\)</span> 存在</li>
+<li>(线性性质) 设 <span class="math inline">\(\mathbf{F} = a \mathbf{G}
++ b \mathbf{H}\)</span>, 则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S} \mathbf{F} \cdot \mathrm{d} \mathbf{S} = a \iint_{S}
+\mathbf{G} \cdot \mathrm{d}\mathbf{S} + b
+\iint_{S}\mathbf{H}\cdot  \mathrm{d}\mathbf{S}
+\]</span></p>
+<ul>
+<li>(分块积分) 设 <span class="math inline">\(S\)</span> 分割为 <span
 class="math inline">\(S_1\)</span> 和 <span
-class="math inline">\(S_2\)</span> (定向保持一致),则</td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ \iint_{S}\mathbf{F} \cdot
-\mathrm{d}\mathbf{S}= \iint_{S_1}\mathbf{F} \cdot \mathrm{d}\mathbf{S} +
-\iint_{S_2}\mathbf{F} \cdot \mathrm{d}\mathbf{S}\]</span></td>
-</tr>
-<tr class="odd">
-<td>* 若记 <span class="math inline">\(-S\)</span> 为 <span
-class="math inline">\(S\)</span> 的反向曲面,则</td>
-</tr>
-<tr class="even">
-<td><span class="math display">\[ \iint_{-S} \mathbf{F} \cdot \mathrm{d}
-\mathbf{S} = - \iint_{S} \mathbf{F} \cdot \mathrm{d}\mathbf{S}
-\]</span></td>
-</tr>
-<tr class="odd">
-<td>* 若在 <span class="math inline">\(S\)</span> 上处处有 <span
-class="math inline">\(\mathbf{F} \perp \mathbf{n}\)</span> 则 <span
-class="math display">\[ \iint_{S}\mathbf{F}\cdot \mathrm{d}\mathbf{S} =
-0 \]</span></td>
-</tr>
-<tr class="even">
-<td>* <span class="math display">\[ \iint_{S} P\mathrm{d}z\mathrm{d}y
-+Q\mathrm{d}x\mathrm{d}z + R \mathrm{d}x\mathrm{d}y =
-\iint_{S}P\mathrm{d}z\mathrm{d}y + \iint_{S}Q\mathrm{d}x\mathrm{d}z +
-\iint_{S}R\mathrm{d}x\mathrm{d}y \]</span></td>
-</tr>
-<tr class="odd">
-<td>## 化为二重积分</td>
-</tr>
-<tr class="even">
-<td>定理1 设曲面 <span class="math inline">\(S\)</span> 由方程 <span
+class="math inline">\(S_2\)</span> (定向保持一致),则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}\mathbf{F} \cdot \mathrm{d}\mathbf{S}= \iint_{S_1}\mathbf{F}
+\cdot \mathrm{d}\mathbf{S} + \iint_{S_2}\mathbf{F} \cdot
+\mathrm{d}\mathbf{S}
+\]</span></p>
+<ul>
+<li>若记 <span class="math inline">\(-S\)</span> 为 <span
+class="math inline">\(S\)</span> 的反向曲面,则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{-S} \mathbf{F} \cdot \mathrm{d} \mathbf{S} = - \iint_{S}
+\mathbf{F} \cdot \mathrm{d}\mathbf{S}
+\]</span></p>
+<ul>
+<li>若在 <span class="math inline">\(S\)</span> 上处处有 <span
+class="math inline">\(\mathbf{F} \perp \mathbf{n}\)</span> 则</li>
+</ul>
+<p><span class="math display">\[
+\iint_{S}\mathbf{F}\cdot \mathrm{d}\mathbf{S} = 0
+\]</span></p>
+<ul>
+<li><span class="math display">\[
+\iint_{S} P\mathrm{d}z\mathrm{d}y +Q\mathrm{d}x\mathrm{d}z + R
+\mathrm{d}x\mathrm{d}y = \iint_{S}P\mathrm{d}z\mathrm{d}y +
+\iint_{S}Q\mathrm{d}x\mathrm{d}z + \iint_{S}R\mathrm{d}x\mathrm{d}y
+\]</span></li>
+</ul>
+<h2 id="化为二重积分-1">化为二重积分</h2>
+<p>定理1 设曲面 <span class="math inline">\(S\)</span> 由方程 <span
 class="math inline">\(z = z (x,y) ((x,y) \in D)\)</span> 给定, 函数 $z=
 z (x,y) $ 在有界闭区域 <span class="math inline">\(D\)</span>
 上有连续的一阶偏导数, <span class="math inline">\(R (x,y,z)\)</span> 在
-<span class="math inline">\(S\)</span> 上连续,则 <span
-class="math display">\[ \iint_{S} R (x,y,z)\mathrm{d}x\mathrm{d}y= \pm
-\iint_{D}R (x,y, z (x,y) )\mathrm{d}x\mathrm{d}y \]</span></td>
-</tr>
-<tr class="odd">
-<td>* 当取 <span class="math inline">\(S\)</span> 上侧 (下侧)时,
-右端积分前取 正号 (负号)</td>
-</tr>
-</tbody>
-</table>
+<span class="math inline">\(S\)</span> 上连续,则</p>
+<p><span class="math display">\[
+\iint_{S} R (x,y,z)\mathrm{d}x\mathrm{d}y= \pm \iint_{D}R (x,y, z (x,y)
+)\mathrm{d}x\mathrm{d}y
+\]</span></p>
+<ul>
+<li>当取 <span class="math inline">\(S\)</span> 上侧 (下侧)时,
+右端积分前取 正号 (负号)</li>
+</ul>
+<hr />
 <p>分散投影法 将</p>
-<p><span class="math display">\[ \begin{aligned}
+<p><span class="math display">\[
+\begin{aligned}
 \iint_{S}\mathbf{F}\cdot \mathbf{n}\mathrm{d}S  &amp;= \iint_{S} P
 \mathrm{d}y \mathrm{d}z+ Q\mathrm{d}z\mathrm{d}x + R
 \mathrm{d}x\mathrm{d}y
-\end{aligned} \]</span></p>
+\end{aligned}
+\]</span></p>
 <p>右端三个积分的积分曲面分别向各坐标曲面投影求投影区域,化为计算三个二重积分</p>
 <hr />
 <p>统一投影法</p>
@@ -486,12 +501,14 @@ class="math display">\[ \iint_{S} R (x,y,z)\mathrm{d}x\mathrm{d}y= \pm
 \iint_{S}Q \mathrm{d}x\mathrm{d}z +
 \iint_{S}R\mathrm{d}y\mathrm{d}x\)</span>
 右端三个积分转换为同一坐标面上的二重积分</p>
-<p><span class="math display">\[ \begin{align}
-    &amp;\iint_{S} P \mathrm{d}y\mathrm{d}z + Q\mathrm{d}x\mathrm{d}z+
+<p><span class="math display">\[
+\begin{align}
+&amp;\iint_{S} P \mathrm{d}y\mathrm{d}z + Q\mathrm{d}x\mathrm{d}z+
 R\mathrm{d}x\mathrm{d}y\\
 &amp;= \pm \iint_{D} \left[  P \cdot (- z_{x}(x,y))+Q \cdot (-z_y (x,y))
 +R \right]\mathrm{d}x\mathrm{d}y \\
-\end{align}  \]</span></p>
+\end{align}
+\]</span></p>
 <hr />
 <p>计算积分 <span class="math inline">\(\displaystyle \iint_{S} P
 \mathrm{d}y\mathrm{d}z+Q\mathrm{d}z\mathrm{d}x+
@@ -532,7 +549,10 @@ R\mathrm{d}x\mathrm{d}y\)</span> 的另一途径为
     <a href="/2022/05/11/%E5%85%8B%E5%8A%B3%E4%BF%AE%E6%96%AF%E7%86%B5%E5%85%AC%E5%BC%8F/" rel="prev" title="">
       <i class="fa fa-chevron-left"></i> 
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2022/05/12/%E6%95%B0%E7%90%86%E9%80%BB%E8%BE%911/" rel="next" title="数理逻辑1">
+      数理逻辑1 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -592,7 +612,7 @@ R\mathrm{d}x\mathrm{d}y\)</span> 的另一途径为
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一型曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.</span> <span class="nav-text">定义与性质</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.1.</span> <span class="nav-text">性质</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">化为二重积分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">第二型曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8-1"><span class="nav-number">2.1.</span> <span class="nav-text">定义与性质</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-number">1.</span> <span class="nav-text">第一型曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.</span> <span class="nav-text">定义与性质</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%B4%A8"><span class="nav-number">1.1.1.</span> <span class="nav-text">性质</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86"><span class="nav-number">1.2.</span> <span class="nav-text">化为二重积分</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%AC%AC%E4%BA%8C%E5%9E%8B%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86"><span class="nav-number">2.</span> <span class="nav-text">第二型曲面积分</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89%E4%B8%8E%E6%80%A7%E8%B4%A8-1"><span class="nav-number">2.1.</span> <span class="nav-text">定义与性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8C%96%E4%B8%BA%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86-1"><span class="nav-number">2.2.</span> <span class="nav-text">化为二重积分</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -608,7 +628,7 @@ R\mathrm{d}x\mathrm{d}y\)</span> 的另一途径为
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -659,12 +679,12 @@ R\mathrm{d}x\mathrm{d}y\)</span> 的另一途径为
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">46k</span>
+    <span title="站点总字数">51k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">42 分钟</span>
+    <span title="站点阅读时长">46 分钟</span>
 </div>
 
 

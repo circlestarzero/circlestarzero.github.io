@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"circlecirclezero.cc","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":"trueß","sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#ffd9e6","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":true,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="克劳修斯熵 卡诺定理  工作在两确定的热源之间的一切可逆机的效率相等  \(\displaystyle \eta_{\text{可}} &#x3D; 1 - \frac{T_2}{T_1}\)  一切不可逆机的效率小于可逆热机的效率  \(\displaystyle \eta_{\text{不可}} &lt; 1 - \frac{T_2}{T_1}\)   对可逆卡诺循环 \[ \begin{aligned">
+  <meta name="description" content="克劳修斯熵卡诺定理  工作在两确定的热源之间的一切可逆机的效率相等 $\displaystyle \eta_{\text{可}} &#x3D; 1 - \frac{T_2}{T_1}$   一切不可逆机的效率小于可逆热机的效率 $\displaystyle \eta_{\text{不可}} &lt; 1 - \frac{T_2}{T_1}$    对可逆卡诺循环 \begin{aligned}  \frac">
 <meta property="og:type" content="article">
 <meta property="og:title" content="热力学第二定律的统计意义和熵的概念">
 <meta property="og:url" content="https://circlecirclezero.cc/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/index.html">
 <meta property="og:site_name" content="CC&#39;blog">
-<meta property="og:description" content="克劳修斯熵 卡诺定理  工作在两确定的热源之间的一切可逆机的效率相等  \(\displaystyle \eta_{\text{可}} &#x3D; 1 - \frac{T_2}{T_1}\)  一切不可逆机的效率小于可逆热机的效率  \(\displaystyle \eta_{\text{不可}} &lt; 1 - \frac{T_2}{T_1}\)   对可逆卡诺循环 \[ \begin{aligned">
+<meta property="og:description" content="克劳修斯熵卡诺定理  工作在两确定的热源之间的一切可逆机的效率相等 $\displaystyle \eta_{\text{可}} &#x3D; 1 - \frac{T_2}{T_1}$   一切不可逆机的效率小于可逆热机的效率 $\displaystyle \eta_{\text{不可}} &lt; 1 - \frac{T_2}{T_1}$    对可逆卡诺循环 \begin{aligned}  \frac">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://circlecirclezero.cc/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/2022-05-06-17-23-18.png">
 <meta property="article:published_time" content="2022-05-06T06:27:48.000Z">
@@ -268,7 +268,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>951</span>
+              <span>909</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -287,65 +287,45 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="克劳修斯熵">克劳修斯熵</h1>
-<p>卡诺定理</p>
+        <h1 id="克劳修斯熵"><a href="#克劳修斯熵" class="headerlink" title="克劳修斯熵"></a>克劳修斯熵</h1><p>卡诺定理</p>
 <ul>
-<li>工作在两确定的热源之间的一切<strong>可逆机</strong>的效率相等
-<ul>
-<li><span class="math inline">\(\displaystyle \eta_{\text{可}} = 1 -
-\frac{T_2}{T_1}\)</span></li>
-</ul></li>
-<li>一切<strong>不可逆机</strong>的效率小于可逆热机的效率
-<ul>
-<li><span class="math inline">\(\displaystyle \eta_{\text{不可}} &lt; 1
-- \frac{T_2}{T_1}\)</span></li>
-</ul></li>
+<li>工作在两确定的热源之间的一切<strong>可逆机</strong>的效率相等<ul>
+<li>$\displaystyle \eta_{\text{可}} = 1 - \frac{T_2}{T_1}$</li>
+</ul>
+</li>
+<li>一切<strong>不可逆机</strong>的效率小于可逆热机的效率<ul>
+<li>$\displaystyle \eta_{\text{不可}} &lt; 1 - \frac{T_2}{T_1}$</li>
+</ul>
+</li>
 </ul>
 <p>对可逆卡诺循环</p>
-<p><span class="math display">\[ \begin{aligned}
-\frac{Q_1}{T_1} = \frac{\left\vert Q_2 \right\vert }{T_2}\\
-\frac{Q_1}{T_1}+\frac{Q_2}{T_2}=0
-\end{aligned} \]</span></p>
-<p>任意一个可逆循环，都可以看成由无数( <span
-class="math inline">\(N\)</span> )个卡诺循环所组成 对其中第 i 个有:
-<span class="math inline">\(\displaystyle \frac{Q_{1i}}{T_{1i}} +
-\frac{Q_{2i}}{T_{2i}} = 0\)</span></p>
-<p>对N个卡诺循环: <span class="math inline">\(\displaystyle
-\sum_{i=1}^{2N} \frac{Q_i}{T_i} = 0\)</span></p>
-<p>克劳修斯等式( <span class="math inline">\(T\)</span> 是热源温度):</p>
-<p><span class="math display">\[ \begin{equation}
+<script type="math/tex; mode=display">\begin{aligned}
+ \frac{Q_1}{T_1} = \frac{\left\vert Q_2 \right\vert }{T_2}\\
+ \frac{Q_1}{T_1}+\frac{Q_2}{T_2}=0
+\end{aligned}</script><p>任意一个可逆循环，都可以看成由无数( $N$ )个卡诺循环所组成<br>对其中第 i 个有: $\displaystyle \frac{Q_{1i}}{T_{1i}} + \frac{Q_{2i}}{T_{2i}} = 0$</p>
+<p>对N个卡诺循环: $\displaystyle \sum_{i=1}^{2N} \frac{Q_i}{T_i} = 0$</p>
+<p>克劳修斯等式( $T$ 是热源温度):</p>
+<script type="math/tex; mode=display">\begin{equation}
 \lim_{N \to \infty} \sum_{i=1}^{2N} \frac{Q_i}{T_i} =0  \\
-\end{equation}\]</span></p>
-<p><span class="math display">\[ \begin{equation}
+\end{equation}</script><script type="math/tex; mode=display">\begin{equation}
     \oint \frac{\mathrm{d}Q}{T} =0
-\end{equation} \]</span></p>
-<h2 id="熵的定义">熵的定义</h2>
-<img data-src="/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/2022-05-06-17-23-18.png" class="">
-<p><span class="math display">\[
-\int_{L_1} \frac{\mathrm{d}Q}{\mathrm{d}T_{2}}
-\frac{\mathrm{d}Q}{\mathrm{d}T} =\cdots =\int_{AB}
-\frac{\mathrm{d}Q}{\mathrm{d}T}
-\]</span></p>
-<ul>
+\end{equation}</script><h2 id="熵的定义"><a href="#熵的定义" class="headerlink" title="熵的定义"></a>熵的定义</h2><img data-src="/2022/05/06/%E7%83%AD%E5%8A%9B%E5%AD%A6%E7%AC%AC%E4%BA%8C%E5%AE%9A%E5%BE%8B%E7%9A%84%E7%BB%9F%E8%AE%A1%E6%84%8F%E4%B9%89%E5%92%8C%E7%86%B5%E7%9A%84%E6%A6%82%E5%BF%B5/2022-05-06-17-23-18.png" class="">
+<script type="math/tex; mode=display">
+\int_{L_1} \frac{\mathrm{d}Q}{\mathrm{d}T_{2}} \frac{\mathrm{d}Q}{\mathrm{d}T} =\cdots =\int_{AB} \frac{\mathrm{d}Q}{\mathrm{d}T}</script><ul>
 <li>积分值只由初末态决定，与积分路径无关</li>
 </ul>
 <p>一定存在一个态函数,它的增量只与状态有关，而与变化的路径无关。</p>
 <ul>
-<li>态函数“<strong>熵</strong>”,记为 "<span
-class="math inline">\(S\)</span>"</li>
+<li>态函数“<strong>熵</strong>”,记为 “$S$”</li>
 </ul>
 <p>克劳修斯熵公式</p>
 <p>“熵”的定义式（对可逆过程）</p>
-<p><span class="math display">\[ S_{B} - S_{A} = \int_{A}^{B}
-\frac{\mathrm{d}Q}{\mathrm{d}T}\]</span></p>
-<ul>
-<li><span class="math inline">\(S_A\)</span>: 初态的熵</li>
-<li><span class="math inline">\(S_B\)</span>: 末态的熵</li>
+<script type="math/tex; mode=display">S_{B} - S_{A} = \int_{A}^{B} \frac{\mathrm{d}Q}{\mathrm{d}T}</script><ul>
+<li>$S_A$: 初态的熵</li>
+<li>$S_B$: 末态的熵</li>
 </ul>
 <p>对无限小的可逆过程</p>
-<p><span class="math display">\[ \mathrm{d}S = \frac{\mathrm{d}Q}{T}
-\]</span></p>
-<script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
+<script type="math/tex; mode=display">\mathrm{d}S = \frac{\mathrm{d}Q}{T}</script><script type="text&#x2F;javascript" src="https://unpkg.com/kity@2.0.4/dist/kity.min.js"></script><script type="text&#x2F;javascript" src="https://unpkg.com/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text&#x2F;javascript" src="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text&#x2F;css" href="https://unpkg.com/hexo-simple-mindmap@0.8.0/dist/mindmap.min.css">
     </div>
 
     
@@ -459,7 +439,7 @@ class="math inline">\(S\)</span>"</li>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">20</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -510,12 +490,12 @@ class="math inline">\(S\)</span>"</li>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">53k</span>
+    <span title="站点总字数">51k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">49 分钟</span>
+    <span title="站点阅读时长">46 分钟</span>
 </div>
 
 
